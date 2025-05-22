@@ -3,43 +3,1066 @@
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1" name="viewport">
-<title>Story Landing page</title>
+<title>Chaotic Spinner Growth</title>
 <style title="Twine CSS">@keyframes appear{0%{opacity:0}to{opacity:1}}@keyframes fade-in-out{0%,to{opacity:0}50%{opacity:1}}@keyframes rumble{25%{top:-0.1em}75%{top:.1em}0%,to{top:0px}}@keyframes shudder{25%{left:.1em}75%{left:-0.1em}0%,to{left:0px}}@keyframes buoy{25%{top:.25em}75%{top:-0.25em}0%,to{top:0px}}@keyframes sway{25%{left:.25em}75%{left:-0.25em}0%,to{left:0px}}@keyframes pulse{0%{transform:scale(0, 0)}20%{transform:scale(1.2, 1.2)}40%{transform:scale(0.9, 0.9)}60%{transform:scale(1.05, 1.05)}80%{transform:scale(0.925, 0.925)}to{transform:scale(1, 1)}}@keyframes zoom-in{0%{transform:scale(0, 0)}to{transform:scale(1, 1)}}@keyframes shudder-in{0%,to{transform:translateX(0em)}5%,25%,45%{transform:translateX(-1em)}15%,35%,55%{transform:translateX(1em)}65%{transform:translateX(-0.6em)}75%{transform:translateX(0.6em)}85%{transform:translateX(-0.2em)}95%{transform:translateX(0.2em)}}@keyframes rumble-in{0%,to{transform:translateY(0em)}5%,25%,45%{transform:translateY(-1em)}15%,35%,55%{transform:translateY(1em)}65%{transform:translateY(-0.6em)}75%{transform:translateY(0.6em)}85%{transform:translateY(-0.2em)}95%{transform:translateY(0.2em)}}@keyframes fidget{0%,8.1%,82.1%,31.1%,38.1%,44.1%,40.1%,47.1%,74.1%,16.1%,27.1%,72.1%,24.1%,95.1%,6.1%,36.1%,20.1%,4.1%,91.1%,14.1%,87.1%,to{left:0px;top:0px}8%,82%,31%,38%,44%{left:-1px}40%,47%,74%,16%,27%{left:1px}72%,24%,95%,6%,36%{top:-1px}20%,4%,91%,14%,87%{top:1px}}@keyframes slide-right{0%{transform:translateX(-100vw)}}@keyframes slide-left{0%{transform:translateX(100vw)}}@keyframes slide-up{0%{transform:translateY(100vh)}}@keyframes slide-down{0%{transform:translateY(-100vh)}}@keyframes fade-right{0%{opacity:0;transform:translateX(-1em)}to{opacity:1}}@keyframes fade-left{0%{opacity:0;transform:translateX(1em)}to{opacity:1}}@keyframes fade-up{0%{opacity:0;transform:translateY(1em)}to{opacity:1}}@keyframes fade-down{0%{opacity:0;transform:translateY(-1em)}to{opacity:1}}@keyframes flicker{0%,29%,31%,63%,65%,77%,79%,86%,88%,91%,93%{opacity:0}30%{opacity:.2}64%{opacity:.4}78%{opacity:.6}87%{opacity:.8}92%,to{opacity:1}}@keyframes blur{0%{filter:blur(2rem);opacity:0}25%{opacity:1}to{filter:blur(0rem);opacity:1}}.dom-debug-mode tw-story,.dom-debug-mode tw-passage,.dom-debug-mode tw-sidebar,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{outline:1px solid #f5a3da;min-height:32px;display:block !important}.dom-debug-mode tw-story::before,.dom-debug-mode tw-passage::before,.dom-debug-mode tw-sidebar::before,.dom-debug-mode tw-include::before,.dom-debug-mode tw-hook::before,.dom-debug-mode tw-expression::before,.dom-debug-mode tw-link::before,.dom-debug-mode tw-dialog::before,.dom-debug-mode tw-columns::before,.dom-debug-mode tw-column::before,.dom-debug-mode tw-align::before{position:absolute;top:0;left:0;height:16px;background-color:#f5a3da;color:#000;font-size:16px;font-weight:normal;font-style:normal;font-family:monospace;display:inline-block;line-height:100%;white-space:pre;z-index:999997}.dom-debug-mode tw-story:hover,.dom-debug-mode tw-passage:hover,.dom-debug-mode tw-sidebar:hover,.dom-debug-mode tw-include:hover,.dom-debug-mode tw-hook:hover,.dom-debug-mode tw-expression:hover,.dom-debug-mode tw-link:hover,.dom-debug-mode tw-dialog:hover,.dom-debug-mode tw-columns:hover,.dom-debug-mode tw-column:hover,.dom-debug-mode tw-align:hover{outline:1px solid #fc9}.dom-debug-mode tw-story:hover::before,.dom-debug-mode tw-passage:hover::before,.dom-debug-mode tw-sidebar:hover::before,.dom-debug-mode tw-include:hover::before,.dom-debug-mode tw-hook:hover::before,.dom-debug-mode tw-expression:hover::before,.dom-debug-mode tw-link:hover::before,.dom-debug-mode tw-dialog:hover::before,.dom-debug-mode tw-columns:hover::before,.dom-debug-mode tw-column:hover::before,.dom-debug-mode tw-align:hover::before{background-color:#fc9;transition:background-color 1s}.dom-debug-mode tw-passage,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{padding:1em;margin:0}.dom-debug-mode tw-story::before{content:'<tw-story tags="' attr(tags) '">'}.dom-debug-mode tw-passage::before{top:-16px;content:'<tw-passage tags="' attr(tags) '">'}.dom-debug-mode tw-sidebar::before{top:-16px;content:"<tw-sidebar>"}.dom-debug-mode tw-hook::before{content:'<tw-hook name="' attr(name) '">'}.dom-debug-mode tw-expression::before{content:'<tw-expression name="' attr(name) '">'}.dom-debug-mode tw-link::before{content:'<tw-link name="' attr(name) '">'}.dom-debug-mode tw-dialog::before{content:"<tw-dialog>"}.dom-debug-mode tw-columns::before{content:"<tw-columns>"}.dom-debug-mode tw-column::before{content:"<tw-column>"}.dom-debug-mode tw-align::before{content:"<tw-align>"}.dom-debug-mode tw-include::before{content:'<tw-include type="' attr(type) '" name="' attr(name) '">'}tw-open-button[goto]{display:none}.debug-mode tw-open-button[replay],.debug-mode tw-open-button[goto]{display:inline}.debug-mode tw-expression{display:inline-block !important}.debug-mode tw-expression[type=variable]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"$" attr(name)}.debug-mode tw-expression[type=tempVariable]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"_" attr(name)}.debug-mode tw-expression[return=boolean]{background-color:rgba(179,179,179,.2)}.debug-mode tw-expression[return=array]{background-color:rgba(255,102,102,.2)}.debug-mode tw-expression[return=dataset]{background-color:rgba(255,128,0,.2)}.debug-mode tw-expression[return=number]{background-color:rgba(255,179,102,.2)}.debug-mode tw-expression[return=datamap]{background-color:rgba(255,255,102,.2)}.debug-mode tw-expression[return=changer]{background-color:rgba(179,255,102,.2)}.debug-mode tw-expression[return=lambda]{background-color:rgba(102,255,102,.2)}.debug-mode tw-expression[return=hookname]{background-color:rgba(102,255,204,.2)}.debug-mode tw-expression[return=string]{background-color:rgba(102,255,255,.2)}.debug-mode tw-expression[return=datatype]{background-color:rgba(102,153,255,.2)}.debug-mode tw-expression[return=gradient],.debug-mode tw-expression[return=colour]{background-color:rgba(204,102,255,.2)}.debug-mode tw-expression[return=instant],.debug-mode tw-expression[return=macro]{background-color:rgba(240,117,199,.2)}.debug-mode tw-expression[return=command]{background-color:rgba(153,153,255,.2)}.debug-mode tw-expression.false{background-color:rgba(255,0,0,.2) !important}.debug-mode tw-expression[type=macro]::before{content:"(" attr(name) ":)";padding:0 .5rem;font-size:1rem;vertical-align:middle;line-height:normal;background-color:inherit;border:1px solid rgba(255,255,255,.5)}.debug-mode tw-expression[title]:not([title=""]){cursor:help}.debug-mode tw-hook{background-color:rgba(0,85,255,.1) !important}.debug-mode tw-hook::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"["}.debug-mode tw-hook::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"]"}.debug-mode tw-hook[name]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"]<" attr(name) "|"}.debug-mode tw-pseudo-hook{background-color:rgba(255,170,0,.1) !important}.debug-mode tw-collapsed::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"{"}.debug-mode tw-collapsed::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"}"}.debug-mode tw-verbatim::before,.debug-mode tw-verbatim::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"`"}.debug-mode tw-align[style*="text-align: center"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0) 0%, hsla(14, 100%, 87%, 0.25) 50%, hsla(14, 100%, 87%, 0) 100%)}.debug-mode tw-align[style*="text-align: left"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0.25) 0%, hsla(14, 100%, 87%, 0) 100%)}.debug-mode tw-align[style*="text-align: right"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0) 0%, hsla(14, 100%, 87%, 0.25) 100%)}.debug-mode tw-column{background-color:rgba(189,228,255,.2)}.debug-mode tw-enchantment{animation:enchantment .5s infinite;border:1px solid}.debug-mode tw-link::after,.debug-mode tw-broken-link::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:attr(passage-name)}.debug-mode tw-include{background-color:rgba(204,128,51,.1)}.debug-mode tw-include::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:attr(type) ' "' attr(name) '"'}.debug-dialogs tw-backdrop:not(.eval-replay):not(.harlowe-crash){pointer-events:none;opacity:.1}tw-eval-replay tw-eval-code,tw-eval-replay tw-eval-explanation{max-height:20vh;overflow:auto;margin:10px auto}tw-eval-replay tw-eval-code{display:block;font-family:monospace;padding-bottom:1ex;border-bottom:2px solid gray}tw-eval-replay tw-eval-explanation{display:block;text-align:center}tw-eval-replay tw-eval-explanation>code{white-space:pre-wrap}tw-eval-replay tw-eval-explanation>code.from-block{width:40%;display:inline-block;text-align:left;max-height:4em;overflow-wrap:anywhere;overflow-y:scroll}tw-eval-replay tw-eval-explanation>code.from-block~.to-desc{width:calc(40% - 2em);margin-left:2em;display:inline-block}tw-eval-replay tw-eval-explanation>code.from-block+span::after{content:"..."}tw-eval-replay tw-eval-explanation>code.from-inline{text-align:right}tw-eval-replay tw-eval-explanation>:nth-child(2){white-space:pre}tw-eval-replay tw-eval-explanation>.to-desc{text-align:left}tw-eval-replay tw-eval-explanation>table{width:100%;margin-top:1em}tw-eval-replay tw-eval-explanation>table td{white-space:pre-wrap !important;word-wrap:anywhere}tw-eval-replay tw-eval-reason{text-align:center;font-size:80%;font-style:italic;display:block}tw-eval-replay tw-eval-it{text-align:center;font-size:80%;display:block}tw-eval-replay tw-dialog-links{display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around}@keyframes enchantment{0%,to{border-color:#ffb366}50%{border-color:#6fc}}tw-debugger{position:fixed;box-sizing:border-box;bottom:0;right:0;z-index:999999;min-width:14em;min-height:1em;padding:0em .5em .5em 1em;font-size:1.25em;font-family:sans-serif;color:#262626;background-color:#fff;border-left:solid #262626 2px;border-top:solid #262626 2px;border-top-left-radius:.5em;opacity:1}tw-debugger.fade-panel:not(:hover){opacity:.33}tw-debugger.theme-dark{color:#d9d9d9;background-color:#000}tw-debugger.theme-dark{border-color:#d9d9d9 rgba(0,0,0,0) rgba(0,0,0,0) #d9d9d9}tw-debugger select{margin-right:1em;width:12em}tw-debugger button,tw-debugger tw-link{border-radius:3px;border:solid #999 1px;margin:auto 4px;color:#262626;background-color:#fff;cursor:pointer}tw-debugger button.enabled,tw-debugger tw-link.enabled{color:#000;background-color:#d9d9d9;box-shadow:inset #999 3px 5px .5em}tw-debugger.theme-dark button,tw-debugger.theme-dark tw-link{color:#d9d9d9;background-color:#000;border-color:#666}tw-debugger.theme-dark button.enabled,tw-debugger.theme-dark tw-link.enabled{color:#e6e6e6;background-color:#424242;box-shadow:inset #666 3px 5px .5em}tw-debugger button{font-size:1em;overflow-x:hidden;text-overflow:ellipsis;white-space:pre}tw-debugger tw-link{font-size:1.25em;border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}tw-debugger tw-link:hover{border-color:#262626;color:#262626}tw-debugger.theme-dark tw-link:hover{border-color:#d9d9d9;color:#d9d9d9}tw-debugger tw-dialog{background-color:#fff;color:#000;font-size:1.25em}tw-debugger.theme-dark tw-dialog{background-color:#000;color:#e6e6e6}tw-debugger .panel{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;position:absolute;bottom:100%;left:-2px;right:0;padding:1em;overflow-y:scroll;overflow-x:hidden;border:inherit;box-sizing:content-box;background-color:#fff;border-bottom:solid #999 2px;border-top-left-radius:.5em;border-bottom-left-radius:.5em;font-size:.8em}tw-debugger .panel:empty,tw-debugger .panel[hidden]{display:none}tw-debugger.theme-dark .panel{background-color:#000;border-bottom-color:#666}tw-debugger .panel-source .panel-row-buttons{width:2rem}tw-debugger .panel-source .source-tags{width:20%;font-style:italic}tw-debugger .panel-row-source td{font-family:monospace;font-size:1rem;white-space:pre-wrap;overflow-wrap:anywhere;max-height:8rem;padding:1rem}tw-debugger .panel-rows{width:100%;overflow-x:scroll}tw-debugger .panel-rows>*{display:table-row}tw-debugger .panel-rows>div:nth-of-type(2n){background-color:#e6e6e6}tw-debugger .panel-tools .panel-rows>*,tw-debugger .panel-options .panel-rows>*{margin-top:.4rem;display:block}tw-debugger.theme-dark .panel-rows>div:nth-of-type(2n){background-color:#212121}tw-debugger .panel-row-buttons{text-align:right}tw-debugger .panel-variables .panel-rows:empty::before{content:"~ No variables ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-enchantments .panel-rows:empty::before{content:"~ No enchantments ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-errors .panel-rows:empty::before{content:"~ No errors... for now. ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-errors .panel-rows:empty+.panel-errors-bottom{display:none}tw-debugger.theme-dark .panel-variables .panel-rows:empty::before,tw-debugger.theme-dark .panel-enchantments .panel-rows:empty::before,tw-debugger.theme-dark .panel-errors .panel-rows:empty::before{color:#a8a8a8}tw-debugger .panel-rows:empty+.panel-variables-bottom{display:none}tw-debugger th[data-col]{text-decoration:underline;cursor:pointer}tw-debugger th[data-col][data-order=asc]::after{content:"↓"}tw-debugger th[data-col][data-order=desc]::after{content:"↑"}tw-debugger .panel-storylets:not(.panel-exclusive) .storylet-exclusive,tw-debugger .panel-storylets:not(.panel-urgent) .storylet-urgent{display:none}tw-debugger .storylet-exclusive,tw-debugger .storylet-urgent,tw-debugger .storylet-open{text-align:center}tw-debugger .panel-variables-bottom{padding-top:5px}tw-debugger .enchantment-row{min-height:1.5em}tw-debugger .variable-path{opacity:.4}tw-debugger .temporary-variable-scope,tw-debugger .enchantment-local{font-family:sans-serif;font-weight:normal;opacity:.8;font-size:.75em}tw-debugger .temporary-variable-scope:not(:empty)::before,tw-debugger .enchantment-local:not(:empty)::before{content:" in "}tw-debugger .variable-name,tw-debugger .enchantment-name{font-family:monospace;font-weight:bold}tw-debugger .variable-type{color:#575757;font-weight:normal;text-overflow:ellipsis;overflow:hidden;max-width:10em}tw-debugger.theme-dark .variable-type{color:#a8a8a8}tw-debugger .error-row{display:table-row;background-color:rgba(230,101,204,.3)}tw-debugger .error-row:nth-of-type(2n){background-color:rgba(237,145,219,.3)}tw-debugger .error-row>*{display:table-cell;padding:.25em .5em}tw-debugger .error-row .error-message[title]:not([title=""]){cursor:help}tw-debugger .error-row .error-passage{color:#575757}tw-debugger.theme-dark .error-row .error-passage{color:#a8a8a8}tw-debugger .storylet-row{background-color:rgba(193,240,225,.3)}tw-debugger .storylet-row:nth-child(2n){background-color:rgba(152,231,204,.3)}tw-debugger .storylet-row.storylet-closed{font-style:italic;background-color:#fff}tw-debugger .storylet-row.storylet-closed:nth-child(2n){background-color:#e6e6e6}tw-debugger .storylet-row.storylet-closed>:not(.storylet-lambda){opacity:.6}.storylet-error tw-debugger .storylet-row{background-color:rgba(230,101,204,.3)}.storylet-error tw-debugger .storylet-row:nth-child(2n){background-color:rgba(237,145,219,.3)}tw-debugger .storylet-row .storylet-name,tw-debugger .storylet-row .storylet-value{display:inline-block;width:50%}tw-debugger .storylet-row .storylet-lambda{font-family:monospace;font-size:1rem;white-space:pre-wrap;overflow-wrap:anywhere}tw-debugger.theme-dark .storylet-row.storylet-closed{background-color:#000}tw-debugger.theme-dark .storylet-row.storylet-closed:nth-child(2n){background-color:#212121}tw-debugger .tabs{padding-bottom:.5em}tw-debugger .tab{border-radius:0px 0px .5em .5em;border-top:none;top:-2px}tw-debugger .resizer-h{position:absolute;height:14em;border-left:2px solid #999;border-right:2px solid #999;top:10px;left:4px;width:8px;cursor:ew-resize}tw-debugger.theme-dark .resizer-h{border-color:rgba(0,0,0,0) #666}tw-debugger .resizer-v{position:absolute;height:8px;border-top:2px solid #999;border-bottom:2px solid #999;margin-bottom:4px;top:4px;left:10px;width:95%;cursor:ns-resize;box-sizing:border-box}tw-debugger.theme-dark .resizer-v{border-color:#666 rgba(0,0,0,0)}tw-debugger mark{color:inherit;background-color:rgba(101,230,230,.3) !important}tw-dialog{z-index:999997;border:#fff solid 2px;padding:2em;color:#fff;background-color:#000;display:block}@media(min-width: 576px){tw-dialog{max-width:50vw}}tw-dialog input[type=text]{font-size:inherit;width:100%;border:solid #fff !important}tw-dialog-links{text-align:right;display:-ms-flexbox;display:flex;-ms-flex-pack:end;justify-content:flex-end}tw-backdrop{z-index:999996;position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,.8);display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}tw-backdrop~tw-backdrop{display:none}tw-link,.enchantment-link{cursor:pointer;color:#4169e1;font-weight:bold;text-decoration:none;transition:color .2s ease-in-out}tw-passage [style^=color] tw-link:not(:hover),tw-passage [style*=" color"] tw-link:not(:hover),tw-passage [style^=color][hover=true] tw-link:hover,tw-passage [style*=" color"][hover=true] tw-link:hover,tw-passage [style^=color] .enchantment-link:not(:hover),tw-passage [style*=" color"] .enchantment-link:not(:hover),tw-passage [style^=color][hover=true] .enchantment-link:hover,tw-passage [style*=" color"][hover=true] .enchantment-link:hover{color:inherit}tw-link:hover,.enchantment-link:hover{color:#00bfff}tw-link:active,.enchantment-link:active{color:#dd4b39}.visited{color:#6941e1}tw-passage [style^=color] .visited:not(:hover),tw-passage [style*=" color"] .visited:not(:hover),tw-passage [style^=color][hover=true] .visited:hover,tw-passage [style*=" color"][hover=true] .visited:hover{color:inherit}.visited:hover{color:#e3e}tw-broken-link{color:#933;border-bottom:2px solid #933;cursor:not-allowed}tw-passage [style^=color] tw-broken-link:not(:hover),tw-passage [style*=" color"] tw-broken-link:not(:hover),tw-passage [style^=color][hover=true] tw-broken-link:hover,tw-passage [style*=" color"][hover=true] tw-broken-link:hover{color:inherit}tw-link.enchantment-mouseover,.link.enchantment-mouseover,tw-expression.enchantment-mouseover>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border-bottom:2px dashed #999}tw-link.enchantment-mouseover:hover,tw-link.enchantment-mouseover:active,.link.enchantment-mouseover:hover,.link.enchantment-mouseover:active,tw-expression.enchantment-mouseover>tw-link:hover,tw-expression.enchantment-mouseover>tw-link:active{color:inherit}tw-link.enchantment-mouseover.enchantment-button,.link.enchantment-mouseover.enchantment-button,tw-expression.enchantment-mouseover>tw-link.enchantment-button{border-style:dashed}tw-link.enchantment-mouseout,.link.enchantment-mouseout,tw-expression.enchantment-mouseout>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border:rgba(64,149,191,.6) 1px solid;border-radius:.2em}tw-link.enchantment-mouseout:hover,tw-link.enchantment-mouseout:active,.link.enchantment-mouseout:hover,.link.enchantment-mouseout:active,tw-expression.enchantment-mouseout>tw-link:hover,tw-expression.enchantment-mouseout>tw-link:active{color:inherit}tw-link.enchantment-mouseout:hover,.link.enchantment-mouseout:hover,tw-expression.enchantment-mouseout>tw-link:hover{background-color:rgba(175,197,207,.75);border:rgba(0,0,0,0) 1px solid}tw-link.enchantment-dblclick,.link.enchantment-dblclick,tw-expression.enchantment-dblclick>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;cursor:pointer;border:2px solid #999;border-radius:0}tw-link.enchantment-dblclick:hover,tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:hover,.link.enchantment-dblclick:active,tw-expression.enchantment-dblclick>tw-link:hover,tw-expression.enchantment-dblclick>tw-link:active{color:inherit}tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:active,tw-expression.enchantment-dblclick>tw-link:active{background-color:#999}tw-link.enchantment-button,.link.enchantment-button,.enchantment-button:not(.link) tw-link,.enchantment-button:not(.link) .link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}.enchantment-button{display:block}.enchantment-clickblock{cursor:pointer;width:100%;height:100%;display:block}.enchantment-clickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;color:rgba(65,105,225,.5);transition:color .2s ease-in-out}.enchantment-clickblock>:not(tw-enchantment):hover::after{color:rgba(0,191,255,.5)}.enchantment-clickblock>:not(tw-enchantment):active::after{color:rgba(222,78,59,.5)}.enchantment-clickblock>:not(tw-enchantment)::after{box-shadow:inset 0 0 0 .5vmax}.enchantment-clickblock>tw-passage::after,.enchantment-clickblock>tw-sidebar::after{box-shadow:0 0 0 .5vmax}.enchantment-mouseoverblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:2px dashed #999}.enchantment-mouseoutblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:rgba(64,149,191,.6) 2px solid}.enchantment-mouseoutblock:hover>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;background-color:rgba(175,197,207,.75);border:rgba(0,0,0,0) 2px solid;border-radius:.2em}.enchantment-dblclickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;cursor:pointer;border:2px solid #999}tw-dialog-links{padding-top:1.5em}tw-dialog-links tw-link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block;display:inline-block}html{margin:0;height:100%;overflow-x:hidden}*,:before,:after{position:relative;box-sizing:inherit}body{margin:0;height:100%}tw-storydata{display:none}tw-story{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;font:100% Georgia,serif;box-sizing:border-box;width:100%;min-height:100%;font-size:1.5em;line-height:1.5em;padding:5% 5%;overflow:hidden;background-color:#000;color:#fff}tw-story [style*=content-box] *{box-sizing:border-box}@media(min-width: 576px){tw-story{padding:5% 20%}}tw-story tw-consecutive-br{display:block;height:1.6ex;visibility:hidden}tw-story select{background-color:rgba(0,0,0,0);font:inherit;border-style:solid;padding:2px}tw-story select:not([disabled]){color:inherit}tw-story textarea{resize:none;background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none;padding:2px}tw-story input[type=text]{background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none}tw-story input[type=checkbox]{transform:scale(1.5);margin:0 .5em .5em .5em;vertical-align:middle}tw-story tw-noscript{animation:appear .8s}tw-passage{display:block}tw-sidebar{text-align:center;display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between}@media(min-width: 576px){tw-sidebar{left:-5em;width:3em;position:absolute;-ms-flex-direction:column;flex-direction:column}tw-enchantment[style*=width]>tw-sidebar{width:inherit}}tw-icon{display:inline-block;margin:.5em 0;font-size:66px;font-family:"Verdana",sans-serif}tw-icon[alt]{opacity:.2;cursor:pointer}tw-icon[alt]:hover{opacity:.4}tw-icon[data-label]::after{font-weight:bold;content:attr(data-label);font-size:20px;bottom:-20px;left:-50%;white-space:nowrap}tw-meter{display:block}tw-hook:empty,tw-expression:empty{display:none}tw-error{display:inline-block;border-radius:.2em;padding:.2em;font-size:1rem;cursor:help;white-space:pre-wrap}tw-error.error{background-color:rgba(223,58,190,.6);color:#fff}tw-error.warning{background-color:rgba(223,140,58,.6);color:#fff;display:none}.debug-mode tw-error.warning{display:inline}tw-error-explanation{display:block;font-size:.8rem;line-height:1rem}tw-open-button,tw-folddown{cursor:pointer;line-height:0em;border-radius:4px;border:1px solid rgba(255,255,255,.5);font-size:.8rem;margin:0 .2rem;padding:3px;white-space:pre}tw-folddown::after{content:"▶"}tw-folddown.open::after{content:"▼"}tw-open-button[replay]{display:none}tw-error tw-open-button,tw-eval-replay tw-open-button{display:inline !important}tw-open-button::after{content:attr(label)}tw-notifier{border-radius:.2em;padding:.2em;font-size:1rem;background-color:rgba(223,182,58,.4);display:none}.debug-mode tw-notifier{display:inline}tw-notifier::before{content:attr(message)}tw-colour{border:1px solid #000;display:inline-block;width:1em;height:1em}tw-enchantment:empty{display:none}h1{font-size:3em}h2{font-size:2.25em}h3{font-size:1.75em}h1,h2,h3,h4,h5,h6{line-height:1em;margin:.3em 0 .6em 0}pre{font-size:1rem;line-height:initial}small{font-size:70%}big{font-size:120%}mark{color:rgba(0,0,0,.6);background-color:#ff9}ins{color:rgba(0,0,0,.6);background-color:rgba(255,242,204,.5);border-radius:.5em;box-shadow:0em 0em .2em #ffe699;text-decoration:none}center{text-align:center;margin:0 auto;width:60%}blink{text-decoration:none;animation:fade-in-out 1s steps(1, end) infinite alternate}tw-align{display:block}tw-columns{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between}.transition-in{animation:appear 0ms step-start}.transition-out{animation:appear 0ms step-end}[data-t8n^=dissolve].transition-in,[data-t8n=fade].transition-in{animation:appear .8s}[data-t8n^=dissolve].transition-out,[data-t8n=fade].transition-out{animation:appear .8s reverse}[data-t8n^=shudder].transition-in{display:inline-block !important;animation:shudder-in .8s}[data-t8n^=shudder].transition-out{display:inline-block !important;animation:shudder-in .8s reverse}[data-t8n^=rumble].transition-in{display:inline-block !important;animation:rumble-in .8s}[data-t8n^=rumble].transition-out{display:inline-block !important;animation:rumble-in .8s reverse}[data-t8n^=pulse].transition-in{animation:pulse .8s;display:inline-block !important}[data-t8n^=pulse].transition-out{animation:pulse .8s reverse;display:inline-block !important}[data-t8n^=zoom].transition-in{animation:zoom-in .8s;display:inline-block !important}[data-t8n^=zoom].transition-out{animation:zoom-in .8s reverse;display:inline-block !important}[data-t8n^=blur].transition-in{animation:blur .8s;display:inline-block !important}[data-t8n^=blur].transition-out{animation:blur .8s reverse;display:inline-block !important}[data-t8n^=slideleft].transition-in{animation:slide-left .8s;display:inline-block !important}[data-t8n^=slideleft].transition-out{animation:slide-right .8s reverse;display:inline-block !important}[data-t8n^=slideright].transition-in{animation:slide-right .8s;display:inline-block !important}[data-t8n^=slideright].transition-out{animation:slide-left .8s reverse;display:inline-block !important}[data-t8n^=slideup].transition-in{animation:slide-up .8s;display:inline-block !important}[data-t8n^=slideup].transition-out{animation:slide-down .8s reverse;display:inline-block !important}[data-t8n^=slidedown].transition-in{animation:slide-down .8s;display:inline-block !important}[data-t8n^=slidedown].transition-out{animation:slide-up .8s reverse;display:inline-block !important}[data-t8n^=fadeleft].transition-in{animation:fade-left .8s;display:inline-block !important}[data-t8n^=fadeleft].transition-out{animation:fade-right .8s reverse;display:inline-block !important}[data-t8n^=faderight].transition-in{animation:fade-right .8s;display:inline-block !important}[data-t8n^=faderight].transition-out{animation:fade-left .8s reverse;display:inline-block !important}[data-t8n^=fadeup].transition-in{animation:fade-up .8s;display:inline-block !important}[data-t8n^=fadeup].transition-out{animation:fade-down .8s reverse;display:inline-block !important}[data-t8n^=fadedown].transition-in{animation:fade-down .8s;display:inline-block !important}[data-t8n^=fadedown].transition-out{animation:fade-up .8s reverse;display:inline-block !important}[data-t8n^=flicker].transition-in{animation:flicker .8s}[data-t8n^=flicker].transition-out{animation:flicker .8s reverse}
 </style>
 </head>
 <body>
-<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Story Landing page.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Story Landing page" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="CB710555-E945-44EC-81C5-A39E72E015B5" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar {
+<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Chaotic Spinner Growth.</tw-noscript></noscript></tw-story>
+<tw-storydata name="Chaotic Spinner Growth" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="01DDFA33-7124-4EC0-A884-7E31260C181A" options="" tags="Growth Ivan Calypso" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar {
     display: none;
 }
 
 /*Story Overall Formating*/
-tw-story{background-color:#A55B4B;color:#4F1C51}tw-link,tw-link.visited{color:#4F1C51}tw-link:hover,tw-link.visited:hover{color:#DCA06D}
+tw-story{background-color:#306026;color:#a68b4d}tw-link,tw-link.visited{color:#7f7236}tw-link:hover,tw-link.visited:hover{color:#b8a560}
+
+/*Calypso's Formating*/
+tw-story[tags="Calypso-Ending"]{background-color:#3D365C;color:#C95792}[tags="Calypso-Ending"] tw-link{color:#9A3F74}[tags="Calypso-Ending"] tw-link:hover{color:#D66AA0}
+
+/*Ivan Formating*/
+tw-story[tags="Ivan-Ending"]{background-color:#4A102A;color:#C5172E}[tags="Ivan-Ending"] tw-link{color:#A01226}[tags="Ivan-Ending"] tw-link:hover{color:#D83646}
+
+/*Duel Ending Passage Formating*/
+tw-story[tags="Duel-Ending"]{background-color:#A62C2C;color:#EA7300}[tags="Duel-Ending"] tw-link{color:#BF5C00}[tags="Duel-Ending"] tw-link:hover{color:#F18A1A}
 
 /*Div List*/
 
-.Title {text-align:center;font-weight:bold;font-size:75px;line-height:100px;color:#210F37;}
+.Title {text-align: center;font-weight: bold;font-size: 75px;line-height: 100px;}
 
-.SubTitle{text-align:center;font-size:50px;line-height:150px}
+.SubTitle{text-align: center;font-size: 50px;}
 
-.Body{text-align:left;font-size:35px;line-height:50px;}
+.Grow-Options{text-align: center;font-size: 40px;line-height: 75px;}
 
-.Tabed{text-indent:2em;}
+.Options {text-align: center;font-size: 40px;line-height: 150px;}
 
-.Tag{float:right;font-size:20px;color:#DCA06D;}
+.Body{text-align: left;font-size: 35px;line-height: 50px;}
 
-.Option{text-align:center;font-size:40px;line-height:100px;}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Storys" tags="" position="750,300" size="100,100">&lt;div class=&quot;Title&quot;&gt;Story Selection&lt;/div&gt;
+.CopyWrite{font-size: 15px;line-height: 15px;}
 
-&lt;div class=&quot;Body&quot;&gt;[[Acid Steals From Dust]]&lt;div class=&quot;Tag&quot;&gt;Tags: Acid, Dust, Size Theft, Butt Sitting, Explicit, Story&lt;/div&gt;
+.PG{text-indent:2em}
 
-&lt;div class=&quot;Body&quot;&gt;[[Chaotic Growth Spinner]]&lt;div class=&quot;Tag&quot;&gt;Tags: Ivan, Calypso, Growth, Explicit, Game&lt;/div&gt;</tw-passagedata><tw-passagedata pid="2" name="Chaotic Growth Spinner" tags="" position="750,425" size="100,100">&lt;div class=&quot;Title&quot;&gt;Chaotic Spinner Growth&lt;/div&gt;
-&lt;div class=&quot;Body&quot;&gt;&lt;div class=&quot;Tabed&quot;&gt;Ivan the Draconequus and demi-god of chaos has come up with a new game involving a spinner with three slices were him and his pegasus wolf wife Calypso will each pick a slice of the spinner and take turns spinning it. Everytime it lands on their slice they grow in size.&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;Option&quot;&gt;(link:&quot;Start Story&quot;)[(goto-url:&quot;/Story-Selector/Ivan-Storys/Chaotic Spinner Growth.html&quot;)]
-[[Story Select-&gt;Storys]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="3" name="Acid Steals From Dust" tags="" position="875,425" size="100,100">&lt;div class=&quot;Title&quot;&gt;Acid Steals From Dust&lt;/div&gt;
-&lt;div class=&quot;Body&quot;&gt;&lt;div class=&quot;Tabed&quot;&gt;Acid has created a new collar, one were there&#39;s an In and Out. The In collar takes the size and atrabuts of the person wearing it, while the Out, wich he wears, gives him the size two fold.&lt;/div&gt;
-&lt;div class=&quot;Tabed&quot;&gt;Acid invits his best friend Dust over so he can take his size. Dust, while not nowing about the nature of the new devise, agree to test it out. What could happen, not like Dust loves being tiny to any giant sexy ponies.&lt;/div&gt;
-&lt;div class=&quot;Option&quot;&gt;(link:&quot;Start Story&quot;)[(goto-url:&quot;/Story-Selector/Acid Storys/acidstealfromdust.html&quot;)]
-[[Story Select-&gt;Storys]]&lt;/div&gt;</tw-passagedata></tw-storydata>
+.CT{text-align:center}
+
+.LightGreen{color:#85cf57}
+
+/*Span List*/
+
+.CMoan1{font-size:40px;color:#68007a;}
+
+.IMoan1{font-size:40px;color:#870c1d;}
+
+.CMoan2{font-size:55px;color:#68007a;}
+
+.IMoan2{font-size:55px;color:#870c1d;}
+
+.CMoan3{font-size:70px;color:#68007a;}
+
+.CCoo{font-size:25px;color:#68007a;}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Calypso-Ending" color="purple"></tw-tag><tw-tag name="Ivan-Ending" color="red"></tw-tag><tw-tag name="Duel-Ending" color="orange"></tw-tag><tw-tag name="End" color="purple"></tw-tag><tw-passagedata pid="1" name="Title" tags="" position="1125,700" size="100,100">&lt;div class=&quot;LightBrown&quot;&gt;&lt;div class=&quot;Title&quot;&gt;Chaotic Spinner Growth&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;SubTitle&quot;&gt;Writen By: Powdered Scale&lt;/div&gt;
+
+&lt;div class=&quot;Options&quot;&gt;[[Start]]
+[[Saved Games-&gt;Save Games]]
+[[Endings -&gt;Endings]]
+(link: &quot;Other Stories&quot;)[(goto-url: &quot;/Story-Selector/index.html&quot;)]&lt;/div&gt;
+
+&lt;div class=&quot;CopyWrite&quot;&gt;
+Copyright © 2025 by Powdered Scale
+
+All rights reserved.
+
+No part of this publication may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of the publisher, except as permitted by U.S. copyright law. For permission requests, contact harmonic.lamb@gmail.com.
+
+The story, all names, characters, and incidents portrayed in this production are fictitious. No identification with actual persons (living or deceased), places, buildings, and products is intended or should be inferred.
+
+Book Cover by Powdered Scale
+
+1st edition 2025
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="2" name="Ivan Growth 1" tags="" position="1425,925" size="100,100">The pair of lovers watch as the spinner slows down till it lands on Ivan. &quot;Yes,&quot; Ivan smiles, looking over at Calypso, who giggles.
+
+&quot;Here w-we go...&quot; Ivan trails off as the magic washes over his entier body. His muscels flooding with power. Pushing out against his skin and pumping him up like a balloon. Ivan moans, flexing his muscels as they fill out his clothers.
+
+&quot;Ooo...&quot; Calypso watches eyes wide as Ivan&#39;[s thighs thickenn up. His cock throbbing in his pants, tight and cearly vissible. Ivan growls, blushing as his pecs swell, tightening his hoodie before the magic stops.
+
+&quot;Man.&quot; Ivan says, looking down at his body before turning to look down at his wife. Nearly a two feet shorter then him now. &quot;What do you think?&quot; Ivan winks down at her.
+
+&quot;I-i...&quot; Calypso blushes, stuttering, looking down at the bed for a few second before looking back up at him. &quot;I think you it&#39;s your turn to spin.&quot;
+
+&quot;Fair,&quot; Ivan shrugs, spinning the spinner.
+(Set:$Ivan to $Ivan + 1)
+[[Grow Ivan-&gt;Ivan Growth 2]]
+[[Grow Calypso-&gt;Calypso Growth 2]]
+[[No Growth-&gt;No Grow 2]]
+(set:$No to 0)</tw-passagedata><tw-passagedata pid="3" name="Ivan Growth 2" tags="" position="1425,1050" size="100,100">(if:$Ivan is 0)[The pair of lovers watch as the spinner slows down till it lands on Ivan. &quot;Yes,&quot; Ivan smiles, looking over at Calypso, who giggles.
+
+&quot;Here w-we go...&quot; Ivan trails off as the magic washes over his entier body. His muscels flooding with power. Pushing out against his skin and pumping him up like a balloon. Ivan moans, flexing his muscels as they fill out his clothers.
+
+&quot;Ooo...&quot; Calypso watches eyes wide as Ivan&#39;s thighs thickenn up. His cock throbbing in his pants, tight and cearly vissible. Ivan growls, blushing as his pecs swell, tightening his hoodie before the magic stops.
+
+&quot;Man.&quot; Ivan says, looking down at his body before turning to look down at his wife. Nearly a two feet shorter then him now. &quot;What do you think?&quot; Ivan winks down at her.
+
+&quot;I-i...&quot; Calypso blushes, stuttering, looking down at the bed for a few second before looking back up at him. &quot;I love it.&quot; She says before spinning the spinner. &quot;So let&#39;s see what happens next!&quot; She giggles, bouncing a bit in exitment.]
+(else-if:$Ivan is 1)[Calypso crosses her fingers, watching as the spinner lands on Ivan again. Calypso sighs, a little sad before blushing when Ivan lets out a deep moan. She watches on as he starts to grow again. His body growing up words and out words.
+
+The bed bending a bit as more and more mass is added on to his hieght. &quot;Oooo this feels amazing!&quot; Ivan moans, his cloths growing tight over his growing muscels. His pecs pressing against his hoodie looking more and more like a shirt while his pants cling to his body like a second skin. Showing off the monster cock throbing and growing with him.
+
+Pre cum wetting his pants as the pleasuer rockets up his body. His wings quivering as the magic stops. Ivan looks down at Calypso, who smiles up at him before pulling the spinner out from under his thigh and taking her turn. Placing it back down to see who would be next.
+
+[[Double Growth Calypso-&gt;Calypso Growth Double 1]]]
+[[Grow Ivan-&gt;Ivan Growth 3]]
+[[Grow Calypso-&gt;Calypso Growth 3]]
+[[No Growth-&gt;No Grow 3]]
+(Set:$Ivan to $Ivan + 1)
+(set:$No to 0)</tw-passagedata><tw-passagedata pid="4" name="Ivan Growth 3" tags="" position="1425,1175" size="100,100">(if:$Ivan is 0)[The pair of lovers watch as the spinner slows down till it lands on Ivan. &quot;Yes,&quot; Ivan smiles, looking over at Calypso, who giggles.
+
+&quot;Here w-we go...&quot; Ivan trails off as the magic washes over his entier body. His muscels flooding with power. Pushing out against his skin and pumping him up like a balloon. Ivan moans, flexing his muscels as they fill out his clothers.
+
+&quot;Ooo...&quot; Calypso watches eyes wide as Ivan&#39;s thighs thickenn up. His cock throbbing in his pants, tight and cearly vissible. Ivan growls, blushing as his pecs swell, tightening his hoodie before the magic stops.
+
+&quot;Man.&quot; Ivan says, looking down at his body before turning to look down at his wife. Nearly a two feet shorter then him now. &quot;What do you think?&quot; Ivan winks down at her.
+
+&quot;I-i...&quot; Calypso blushes, stuttering, looking down at the bed for a few second before looking back up at him. &quot;I love it!&quot; She giggles, urging Ivan to spin. Ivan chukels before spinning the spinner for his next turn.]
+(else-if:$Ivan is 1)[Calypso crosses her fingers, watching as the spinner lands on Ivan again. Calypso sighs, a little sad before blushing when Ivan lets out a deep moan. She watches on as he starts to grow again. His body growing up words and out words.
+
+The bed bending a bit as more and more mass is added on to his hieght. &quot;Oooo this feels amazing!&quot; Ivan moans, his cloths growing tight over his growing muscels. His pecs pressing against his hoodie looking more and more like a shirt while his pants cling to his body like a second skin. Showing off the monster cock throbing and growing with him.
+
+Pre cum wetting his pants as the pleasuer rockets up his body. His wings quivering as the magic stops. Ivan looks down at Calypso, who smiles up at him before pulling the spinner out from under his thigh and placing it back down to let her husband take his turn.
+
+He smiles down and spins the spinner.]
+(else-if:$Ivan is 2)[Calypso rolls her eyes when the spinner again landed on her hubby Ivan. She didn&#39;t mind one bit, watching as Ivan once again grows bigger. Moaning in pleasure. His hips expanding out and hitting her&#39;s, pushing her a bit as the bed on his side starts to creek.
+
+&quot;Yes!&quot; Ivan moans, his cock throbing. Straining his pants till the get pushed to there breaking point and ripp themself free of the fabric. Slapping him on the stomick as pre cum flies into the room. &quot;Bigger!&quot; Ivan moans, his voice deeper as his body expands.
+
+Calypso shivers, unable to restrain herself from touching his throbing monster cock. Ivan shivers as her hand gently strocks his cock. His balls growning and swelling with cum ready to blow.
+
+His pecs finnaly press so hard out that his hoodie ripps apart. Exposing his yack body and new massive pecs and toned abs. Calypso also gently touching his pecs sends a spike of arousel up his body that narly tips him over before the growth stops.
+
+&quot;Oh man,&quot; Calypso blushes. Pulling away, holding herself back from just tackeling the giant hunck. &quot;Spin already!&quot; She shouts in exitment fulled horniness. Ivan chukels, moving a bit before spinning the spinner.
+(if:$Calypso is 0)[[[Ivan teases Calypso-&gt;Ivan Teasing about preginating Calypso]]]]
+[[Grow Ivan-&gt;Ivan Growth 4]]
+[[Grow Calypso-&gt;Calypso Growth 4]]
+[[No Growth-&gt;No Grow 4]]
+(Set:$Ivan to $Ivan + 1)
+(set:$No to 0)</tw-passagedata><tw-passagedata pid="5" name="Ivan Growth 4" tags="" position="1425,1300" size="100,100">(if:$Ivan is 0)[The pair of lovers watch as the spinner slows down till it lands on Ivan. &quot;Yes,&quot; Ivan smiles, looking over at Calypso, who giggles.
+
+&quot;Here w-we go...&quot; Ivan trails off as the magic washes over his entier body. His muscels flooding with power. Pushing out against his skin and pumping him up like a balloon. Ivan moans, flexing his muscels as they fill out his clothers.
+
+&quot;Ooo...&quot; Calypso watches eyes wide as Ivan&#39;s thighs thickenn up. His cock throbbing in his pants, tight and cearly vissible. Ivan growls, blushing as his pecs swell, tightening his hoodie before the magic stops.
+
+&quot;Man.&quot; Ivan says, looking down at his body before turning to look down at his wife. Nearly a two feet shorter then him now. &quot;What do you think?&quot; Ivan winks down at her.
+
+&quot;I-i...&quot; Calypso blushes, stuttering, looking down at the bed for a few second before looking back up at him. &quot;I love it.&quot; She says before spinning the spinner. &quot;So let&#39;s see what happens next!&quot; She giggles, bouncing a bit in exitment.]
+(else-if:$Ivan is 1)[Calypso crosses her fingers, watching as the spinner lands on Ivan again. Calypso sighs, a little sad before blushing when Ivan lets out a deep moan. She watches on as he starts to grow again. His body growing up words and out words.
+
+The bed bending a bit as more and more mass is added on to his hieght. &quot;Oooo this feels amazing!&quot; Ivan moans, his cloths growing tight over his growing muscels. His pecs pressing against his hoodie looking more and more like a shirt while his pants cling to his body like a second skin. Showing off the monster cock throbing and growing with him.
+
+Pre cum wetting his pants as the pleasuer rockets up his body. His wings quivering as the magic stops. Ivan looks down at Calypso, who smiles up at him before pulling the spinner out from under his thigh and taking her turn. Placing it back down to see who would be next.]
+(else-if:$Ivan is 2)[Calypso rolls her eyes when the spinner again landed on her hubby Ivan. She didn&#39;t mind one bit, watching as Ivan once again grows bigger. Moaning in pleasure. His hips expanding out and hitting her&#39;s, pushing her a bit as the bed on his side starts to creek.
+
+&quot;Yes!&quot; Ivan moans, his cock throbing. Straining his pants till the get pushed to there breaking point and ripp themself free of the fabric. Slapping him on the stomick as pre cum flies into the room. &quot;Bigger!&quot; Ivan moans, his voice deeper as his body expands.
+
+Calypso shivers, unable to restrain herself from touching his throbing monster cock. Ivan shivers as her hand gently strocks his cock. His balls growning and swelling with cum ready to blow.
+
+His pecs finnaly press so hard out that his hoodie ripps apart. Exposing his yack body and new massive pecs and toned abs. Calypso also gently touching his pecs sends a spike of arousel up his body that narly tips him over before the growth stops.
+
+&quot;Oh man,&quot; Calypso blushes. Pulling away, holding herself back from just tackeling the giant hunck. She quickly spins for her next turn. Bouncing in exitment, causing her breasts and butt to jiggle a bit.]
+(else-if:$Ivan is 3)[&quot;Oh!&quot; Ivan smiles, before moaning out in pleasure. &quot;Yes!&quot; Ivan&#39;s voice booming a bit as he grows. Calypso watching, mouth watering as Ivan&#39;s chest continues to grow bigger. His very weight nearly snapping the bed in half as his thighs grow out bigger.
+
+Ivan growls, shaking the room and causeing Calypso to blush. She gently squezzes his thigh, feeling the muscels growing underneth the skin. Sending a shive rup Ivan&#39;s body before his head hits the cieling.
+
+&quot;You ok?&quot; Calypso asks as the size slows down to a hult.
+
+&quot;Ya,&quot; Ivan nods, rubbing his head before shivering when Calypso hugs him. &quot;Fuck, Calypso if you teas me any more I&#39;m gonna cum.&quot; Ivan chuckels, side hugging Calypso. Calypso giggles before pulling away.
+
+&quot;Just you wait big boy.&quot; Calypso winks, taking her turn on the spinner.
+[[Double Growth Calypso-&gt;Calypso growth Double 2]]]
+[[Grow Ivan-&gt;Ivan Growth 5]]
+[[Grow Calypso-&gt;Calypso Growth 5]]
+[[No Growth-&gt;No Grow 5]]
+(Set:$Ivan to $Ivan + 1)
+(set:$No to 0)</tw-passagedata><tw-passagedata pid="6" name="Ivan Growth 5" tags="" position="1425,1425" size="100,100">(if:$Ivan is 0)[The pair of lovers watch as the spinner slows down till it lands on Ivan. &quot;Yes,&quot; Ivan smiles, looking over at Calypso, who giggles.
+
+&quot;Here w-we go...&quot; Ivan trails off as the magic washes over his entier body. His muscels flooding with power. Pushing out against his skin and pumping him up like a balloon. Ivan moans, flexing his muscels as they fill out his clothers.
+
+&quot;Ooo...&quot; Calypso watches eyes wide as Ivan&#39;s thighs thickenn up. His cock throbbing in his pants, tight and cearly vissible. Ivan growls, blushing as his pecs swell, tightening his hoodie before the magic stops.
+
+&quot;Man.&quot; Ivan says, looking down at his body before turning to look down at his wife. Nearly a two feet shorter then him now. &quot;What do you think?&quot; Ivan winks down at her.
+
+&quot;I-i...&quot; Calypso blushes, stuttering, looking down at the bed for a few second before looking back up at him. &quot;I love it!&quot; She giggles, urging Ivan to spin. Ivan chukels before spinning the spinner for his next turn.]
+(else-if:$Ivan is 1)[Calypso crosses her fingers, watching as the spinner lands on Ivan again. Calypso sighs, a little sad before blushing when Ivan lets out a deep moan. She watches on as he starts to grow again. His body growing up words and out words.
+
+The bed bending a bit as more and more mass is added on to his hieght. &quot;Oooo this feels amazing!&quot; Ivan moans, his cloths growing tight over his growing muscels. His pecs pressing against his hoodie looking more and more like a shirt while his pants cling to his body like a second skin. Showing off the monster cock throbing and growing with him.
+
+Pre cum wetting his pants as the pleasuer rockets up his body. His wings quivering as the magic stops. Ivan looks down at Calypso, who smiles up at him before pulling the spinner out from under his thigh and placing it back down to let her husband take his turn.
+
+He smiles down and spins the spinner.]
+(else-if:$Ivan is 2)[Calypso rolls her eyes when the spinner again landed on her hubby Ivan. She didn&#39;t mind one bit, watching as Ivan once again grows bigger. Moaning in pleasure. His hips expanding out and hitting her&#39;s, pushing her a bit as the bed on his side starts to creek.
+
+&quot;Yes!&quot; Ivan moans, his cock throbing. Straining his pants till the get pushed to there breaking point and ripp themself free of the fabric. Slapping him on the stomick as pre cum flies into the room. &quot;Bigger!&quot; Ivan moans, his voice deeper as his body expands.
+
+Calypso shivers, unable to restrain herself from touching his throbing monster cock. Ivan shivers as her hand gently strocks his cock. His balls growning and swelling with cum ready to blow.
+
+His pecs finnaly press so hard out that his hoodie ripps apart. Exposing his yack body and new massive pecs and toned abs. Calypso also gently touching his pecs sends a spike of arousel up his body that narly tips him over before the growth stops.
+
+&quot;Oh man,&quot; Calypso blushes. Pulling away, holding herself back from just tackeling the giant hunck. &quot;Spin already!&quot; She shouts in exitment fulled horniness. Ivan chukels, moving a bit before spinning the spinner.]
+(else-if:$Ivan is 3)[&quot;Oh!&quot; Ivan smiles, before moaning out in pleasure. &quot;Yes!&quot; Ivan&#39;s voice booming a bit as he grows. Calypso watching, mouth watering as Ivan&#39;s chest continues to grow bigger. His very weight nearly snapping the bed in half as his thighs grow out bigger.
+
+Ivan growls, shaking the room and causeing Calypso to blush. She gently squezzes his thigh, feeling the muscels growing underneth the skin. Sending a shive rup Ivan&#39;s body before his head hits the cieling.
+
+&quot;You ok?&quot; Calypso asks as the size slows down to a hult.
+
+&quot;Ya,&quot; Ivan nods, rubbing his head before shivering when Calypso hugs him. &quot;Fuck, Calypso if you teas me any more I&#39;m gonna cum.&quot; Ivan chuckels, side hugging Calypso. Calypso giggles before pulling away. Ivan spinning for his last turn.]
+(else-if:$Ivan is 4)[&quot;Of course.&quot; Calypso rolls her eyes in slight anoyince. Her tail wagging telling a diffrent story as she watches Ivan blush. Ivan leans back, letting out a deep moan that sends a shiver down her back as his chest grows out.
+
+Wave after wave of mass adds onto her husband. Growing up in fast spurts. His voice deepning and sending shivers down her back Ivan&#39;s thighs pushing her off the bed before the entier thing breaks under his weight.
+
+&quot;Oh fuck!&quot; Ivan moans, pre cum spilling out as he moves. trying to stay in the slowly shrinking room. His butt stricking the cieling, sending him down to the ground. Falling on top of Calypso as the growth finnaly stops.
+
+&quot;Ooo so big.&quot; Calypso coos, blushing hard. Ivan shivering, near the edg of cuming.
+
+&quot;An so damn horny.&quot; Ivan says, shifting around to try and find the spinner before taking his turn.]
+(Set:$Ivan to $Ivan + 1) (set:$No to 0)
+(if:$Calypso &gt;= 4 and $Ivan &gt;= 5)[[[Grow Both Ivan and Calypso into Giants-&gt;Same Szie Giant Ivan Dom]]]
+(if:$Calypso &lt;= $Ivan and $Calypso &gt;= $Ivan and $Calypso &gt; 0 and $Ivan &gt; 0)[[Same size-&gt;Same Size]]
+(if:$Calypso &lt;= $Ivan and $Calypso &gt;= $Ivan and $Calypso &gt;= 1 and $Ivan &gt;= 1)[[Slightly Taller Ivan-&gt;Slightly Tall Ivan]]
+(if:$Calypso &lt; $Ivan and $Calypso &gt;= 0)[[Giant Ivan-&gt;Giant Ivan]]
+(if:$Ivan is 5 and $Calypso &lt; 1)[[Massive Ivan-&gt;Massive Ivan]]
+(if:$Calypso &gt;=  $Ivan and $Calypso &lt;=  $Ivan and $Calypso &gt;= 1 and $Ivan &gt;= 1)[[Slightly Taller Calypso-&gt;Slightly Tall Calypso]]
+(if:$Calypso &gt; $Ivan and $Ivan &gt;= 0)[[Giant Calypso-&gt;Giant Calypso]]
+(if:$Calypso is 5 and $Ivan &lt; 1)[[Massive Calypso-&gt;Massive Calypso]]</tw-passagedata><tw-passagedata pid="7" name="Calypso Growth 1" tags="" position="825,925" size="100,100">(display:&quot;CalypsoS1&quot;)
+&lt;div class=&quot;Body&quot;&gt;&lt;div class=&quot;PG&quot;&gt;Ivan able to look away long enough to spin for his turn.&lt;/div&gt;&lt;/div&gt;
+(set:$Calypso to $Calypso + 1)
+&lt;div class=&quot;Grow-Options&quot;&gt;[[Grow Calypso-&gt;Calypso Growth 2]]
+[[Grow Ivan-&gt;Ivan Growth 2]]
+[[No Growth-&gt;No Grow 2]]&lt;/div&gt;
+(set:$No to 0)</tw-passagedata><tw-passagedata pid="8" name="Calypso Growth 2" tags="" position="825,1050" size="100,100">(if:$Calypso is 0)[(display:&quot;CalypsoS1&quot;)
+&lt;div class=&quot;Body&quot;&gt;&lt;div class=&quot;PG&quot;&gt;Calypso giggles again before turning down and spinning for her turn.&lt;/div&gt;&lt;/div&gt;
+]\
+(else-if:$Calypso is 1)[(display:&quot;CalypsoS2&quot;)
+&lt;div class=&quot;Body&quot;&gt;&lt;div class=&quot;PG&quot;&gt;Calypso giggles, seeing her blushing husband before going to the spinner for her turn.&lt;/div&gt;&lt;/div&gt;
+]\
+&lt;div class=&quot;Grow-Options&quot;&gt;(if:$Calypso is 1)[[[Double Growth Ivan-&gt;Ivan Growth Double]]
+]\
+[[Grow Calypso-&gt;Calypso Growth 3]]
+[[Grow Ivan-&gt;Ivan Growth 3]]
+[[No Growth-&gt;No Grow 3]]&lt;/div&gt;
+(set:$Calypso to $Calypso + 1)
+(set:$No to 0)</tw-passagedata><tw-passagedata pid="9" name="Calypso Growth 3" tags="" position="825,1175" size="100,100">(if:$Calypso is 0)[(display:&quot;CalypsoS1&quot;)
+&lt;div class=&quot;Body&quot;&gt;&lt;div class=&quot;PG&quot;&gt;Ivan turns to the spinner, taking his turn on the spinner.&lt;/div&gt;&lt;/div&gt;
+]\
+(else-if:$Calypso is 1)[(display:&quot;CalypsoS2&quot;)
+&lt;div class=&quot;Body&quot;&gt;&lt;div class=&quot;PG&quot;&gt;Ivan blushes, before tearing his eyes away from his love and spins the spinner for his turn.&lt;/div&gt;&lt;/div&gt;
+]\
+(else-if:$Calypso is 2)[(display:&quot;CalypsoS3&quot;)
+&lt;div class=&quot;Body&quot;&gt;&lt;div class=&quot;PG&quot;&gt;Ivan chukles, seeing how turned on she was makes him turned on. He grabs the spinner and goes for his turn.&lt;/div&gt;&lt;/div&gt;
+]\
+&lt;div class=&quot;Grow-Options&quot;&gt;(if:$Ivan is 0 and $Calypso is 2)[[[Calypso Teases Ivan-&gt;Calypso Teasing about Ivan being in her breasts]]
+]\
+[[Grow Calypso-&gt;Calypso Growth 4]]
+[[Grow Ivan-&gt;Ivan Growth 4]]
+[[No Growth-&gt;No Grow 4]]&lt;/div&gt;
+(set:$Calypso to $Calypso + 1)
+(set:$No to 0)</tw-passagedata><tw-passagedata pid="10" name="Calypso Growth 4" tags="" position="825,1300" size="100,100">(if:$Calypso is 0)[(display:&quot;CalypsoS1&quot;)
+&lt;div class=&quot;Body&quot;&gt;&lt;div class=&quot;PG&quot;&gt;Ivan blushes as Calypso spins the spinner.&lt;/div&gt;&lt;/div&gt;
+]\
+(else-if:$Calypso is 1)[(display:&quot;CalypsoS2&quot;)
+&lt;div class=&quot;Body&quot;&gt;&lt;div class=&quot;PG&quot;&gt;He looks away before she spins the spinner for her turn.&lt;/div&gt;&lt;/div&gt;
+]\
+(else-if:$Calypso is 2)[(display:&quot;CalypsoS3&quot;)
+&lt;div class=&quot;Body&quot;&gt;&lt;div class=&quot;PG&quot;&gt;Calypso reches down and gently spins the spinner.&lt;/div&gt;&lt;/div&gt;
+]\
+(else-if:$Calypso is 3)[(display:&quot;CalypsoS4&quot;)
+&lt;div class=&quot;Body&quot;&gt;&lt;div class=&quot;PG&quot;&gt;&quot;Then let&#39;s hurry up.&quot; Calypso says, spiining the spinner. Nearly sending it off the bed, but Ivan catches it and let&#39;s Calypso try agian. This time with less fource.&lt;/div&gt;&lt;/div&gt;
+]\
+&lt;div class=&quot;Grow-Options&quot;&gt;(if:$Calypso is 3)[[[Double Growth Ivan-&gt;Ivan Growth Double 2]]
+]\
+[[Grow Calypso-&gt;Calypso Growth 5]]
+[[Grow Ivan-&gt;Ivan Growth 5]]
+[[No Growth-&gt;No Grow 5]]&lt;/div&gt;
+(set:$Calypso to $Calypso + 1)
+(set:$No to 0)</tw-passagedata><tw-passagedata pid="11" name="Calypso Growth 5" tags="" position="825,1425" size="100,100">(if:$Calypso is 0)[(display:&quot;CalypsoS1&quot;)
+&lt;div class=&quot;Body&quot;&gt;&lt;div class=&quot;PG&quot;&gt;Ivan turns to the spinner, taking his turn on the spinner.&lt;/div&gt;&lt;/div&gt;
+]\
+(else-if:$Calypso is 1)[(display:&quot;CalypsoS2&quot;)
+&lt;div class=&quot;Body&quot;&gt;&lt;div class=&quot;PG&quot;&gt;Ivan blushes, before tearing his eyes away from his love and spins the spinner for his turn.&lt;/div&gt;&lt;/div&gt;
+]\
+(else-if:$Calypso is 2)[(display:&quot;CalypsoS3&quot;)
+&lt;div class=&quot;Body&quot;&gt;&lt;div class=&quot;PG&quot;&gt;Ivan chukles, seeing how turned on she was makes him turned on. He grabs the spinner and goes for his turn.&lt;/div&gt;&lt;/div&gt;
+]\
+(else-if:$Calypso is 3)[(display:&quot;CalypsoS4&quot;)
+&lt;div class=&quot;Body&quot;&gt;&lt;div class=&quot;PG&quot;&gt;&quot;Then let&#39;s hurry up.&quot; Calypso says, bouncing up and down. Exitadly waiting for Ivan to spin. Her breasts bouncing up and down with her butt jiggeling. Distracting Ivan for a moment before he takes his last turn.&lt;/div&gt;
+]\
+(else-if:$Calypso is 4)[(display:&quot;CalypsoS5&quot;)
+&lt;div class=&quot;Body&quot;&gt;&lt;div class=&quot;PG&quot;&gt;Ivan looks up at his wife, blushing at her angelic size. Calypso takes up so much space now with her massive body it was hard for him not to want her to make him cum from just being crushed under her giant breasts right then and there. But Ivan decided to shift around, hitting the spinner for his last turn.&lt;/div&gt;&lt;/div&gt;]\
+(set:$Calypso to $Calypso + 1) (set:$No to 0)
+&lt;div class=&quot;Grow-Options&quot;&gt;(if:$Calypso &gt;= 5 and $Ivan &gt;= 4)[[[Grow Both Calypso and Ivan into giants-&gt;Same Szie Giant Calypso Dom]]
+]\
+(if:$Calypso &lt;= $Ivan and $Calypso &gt;= $Ivan and $Calypso &gt; 0 and $Ivan &gt; 0)[[[Same size-&gt;Same Size]]
+]\
+(if:$Calypso &lt;= $Ivan and $Calypso &gt;= $Ivan and $Calypso &gt;= 1 and $Ivan &gt;= 1)[[[Slightly Taller Ivan-&gt;Slightly Tall Ivan]]
+]\
+(if:$Calypso &lt; $Ivan and $Calypso &gt;= 0)[[[Giant Ivan-&gt;Giant Ivan]]
+]\
+(if:$Ivan is 5 and $Calypso &lt; 1)[[[Massive Ivan-&gt;Massive Ivan]]
+]\
+(if:$Calypso &gt;=  $Ivan and $Calypso &lt;=  $Ivan and $Calypso &gt;= 1 and $Ivan &gt;= 1)[[[Slightly Taller Calypso-&gt;Slightly Tall Calypso]]
+]\
+(if:$Calypso &gt; $Ivan and $Ivan &gt;= 0)[[[Giant Calypso-&gt;Giant Calypso]]
+]\
+(if:$Calypso is 5 and $Ivan &lt; 1)[[[Massive Calypso-&gt;Massive Calypso]]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="12" name="No Grow 2" tags="" position="1125,1050" size="100,100">(if:$No is 0)[The two watch in antisapation for the first spin to slowly turn and land on the one space nether of them had control over.
+
+&quot;Well then.&quot; Ivan says in disapointment. Calypso crossing her arms over her chest and pouts cutiely. Ivan chukels at her adorable display before she spins for her turn.]
+(else-if:$No is 1)[Ivan sighs, watching as the spinner stops again on the empty space.
+
+&quot;Come on!&quot; Calypso yells in angery. Quickly spinning it for her turn.]
+(set:$No to $No + 1)
+[[Grow Ivan-&gt;Ivan Growth 3]]
+[[Grow Calypso-&gt;Calypso Growth 3]]
+[[No Growth-&gt;No Grow 3]]</tw-passagedata><tw-passagedata pid="13" name="No Grow 3" tags="" position="1125,1175" size="100,100">(if:$No is 0)[The two watch in antisapation for the first spin to slowly turn and land on the one space nether of them had control over.
+
+&quot;Well then.&quot; Ivan says in disapointment. Calypso crossing her arms over her chest and pouts cutiely. Ivan chukels at her adorable display before spinning for his turn.]
+(else-if:$No is 1)[Ivan sighs, watching as the spinner stops again on the empty space.
+
+&quot;Come on!&quot; Calypso yells in angery. &quot;This is unfair!&quot; Ivan nods before spinning it.]
+(else-if:$No is 2)[&quot;What are the ods?&quot; Ivan asks, watching once again as the spinner lands on the empty space. Calypso was not red in the face from anger.
+
+&quot;This has to be rigged!&quot; She yells, flinging her arms up in the air for dramatic effect. Ivan luaghs at her little tantrum before kissing her on the cheek. Calming her down and causing her to blush.
+
+&quot;Don&#39;t worry, the next one will make one of use grow...&quot; Ivan trails off a bit before spinning the spinner.]
+(set:$No to $No + 1)
+[[Grow Ivan-&gt;Ivan Growth 4]]
+[[Grow Calypso-&gt;Calypso Growth 4]]
+[[No Growth-&gt;No Grow 4]]</tw-passagedata><tw-passagedata pid="14" name="No Grow 4" tags="" position="1125,1300" size="100,100">(if:$No is 0)[The two watch in antisapation for the first spin to slowly turn and land on the one space nether of them had control over.
+
+&quot;Well then.&quot; Ivan says in disapointment. Calypso crossing her arms over her chest and pouts cutiely. Ivan chukels at her adorable display before she spins for her turn.]
+(else-if:$No is 1)[Ivan sighs, watching as the spinner stops again on the empty space.
+
+&quot;Come on!&quot; Calypso yells in angery. Quickly spinning it for her turn.]
+(else-if:$No is 2)[&quot;What are the ods?&quot; Ivan asks, watching once again as the spinner lands on the empty space. Calypso was not red in the face from anger.
+
+&quot;This has to be rigged!&quot; She yells, flinging her arms up in the air for dramatic effect. Ivan luaghs at her little tantrum before kissing her on the cheek. Calming her down and causing her to blush.
+
+&quot;Don&#39;t worry love.&quot; Calypso smiles, spinning it for her turn.]
+(else-if:$No is 3)[&quot;Ok!&quot; Ivan yells as the spinner lands on the empty space for the fourth time in a row. &quot;We better have one of us grow by the end of this!&quot; Ivan yells more at you. Almost like he knows you&#39;re there. Calypso looks at him with a slight tilt in her head and a queastion in her mind.
+
+&quot;Sorry, just spin love.&quot; Ivan smiles before looking at you. She spins, ignoring Ivan&#39;s silly antics.]
+(set:$No to $No + 1)
+[[Grow Ivan-&gt;Ivan Growth 5]]
+[[Grow Calypso-&gt;Calypso Growth 5]]
+[[No Growth-&gt;No Grow 5]]</tw-passagedata><tw-passagedata pid="15" name="No Grow 5" tags="" position="1125,1425" size="100,100">(if:$No is 0)[The two watch in antisapation for the first spin to slowly turn and land on the one space nether of them had control over.
+
+&quot;Well then.&quot; Ivan says in disapointment. Calypso crossing her arms over her chest and pouts cutiely. Ivan chukels at her adorable display before spinning for his turn.]
+(else-if:$No is 1)[Ivan sighs, watching as the spinner stops again on the empty space.
+
+&quot;Come on!&quot; Calypso yells in angery. &quot;This is unfair!&quot; Ivan nods before spinning it.]
+(else-if:$No is 2)[&quot;What are the ods?&quot; Ivan asks, watching once again as the spinner lands on the empty space. Calypso was not red in the face from anger.
+
+&quot;This has to be rigged!&quot; She yells, flinging her arms up in the air for dramatic effect. Ivan luaghs at her little tantrum before kissing her on the cheek. Calming her down and causing her to blush.
+
+&quot;Don&#39;t worry, the next one will make one of use grow...&quot; Ivan trails off a bit before spinning the spinner.]
+(else-if:$No is 3)[&quot;Ok!&quot; Ivan yells as the spinner lands on the empty space for the fourth time in a row. &quot;We better have one of us grow by the end of this!&quot; Ivan yells more at you. Almost like he knows you&#39;re there. Calypso looks at him with a slight tilt in her head and a queastion in her mind.
+
+&quot;Sorry...&quot; Ivan sighs. Calypso pulls him into a hug. Ivan smiles, hugging her back before the two seperat. Ivan spinning one last time.]
+(else-if:$No is 4)[&quot;Fuck!&quot; Ivan yells in angery as the last spin lands on the empty space. &quot;By all the gods and goddesses there is no damn way we landed on the empty space five times in a row with out one of us growing!&quot; Ivan gives up, flopping own onto the bed.
+
+Calypso looks down at him in worry. &quot;You still have one more spin...&quot; She lays down next to Ivan.
+
+&quot;What&#39;s the point?&quot; Ivan asks. &quot;It&#39;s going to land on the empty space again.&quot; Ivan looks at Calypso nuzzeling into his size.
+
+&quot;Well...&quot; Calypso thinks for a moment. Looking down at his hoodie before looking up at him. &quot;We can always just have normal fun?&quot; She smiles. Ivan looks down at her, slowly a smile infects his face.
+
+&quot;Man, with you around it&#39;s alwayse a fun time.&quot; Ivan hugs Calypso. She giggles as he spins the spinner again. Pulling her up more onto the bed and on top of him. Cuddeling her and ignoring the spinner.]
+(if:$Calypso is 0 and $Ivan is 0)[[No Growth-&gt;Why]]
+(if:$Calypso &lt;= $Ivan and $Calypso &gt;= $Ivan and $Calypso &gt; 0 and $Ivan &gt; 0)[[Same size-&gt;Same Size]]
+(if:$Calypso &lt;= $Ivan and $Calypso &gt;= $Ivan and $Calypso &gt;= 1 and $Ivan &gt;= 1)[[Slightly Taller Ivan-&gt;Slightly Tall Ivan]]
+(if:$Calypso &lt; $Ivan and $Calypso &gt;= 0)[[Giant Ivan-&gt;Giant Ivan]]
+(if:$Ivan is 5 and $Calypso &lt; 1)[[Massive Ivan-&gt;Massive Ivan]]
+(if:$Calypso &gt;=  $Ivan and $Calypso &lt;=  $Ivan and $Calypso &gt;= 1 and $Ivan &gt;= 1)[[Slightly Taller Calypso-&gt;Slightly Tall Calypso]]
+(if:$Calypso &gt; $Ivan and $Ivan &gt;= 0)[[Giant Calypso-&gt;Giant Calypso]]
+(if:$Calypso is 5 and $Ivan &lt; 1)[[Massive Calypso-&gt;Massive Calypso]]</tw-passagedata><tw-passagedata pid="16" name="Massive Calypso" tags="Calypso-Ending" position="625,1625" size="100,100">(If:$Breasts is true)[&lt;div class=&quot;Body&quot;&gt;&lt;div class=&quot;PG&quot;&gt;Ivan chuckles, left to watch as the spinner lands on Calypso one last time. &quot;Uh oh...&quot; Calypso says as her body starts to expand again. Pressing Ivan agianst the wall as her butt cracks the wall behind her. Her head destorying the cieling as the walls of the room and th house for that matter come crumbeling down around them.
+
+&lt;div class=&quot;PG&quot;&gt;Calypso sits up, sitting on top of Ivan in the process. Crushing him unde her massive weight. His body pressing into her fat growing butt. Ivan moans, thrusting as his cock cums from her soft fat ass. He kisses and massages it, causing Calypso to moan. Senind pleasure up his body and sending him over again to cum for her growing rump.
+
+&lt;div class=&quot;PG&quot;&gt;Calypso grabs her giant breasts, messaging them as milk spills out. Her body expanding and rolling voer the destoryed house. People seeing and running, others taking videos and pictures of her.
+
+&lt;div class=&quot;PG&quot;&gt;&quot;Oh Ivan!&quot; Calypso grinds down on Ivan. Moaning out in pleasure as her arousel rises with her height. Her wings spread out stiff with her tail wagging in exitment, destorying houses behind her.
+
+&lt;div class=&quot;PG&quot;&gt;&quot;Mmmm bigger my love!&quot; Ivan moans, grinding back. Calypso shivers, on the edg of letting go fully. That&#39;s when she get&#39;s an amazing idea.
+
+&lt;div class=&quot;PG&quot;&gt;&quot;Hey cutie.&quot; Calypso lifts her butt off of Ivan. Who wimpers in saddness as the giant soft rump of his love mov es away before squeaking when she grabs him. Lifting him up into the air before dropping him between her breasts the size of hills. &quot;You like the new...&quot; Calypso interupts herself with a moan as she sits back down, her fat ass jiggling, sending a wave of pleasure up her body.
+
+&lt;div class=&quot;PG&quot;&gt;&quot;I love this!&quot; Ivan shouts up, blushing up at his giant wive before humping the big milkers. Sending tiny jiggles against her chest that throws her over the edg.
+
+&lt;div class=&quot;PG&quot;&gt;&quot;Yes!&quot; Calypso moans, throuing her head back and grinding down into the ground. Cum flooding the street as she rides out her high. Ivan moaning, bucking as he cums in her breasts. The two cailming down, riding out the last of the growth and pleasure.
+
+&lt;div class=&quot;PG&quot;&gt;Calypso lays down, sighing before looking down at Ivan and asking, &quot;Can we do this again sometime?&quot;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+(set:$MassiveCalypsoBreasts to True)
+&lt;div class=&quot;Grow-Options&quot;&gt;[[NICE! That&#39;s the Massive Calypso Ending. Want to try for another ending?-&gt;Title]]&lt;/div&gt;]\
+
+(else:)[Ivan chuckles, left to watch as the spinner lands on Calypso one last time. &quot;Uh oh...&quot; Calypso says as her body starts to expand again. Pressing Ivan agianst the wall as her butt cracks the wall behind her. Her head destorying the cieling as the walls of the room and th house for that matter come crumbeling down around them.
+
+Calypso sits up, sitting on top of Ivan in the process. Crushing him unde rher massive weight. His body pressing into her fat growing butt. Ivan moans, thrusting as his cock cums from her soft fat ass. He kisses and massages it, causing Calypso to moan. Senind pleasure up his body and sending him over again to cum for her growing rump.
+
+Calypso grabs her giant breasts, messaging them as milk spills out. Her body expanding and rolling voer the destoryed house. People seeing and running, others taking videos and pictures of her.
+
+&quot;Oh Ivan!&quot; Calypso grinds down on Ivan. Moaning out in pleasure as her arousel rises with her height. Her wings spread out stiff with her tail wagging in exitment, destorying houses behind her.
+
+&quot;Mmmm bigger my love!&quot; Ivan moans, grinding back. Calypso shivers, on the edg of letting go fully. Her butt crushing down a house pushes her over the edg.
+
+&quot;Fuck! Ivan!&quot; Calypso moans out, pushing down against him as the growth stops. Cum flooding the streets as she lets it all out. Pleasure rocketing ehr body as she rides it out. Messaging her massive tits as Ivan worships her ass.
+
+&quot;Mmm yes.&quot; Ivan moans, dentched in her cum. Calypo sighs, stnaind up. Looming over the town at one hundread feet tall. She bends over and gently picks up Ivan before placing him in between her soft breasts.
+
+&quot;Looks like I won.&quot; Calypso smiles. Her tail wags happily.
+
+&quot;Hehe ya...&quot; Ivan smiles, sinking a bit deeper into her breasts before closing his eyes.
+(set:$MassiveCalypso to true)
+[[NICE! That&#39;s the Massive Calypso Ending. Want to try for another ending?-&gt;Title]]]</tw-passagedata><tw-passagedata pid="17" name="Giant Calypso" tags="Calypso-Ending" position="725,1625" size="100,100">(if:$Calypso - $Ivan is 5)[(if:$Breasts is true)[Calypso squeaks, the spinner landing on her slice again right before her body starts to grow. Calypso moaning as her body presses outwords, fourcing Ivan into the wall before he slides under neth her stomick.
+
+&quot;I-Ivan...&quot; Calypso coos, shifting aorund as her body fills up the room. Her legs cracking the wall as she rotat and lays on her back. Chest pressing against the cieling as Ivan get&#39;s trapped below her rather large rump.
+
+Ivan humps her butt, moaning as the giant soft mound of flesh press him into the ground ebfore stopping just before she destroys the room. Leaving ehr breasts squshing against the cieling, milk spilling out with her elgs curled up and butt pressed furmly into the gorund.
+
+Ivan shakes, his entier body trapped under the big butt of his wife. Nearly over the edge, his cock throbing. Wanting to let go and cum for his massive sexy wolf wife. Calypso tries to move. 
+
+&quot;Calypso!&quot; Ivan moans, getting squesed between her butt. Nearly getting pushed over the edge. &quot;Fuck I&#39;m close!&quot;
+
+&quot;Fuck it.&quot; Calypso says, moving quickly to grabs Ivan from between ehr cheeks. Making a hole in the wall were her elbo stricks it before being placed between ehr breasts. Ivan shutters, sitting in her big soft mounds sliked up with milk.
+
+&quot;Ah yes!&quot; Ivan moans in delight, bucking his hips against ehr breasts. Calypso moaning as her boobs jiggle. She grabs them and presses them together around her little husband. grinding into the floor as she climaxes with Ivan.
+
+Ivan cuming between her giant breasts as Calypso rides out a high she had never felt before. The sensitive feeling of ehr hands messaging ehr giant breasts with her little husband fucking them felt so amazing she never wanted it to end.
+
+It sadly had to, the pair riding out the climaxe. Room now filled with her cum, she only had one question, &quot;Can we do this agian?&quot;
+(set:$GiantCalypsoBreast1 to true)
+[[Nice work, you got 1 of 6 Giant Calypso ending. Want to try again?-&gt;Title]]
+]
+(else:)[Calypso squeaks, the spinner landing on her slice again right before her body starts to grow. Calypso moaning as her body presses outwords, fourcing Ivan into the wall before he slides under neth her stomick.
+
+&quot;I-Ivan...&quot; Calypso coos, shifting aorund as her body fills up the room. Her legs cracking the wall as she rotat and lays on her back. Chest pressing against the cieling as Ivan get&#39;s trapped below her rather large rump.
+
+Ivan humps her butt, moaning as the giant soft mound of flesh press him into the ground ebfore stopping just before she destroys the room. Leaving ehr breasts squshing against the cieling, milk spilling out with her elgs curled up and butt pressed furmly into the gorund.
+
+Ivan shakes, his entier body trapped under the big butt of his wife. Nearly over the edge, his cock throbing. Wanting to let go and cum for his massive sexy wolf wife. Calypso tries to move. Her breasts squeze against the cieling, more milk spilling out as her ass squezzes around Ivan, causing him to go over.
+
+&quot;Calypso!&quot; Ivan moans, bucking his hips into her butt. Cumming to his wife&#39;s massive body, staining his poor shorts in the process. Calypso couldn&#39;t hold it together much longer herself. Her body shaking with every little moment.
+
+&quot;Fuck it!&quot; Calypso squeaks, grabbing her breasts hard and grinding against Ivan. Ivan moans, enjoying the after glow of being ground into the floor. Calypso messaging ehr breasts roughly, milk spilling out and coting the room before she let&#39;s out a high pitched moan.
+
+Cum floods the room, staining everything in a layer of her cum, including Ivan. The pair calm down, breathing after the fast climax before Calypso asks, &quot;Can we do this again sometime?&quot;
+(set:$GiantCalypso1 to true)
+[[Nice work, you got 1 of 6 Giant Calypso ending. Want to try again?-&gt;Title]]
+]]
+(else-if:$Calypso - $Ivan is 3 or $Calypso - $Ivan is 4)[(if:$Breasts is true)[Calypso squeaks, the spinner landing on her slice again right before her body starts to grow. Calypso moaning as her body presses outwords, fourcing Ivan into the wall before he slides under neth her stomick.
+
+&quot;I-Ivan...&quot; Calypso coos, shifting aorund as her body fills up the room. Her legs cracking the wall as she roats and lays on her back. Chest graazing against the cieling as Ivan get&#39;s trapped below her rather large rump.
+
+Ivan humps her butt, moaning as the giant soft mound of flesh press him into the ground before stopping just before she fills up the room. Leaving her breasts scrapping the cieling, milk spilling out with her legs mostly curled up and butt pressed furmly into the gorund.
+
+Ivan shakes, his entier body trapped under the big butt of his wife. Nearly over the edge, his cock throbing. Wanting to let go and cum for his massive sexy wolf wife. Calypso tries to move. Her breasts gently tickle against the cieling, more milk spilling out as her ass squezzes around Ivan, causing him to go over.
+
+&quot;Calypso!&quot; Ivan moans, nearly ready to cum. &quot;I-I can&#39;t hold out!&quot; Calypso sighs, blushing as she grabs him from between her cheeks. Laying down on the ground before playing him between her breasts were she squezes them around him.
+
+&quot;Calypso!&quot; Ivan moans, cuming the moment the soft mounds pressing against his body. He spasums, cumming into her breasts before Calypso joins in. Moaning out, grinding into the gorund as she cums with him. Messaging her giant breasts before relaxing.
+
+The pair sighing, blushing and smiling before Calypso asks the most important question, &quot;Can we do this again?&quot;
+(set:$GiantCalypsoBreast2 to true)
+[[Nice work, you got 1 of 6 Giant Calypso ending. Want to try again?-&gt;Title]]]
+
+(else:)[Calypso squeaks, the spinner landing on her slice again right before her body starts to grow. Calypso moaning as her body presses outwords, fourcing Ivan into the wall before he slides under neth her stomick.
+
+&quot;I-Ivan...&quot; Calypso coos, shifting aorund as her body fills up the room. Her legs cracking the wall as she roats and lays on her back. Chest graazing against the cieling as Ivan get&#39;s trapped below her rather large rump.
+
+Ivan humps her butt, moaning as the giant soft mound of flesh press him into the ground before stopping just before she fills up the room. Leaving her breasts scrapping the cieling, milk spilling out with her legs mostly curled up and butt pressed furmly into the gorund.
+
+Ivan shakes, his entier body trapped under the big butt of his wife. Nearly over the edge, his cock throbing. Wanting to let go and cum for his massive sexy wolf wife. Calypso tries to move. Her breasts gently tickle against the cieling, more milk spilling out as her ass squezzes around Ivan, causing him to go over.
+
+&quot;Calypso!&quot; Ivan moans, bucking his hips into her butt. Cumming to his wife&#39;s giant body, staining his poor shorts in the process. Calypso lays down on the ground, chest pressed against the floor. No longer able to hold it in, moans and bucks her hips. Squezing Ivan deeper into her butt in the process.
+
+Calypso squeaks, grabbing her breasts hard and grinding her thighs together against Ivan. Ivan moans, enjoying the after glow of being ground into her fat butt. Calypso messaging ehr breasts roughly, milk spilling out and coting the room before she let&#39;s out a high pitched moan.
+
+Cum floods the room, staining everything in a layer of her cum, including Ivan. The pair calm down, breathing after the fast climax before Calypso asks, &quot;Can we do this again sometime?&quot;
+(set:$GiantCalypso2 to true)
+[[Nice work, you got 1 of 6 Giant Calypso ending. Want to try again?-&gt;Title]]]]
+(else-if:$Calypso - $Ivan is 1 or $Calypso - $Ivan is 2)[(if:$Breasts is true)[Calypso smiles, watching as the spinner lands on her space. Moaning in delight as the growth washes ove rher body like a wave. Pushing her bigger, pumping up like a balloon. Ivan next to her watching, blushing as his cock strains against his pants.
+
+Ivan bits his lip, going in to squeze her thick growing thighs. &quot;Oh Ivan!&quot; Calypso moans, shivering as his hands sink into her growing leg. Her butt ballooning out and pushing Ivan slightly to the side before her weight breaks the bed. Sending Ivan into her lap.
+
+Calypso and Ivan blush as the magic stops. Calypso looking down as Ivan sits up in her lap. Looking up at Calypso a good few heads taller then him. Her preasts perfectly head level with his face, giving Calypso a little idea.
+
+&quot;How ya like it down there big boy.&quot; Calypso teases, wrapping her arms around Ivan and pulling him into ehr chest. Ivan shivers, trapped against her chest. Pre cum spirting out of his cock and his msucles shivering. Ever part of him wanting to let go right then.
+
+&quot;Oh!&quot; Calypso moans in suprise. Ivan&#39;s hand had found her slit and had started messaging it as he gently humps against her. calypso blushing, pulling him deeper into her pillow like breasts now leaking milk.
+
+&quot;Fuck!&quot; Ivan moans, bucking as he cums quicikly. The heavenly body of his wife sending him right over the edge. His fingers blunging into her, causing her to throw back her head and moan. Bucking her hips and cumming to her peak.
+
+The pair ride it out, Calypso falling onto the ebd with Ivan still in her amrs. The pair look at eachother and smile. &quot;We are defently doing this again.&quot; Ivan says before gently kissing Calypso on the cheek.
+(set:$GiantCalypsoBreast3 to true)
+[[Nice work, you got 1 of 6 Giant Calypso ending. Want to try again?-&gt;Title]]]
+(else:)[Calypso smiles, watching as the spinner lands on her space. Moaning in delight as the growth washes ove rher body like a wave. Pushing her bigger, pumping up like a balloon. Ivan next to her watching, blushing as his cock strains against his pants.
+
+Ivan bits his lip, going in to squeze her thick growing thighs. &quot;Oh Ivan!&quot; Calypso moans, shivering as his hands sink into her growing leg. Her butt ballooning out and pushing Ivan slightly to the side before her weight breaks the bed. Sending Ivan into her lap.
+
+Calypso and Ivan blush as the magic stops. Calypso looking down as Ivan sits up in her lap. Looking up at Calypso a good few heads taller then him. Her preasts perfectly head level with his face, giving Calypso a little idea.
+
+&quot;How ya like it down there big boy.&quot; Calypso asks, wrapping her legs around Ivan before rolling him onto his back with her sitting on top. Ivan shutters, the massive weight of her ass on his throbbing crouch nearly pushing him over.
+
+&quot;F-fuck!&quot; Ivan moans, bucking his hips. &quot;Calypso, I&#39;m close...&quot; Calypso giggles, grinding down on him while playing with her breasts. Moaning, feeling his cock throb in his pants against her.
+
+&quot;uuhhh Calypso!&quot; Ivan moans, bucking his hips. Cumming to her soft ass grinding down on him. Calypso shivers, joining in, moaning out his name as milk leaks out onto him. Cum making it easyer to grind on his cock.
+
+The two ride it out, Calypso sighing and laying next to Ivan before looking over at him. &quot;Can we do that agian?&quot;
+(set:$GiantCalypso3 to true)
+[[Nice work, you got 1 of 6 Giant Calypso ending. Want to try again?-&gt;Title]]]]</tw-passagedata><tw-passagedata pid="18" name="Slightly Tall Calypso" tags="Calypso-Ending" position="825,1625" size="100,100">(if:$Calypso &lt;=2 and $Ivan &lt;=2)[&quot;Ooo yes!&quot; Calypso smiles, watching as the spinner lands on her spot. &quot;Looks like I get t-to be t-taller.&quot; Calypso moans, the magic flowing over her body. Ivan watches as her breasts strain against her crop top. Her thighs pressing out, making her shorts look like they were skin tight. Not helped by the growing bubble butt.
+
+Ivan bits his lip, shifting to give his growing girl a bit more room before the magic cuts off prematuerly. Leaving Calypso wimpering in sadness, only a foot taller then she was before.
+
+&quot;Hey it&#39;s alright,&quot; Ivan says, sliding in close to his wife. Hugginer her and nuzzeling into her side. &quot;You&#39;re still taller then me.&quot; He blushes, looking up at her. She smiles, turning and pulling Ivan into a hug.
+
+&quot;That&#39;s true.&quot; Calypso smiles, squezing Ivan into her chest. Ivan blushing as his cock throbs. Pleasure sending shivers up his back. Calypso giggles before pushing him down onto the bed.
+
+Ivan let&#39;s out a squeak as Calypso presses her body against him. Trapping him between her and the bed that bends a bit from there combined weight. Her tail wagging behind her in exitment as she shifts to get his cock betwee her legs. She pulls off her shorts before wrapping her thighs around his cock.
+
+Ivan moans as Calypso wrapps her thick thighs around his cock. Grinding against it while pressing her chest into his. Pre cum spurting out as his body is rocked with pleasure. He bucks his hips up into Calypso&#39;s, who giggles at his reaction.
+
+&quot;God, Calypso your so cutie.&quot; Ivan moans, pulling her head down and meeting her lips for a kiss. Calypso moans happily, kissing back before grinding faster against his cock. The two gently explore the other with there hands as they continue to kiss.
+
+Calypso pulling away first to sit up. &quot;I&#39;m close.&quot; She shutters, feeling his throbing cock between ehr cheeks.
+
+&quot;I am too.&quot; Ivan admits through glenched teeth. Holding on from just cuming to his wife&#39;s amazingly soft rump squshing his member.
+
+&quot;Then let&#39;s finish this,&quot; Calypso says, standing up a bit before coming down on his cock. Sliding it into herself and breaking the bed from the fource. Ivan bucks his hips up into her, moaning as Calypso grinds down on him with wild abandonment.
+
+&quot;Fuck!&quot; Ivan moans, getting so close to cuming. He grabs her thick thighs and pulls them down, pushing up against her fat butt at the sametime. Calypso blushes, moaning as her wings spread out. Tail wagging happily as Ivan cums inside her.
+
+&quot;Oh Ivan, fill me.&quot; Calypso moans as Ivan humps her a few times before relaxing. Calypso sighs, sliding off of him and laying next to him on the broken bed. Pulling him into a cuddle that he of course accepts.
+(set:$SlightlyTallCalypso2 to true)
+&quot;We should do that agian some time.&quot; Ivan smiles, nuzzeling into his wife&#39;s big breasts.]
+(else-if:$Calypso &gt;= 3 and $Ivan &gt;= 3)[&quot;Ooo yes!&quot; Calypso smiles, watching as the spinner lands on her spot. &quot;Looks like I get t-to be t-taller.&quot; Calypso moans, the magic flowing over her body. Ivan watches as she stretches upwords. Her thigh pressing up against him. Calypso moans as her breasts balloon out.
+
+Ivan bits his lip, shifting to give his growing girl a bit more room before the magic cuts off prematuerly. Leaving Calypso wimpering in sadness, only a foot taller then she was before.
+
+&quot;Hey it&#39;s alright,&quot; Ivan says, sliding in close to his wife. Hugginer her and nuzzeling into her side. &quot;You&#39;re still taller then me.&quot; He blushes, looking up at her. She smiles, turning and pulling Ivan into a hug.
+
+&quot;That&#39;s true.&quot; Calypso smiles, squezing Ivan into her chest. Ivan blushing as his cock throbs against her. Pleasure sending shivers up his back. Calypso giggles before pushing him down onto the bed.
+
+Ivan let&#39;s out a squeak as Calypso presses her body against him. Trapping him between her and the bed that bends a bit from there combined weight. Her tail wagging behind her in exitment as she shifts to get his cock betwee her legs.
+
+Ivan moans as Calypso wrapps her thighs around his cock. Grinding against it while pressing her chest into his. Pre cum spurting out as his body is rocked with pleasure. He bucks his hips up into Calypso&#39;s, who giggles at his reaction.
+
+&quot;God, Calypso your so cutie.&quot; Ivan moans, pulling her head down and meeting her lips for a kiss. Calypso moans happily, kissing back before grinding faster against his cock. The two gently explore the other with there hands as they continue to kiss.
+
+Calypso pulling away first to sit up. &quot;I&#39;m close.&quot; She shutters, feeling his throbing cock between ehr cheeks.
+
+&quot;I am too.&quot; Ivan admits through glenched teeth. Holding on from just cuming to his wife&#39;s amazingly soft rump squshing his member.
+
+&quot;Then let&#39;s finish this,&quot; Calypso says, standing up a bit before coming down on his cock. Sliding it into herself and breaking the bed from the fource. Ivan bucks his hips up into her, moaning as Calypso grinds down on him with wild abandonment.
+
+&quot;Fuck!&quot; Ivan moans, getting so close to cuming. He grabs her thick thighs and pulls them down, pushing up against her fat butt at the sametime. Calypso blushes, moaning as her wings spread out. Tail wagging happily as Ivan cums inside her.
+
+&quot;Oh Ivan, fill me.&quot; Calypso moans as Ivan humps her a few times before relaxing. Calypso sighs, sliding off of him and laying next to him on the broken bed. Pulling him into a cuddle that he of course accepts.
+(set:$SlightlyTallCalypso1 to true)
+&quot;We should do that agian some time.&quot; Ivan smiles, nuzzeling into his wife&#39;s big breasts.]
+
+[[Good work, you basicly found the vinnila ending but Calypso is slightly bigger. There&#39;s two of these per character so try out other combinations of equal sizes.-&gt;Title]]</tw-passagedata><tw-passagedata pid="19" name="Same Size" tags="Duel-Ending" position="1125,1825" size="100,100">&quot;Damn...&quot; Ivan and Calypso sighs as they watch the last spin land on the nothing space. Ivan snaps his fingers, sending the spinner away out of sadness. &quot;We aren&#39;t even that big!&quot; Ivan complains.
+
+Calypso giggles at his fake anger before going in for a hug with her husband. Ivan sighs, hugging her back. &quot;We&#39;re big enough love.&quot; Calypso coos, nuzzeling into his cheek. Ivan smiles, gently pushing her to the bed before looming over her.
+
+Calypso blushes, looking up at Ivan as he pulls out his throbing cock and places it between her legs. &quot;You ready the big girl.&quot; Ivan coos in her ear, sending a shiver down her back before she nods. Ivan kisses her on the forhead as he gently slides himself in her.
+
+Calypso moans as Ivan starts to fuck her. She wraps her arms around his head and pulls him down for a kiss. Pressing ehr breasts against his big pecs. The two kiss deeply and loveingly. Taking breaks to breath and moan as Ivan continues to ravage her.
+
+&quot;I-ivan...&quot; Calypso moans before cumming. Ivan chukels, pulling away while still fucking her. Letting her ride herself out as his climax aprouches fast. Ivan grunts, pushing deep inside her. Calypso moans in suprised as Ivan cums inside her. Sending shivers down her spine.
+(set:$SameSzie to true)
+Ivan grunts, humping a bit before rexlaing, pulling out and laying down next to Calypso. Calypso rolls over onto him and hugs him, nuzzeling into his chest. &quot;We should do this again!&quot; Calypso smiles up at Ivan, who smiles back before hugging her.
+
+[[Nice, you got the Same Size ending... why didn&#39;t you grow one of them a bit bigger?-&gt;Title]]</tw-passagedata><tw-passagedata pid="20" name="Massive Ivan" tags="Ivan-Ending" position="1625,1625" size="100,100">(if:$Pregnet is true)[&quot;Well look at that.&quot; Ivan chukels, his deep voice sending a shiver down Calypso&#39;s back. Who was currently trapped unde rhis big chest that was suddenly getting much bigger. She moans as Ivan expands out. her vistion surounded by his pecs as his butt crashes into the wall behind him. Sending a shiver up his body and spilling out pre into the room.
+
+&quot;The rooms is getting...&quot; Ivan grunts. His frame filling out the room entierly and pushing against the walls. &quot;Tight!&quot; Ivan says before his body bursts out of the room and destorys the house. His body shivering as pleasure runs in his vains.
+
+He grinds his cock gently into the ground, wanting so badly to cum. Feeling Calypso scurm between his pecs that are still expanding didn&#39;t help him at all.
+
+Calypso glefuly giggles and moans. Loving every second of being crushed under Ivan&#39;s chest and srrounded by his giant pecs that make even her jelouse. &quot;Oh Ivan! You&#39;re so big and handsome!&quot; She moans, kissing his pecs.
+
+Ivan shivers, feeling her tiny worshiping of his form. He smirks, squezing his pecs around her body, sandwithcing her bewteen mountains of muscles still growing and stretching. &quot;Oh really now?&quot;
+
+Calypso shutters, feeling the strong muscels form and squeeze around her. Only hightening her arousel for her massive husband. &quot;Oh yes!&quot; Calypso moans out. &quot;I want you to cum on me please!&quot; She begs, remebering the tising offer from earlyer Ivan had teased her with.
+
+Ivan smiles, rising up and still on all fours, uses his pegisus wing to rub off his massive cock nearly up to his chin. Calypso looks up at the giant Ivan that had now stopped growing in size.
+
+&quot;Yes!&quot; Calypso shouts, seeing his masterbat. Pointing his cock down at her with his balls touching the ground. Ready to blow there seed down onto her. &quot;Cum for me my strong handsome man!&quot;
+
+Ivan shutters at her words, pushing him over the edg. He growns deeply, shuttering the ground and turning on Calypso more as he bucks his hips. Cum spilling out and onto her. Barring her in wave after wave of hot viral cum that covers her.
+
+Slowly she feels the wrmths push into her body. Slowly expanding her stomick as it fills with cum before it can&#39;t hold anymore. Leaving Calypso moaning in delight as Ivan rides out his pleasuer.
+
+He sighs, collapsing next to Calypso on the ground. Who could bearly turn with her stomick full of his cum, to look up at her giant love. &quot;Thanks!&quot;
+
+&quot;No worries cutie.&quot; Ivan chukels, smiling down at her. &quot;We should do this agian, maybe you&#39;ll get the turn to grow.&quot; Calypso nodes before looking down at her belly that looks like she was already pregnet with his kids. Somthing she wouldn&#39;t mind at all.
+(set:$PregMassiveIvan to true)
+[[Nice work! You got a very secret ending! Want to try for more?-&gt;Title]]]
+(else:)[&quot;Well look at that.&quot; Ivan chukels, his deep voice sending a shiver down Calypso&#39;s back. Who was currently trapped under his big chest that was suddenly getting much bigger. She moans as Ivan expands out. her vistion surounded by his pecs as his butt crashes into the wall behind him. Sending a shiver up his body and spilling out pre into the room.
+
+&quot;The rooms is getting...&quot; Ivan grunts. His frame filling out the room entierly and pushing against the walls. &quot;Tight!&quot; Ivan says before his body bursts out of the room and destorys the house. His body shivering as pleasure runs in his vains.
+
+&quot;Yes!&quot; Calypso moans, feeling her husband&#39;s chest grow against her. Expanding bigger with each second. Her love getting hotter by the second, sending shivers down her back.
+
+Ivan grunts, still squating on all fours with his chest on the ground. Pressing Calypso into the ground with his massive pecs. His cock scrapping the ground, spilling out pre cum like a water fountain. Ivan so ready to just blow his load with his balls so big they touch the ground.
+
+&quot;I can&#39;t...&quot; Ivan moans, move around onto his back with Calypso hanging onto his chest. Ivan sighs, looking up at his cock that would nearly go up to his chin. Throbing away, sensitive to even the breeze.
+
+&quot;Mmm... please cum my love.&quot; Calypso begs as the growth stops. Kissing his chest and snuggling into it&#39;s giant soft fur. Ivan chuckels, heaving his chest like a mini earth quake before flexing his pecs around Calypso.
+
+&quot;You like that?&quot; He asks, watching as his little wive shutters at being surrounded by his strong muscels. Calypso just nodes, already riding out her own pleasure on Ivan.
+
+&quot;Looks like you got off just fine.&quot; Ivan says, shifting a bit and letting his peggisus wing wrapp around his cock. Sending a massive surge of pleasure up his body. &quot;Now for me.&quot;
+
+Ivan slowly uses his wing to masterbat. Rubbing his feathers slowly up and down his massive shaft. Sending waves of pleasures down his body. His back arching as his peak rockets sky word and into the stars.
+
+&quot;Fuck!&quot; Ivan moans, cum rocketing out of his cock like a volcano. Raining back down as he bucks his hips. Calypso hanging on as she watches him ride out his pleasure. After a few seconds of bucking, he runs dry and relaxes. Splaying out on the destoryed house. People aorund watching in horror and hornyness at the display.
+
+&quot;We should do this again.&quot; Calypso sighs, nuzzeling into his giant chest.
+
+&quot;Defently.&quot; Ivan nods, gently holding her to his chest with a smile on his face.
+(set:$MassiveIvan to true)
+[[NICE! That&#39;s the Massive Ivan Ending. Want to try for another ending?-&gt;Title]]]</tw-passagedata><tw-passagedata pid="21" name="Giant Ivan" tags="Ivan-Ending" position="1525,1625" size="100,100">(if:$Ivan - $Calypso is 5)[(if:$Pregnet is true)[Ivan chuckels deeply, causing Calypso to shutter under his chest. Pressing into the ground as the spinner lands on Ivan again. &quot;Looks like I get a-another...&quot; Ivan can&#39;t finish his sentence as his body shutters. Expanding with Calypso veyr near him.
+
+&quot;Yes!&quot; Calypso moans, feeling Ivan&#39;s chest press her deeper into the ground. &quot;Grow ny hunky boy!&quot; Calypso giggles at her own antics as Ivan starts to grow against the room. His butt hitting the cieling, cracking it as his head scraps the wall.
+
+&quot;Man it&#39;s getting... getting tight...&quot; Ivan moans, his body being squezed by the walls of the room, bearly holding on to conatin his giant body. His cock throbing agaisnt himself and pocking Calypso, who giggles. Calypso wraps her legs around the giant tip of his cock, causing Ivan to moan at the feeling of his small wife.
+
+&quot;Ivan.&quot; Calypso says, smiling up at him. grinding gently against him. &quot;Please cum for me?&quot; She asks more then demands. Ivan chukels, sneding a shiver down her spine.
+
+&quot;Sure thing, but you will probably get filled.&quot; Ivan says, ajusting himself the best he can. His pecs ending up trapping Calypso&#39;s body. Her face flushed red, legs wrapped aorund his giant cock throbbing at her hips with her body squezed by his pecs.
+
+&quot;Oh fill me up my stud husband!&quot; Calypso moans, grinding the best she can against him. Ivan shivers, almost ready to just let loose.
+
+&quot;I&#39;ll fill you all the way up my tiny wife.&quot; Ivan teases, squezing his pecs around ehr and gently grinding down. Calypso moans in delight, feeling his chest aorund her. Squezing gently as his cock gently prods at her legs.
+
+&quot;Yes!&quot; Calypso moans, cumming at the thought. &quot;Fill me up with you&#39;re cum!&quot;
+
+Ivan replies with a grunt and thrust. Cum spilling and hitting Calypso directly. Her moans are swalled by the waves of cum spilling over her. Pumping inside her and slowly swelling her stomick till it couldn&#39;t hold anymore.
+
+Ivan thrusts a few more times before shifting around to let Calypso breath. Who was covered in his cum, panting with a belly swelled up like she was alreayd pregnet. &quot;Hehe, we should really do this again.&quot; Ivan smiles down at his little wife looking like she was bearing his kids.
+
+&quot;Defently!&quot; Calypso gigles.
+(set:$GiantIvan1Preg to true)
+[[Nice work! This is one of 6 Giant Ivan endings. Wanna find more?-&gt;Title]]]
+(else:)[Ivan chuckels deeply, causing Calypso to shutter under his chest. Pressing into the ground as the spinner lands on Ivan again. &quot;Looks like I get a-another...&quot; Ivan can&#39;t finish his sentence as his body shutters. Expanding with Calypso veyr near him.
+
+&quot;Yes!&quot; Calypso moans, feeling Ivan&#39;s chest press her deeper into the ground. &quot;Grow ny hunky boy!&quot; Calypso giggles at her own antics as Ivan starts to grow against the room. His butt hitting the cieling, cracking it as his head scraps the wall.
+
+&quot;Man it&#39;s getting... getting tight...&quot; Ivan moans, his body being squezed by the walls of the room, bearly holding on to conatin his giant body. His cock throbing agaisnt himself and pocking Calypso, who giggles.
+
+&quot;I can&#39;t... hold on...&quot; Ivan triest to shift. Pre cum spill out onto Calypso as he trys to point his cock away from her. &quot;Fuck!&quot; With out even having touched it, the growth he had just gone under had pushed him over the edg.
+
+Cum floods out of his been bag sized balls and into the room. Staining the walls and furniture. Calypso blushing red, watching as her giant husband lets out masculin moan after moan. Cum pumping out before he was dry, riding out his pelasure. the entire room now white.
+
+&quot;That&#39;s gonna be a lot of clean up.&quot; Ivan sighs, relaxing.
+
+&quot;Well worth it.&quot; Calypso stands up and hugs his chest. Ivan smiles, gently hugging her back. &quot;We got to do this again!&quot;
+
+&quot;Hell ya!&quot;
+(set:$GiantIvan1 to true)
+[[Nice work! This is one of 6 Giant Ivan endings. Wanna find more?-&gt;Title]]]]
+(else-if:$Ivan - $Calypso is 3)[(if:$Pregnet is true)[Ivan chuckels deeply, causing Calypso to shutters. Looking up at the giant Ivan several sizes bigger then her. &quot;Looks like I get a-another...&quot; Ivan can&#39;t finish his sentence as his body shutters. More mass adding onto his alreayd big frame.
+
+&quot;Yes!&quot; Calypso moans, giong in for a hug and feeling Ivan&#39;s chest press agaisnt her. &quot;Grow my hunky boy!&quot; Calypso giggles at her own antics as Ivan snapps the bed in half with his new size.
+
+&quot;Man I&#39;m getting... getting...&quot; Ivan moans, feeling Calypso shrink smaller. When in fact he was the one growing bigger by the second. Calypso hugging and kissing his growing body. Sending shivers up his back.
+
+&quot;I can&#39;t... hold on...&quot; Ivan staggers up, his head hitting the cieling as pre cum spills out onto Calypso. Who shutters in pleasure, blushing as an idea forms in her head.
+
+&quot;Point it this way big guy!&quot; Calypso screams up in exitment. Spreading her legs to show what she ment by it. Ivan, raviged with pleasuer looks down at his smaller partner and nods. Turning so his cock was pointed at her, and right on time to.
+
+&quot;Fuck!&quot; With bearly touching it with his hands, cum erupts out and onto Calypso. Covering her with his viral cum. Calypso moans happly, unable to speak as waves of sticky cum fills her vistion.
+
+Her body filling up with it&#39;s warmth. Slowly the cucm powerfuly pumped to her body by the giant cock of her husband starts to fill her belly. Stopping once it couldn&#39;t hold anymore. Looking ready to bear his children.
+
+Ivan sighs as he runs out, riding the last of his pleasure before sitting down next to Calypso. &quot;Liked that little one?&quot; He asks as Calypso goes in for s hug.
+
+&quot;Ya!&quot; She smiles up at him. &quot;We should do it again!&quot;
+(set:$GiantIvan2Preg to true)
+[[Nice work! This is one of 6 Giant Ivan endings. Wanna find more?-&gt;Title]]]
+(else:)[Ivan chuckels deeply, causing Calypso to shutters. Looking up at the giant Ivan several sizes bigger then her. &quot;Looks like I get a-another...&quot; Ivan can&#39;t finish his sentence as his body shutters. More mass adding onto his alreayd big frame.
+
+&quot;Yes!&quot; Calypso moans, giong in for a hug and feeling Ivan&#39;s chest press agaisnt her. &quot;Grow my hunky boy!&quot; Calypso giggles at her own antics as Ivan snapps the bed in half with his new size.
+
+&quot;Man I&#39;m getting... getting...&quot; Ivan moans, feeling Calypso shrink smaller. When in fact he was the one growing bigger by the second. Calypso hugging and kissing his growing body. Sending shivers up his back.
+
+&quot;I can&#39;t... hold on...&quot; Ivan tries to shift off the broken pile of wood that is the bed. Pre cum spill out onto Calypso as he trys to stand up. &quot;Fuck!&quot; With out even having touched his cock, the growth he had just gone under had pushed him over the edg. He falls back down, sitting on Calypso who moans at the giant ass now on her lap.
+
+Cum floods out of his big balls and into the room. Staining the walls and furniture as it erupts out. Calypso blushing red as Ivan unintentualy grinds his fat ass down on her smaller body, watching as her giant husband lets out masculin moan after moan. Sending shivers up her back. Cum pumping out of his cock before he was dry, riding out his pelasure. the entire frount of the room now white.
+
+&quot;That&#39;s gonna be a lot of clean up.&quot; Ivan sighs, relaxing.
+
+&quot;Well worth it.&quot; Calypso sighs, hugging his back the best she can. &quot;We got to do this again!&quot;
+
+&quot;Hell ya!&quot;
+(set:$GiantIvan2 to true)
+[[Nice work! This is one of 6 Giant Ivan endings. Wanna find more?-&gt;Title]]]]
+(else-if:$Ivan - $Calypso is 1)[(if:$Pregnet is true)[Ivan chuckels deeply, causing Calypso to shutters. Looking slightly up at the giant Ivan a few sizes bigger then her. &quot;Looks like I get a-another...&quot; Ivan can&#39;t finish his sentence as his body shutters. More mass adding onto his alreayd big frame.
+
+&quot;Yes!&quot; Calypso moans, giong in for a hug and feeling Ivan&#39;s chest press agaisnt her. &quot;Grow my hunky boy!&quot; Calypso giggles at her own antics as Ivan continues to grow.
+
+&quot;Man I&#39;m getting... getting...&quot; Ivan moans, feeling Calypso shrink smaller. When in fact he was the one growing bigger by the second. Calypso hugging and kissing his growing body. Sending shivers up his back.
+
+&quot;I can&#39;t... hold on...&quot; Ivan moans. Calypso gets an idea. Standing up and gently pushing Ivan down to the bed. Ivan looks up as Calypso gets on top of him, butt against his cock and starts grinding. Her breasts against his chest, kissing him on the cheek.
+
+Ivan moans, bucking his hips up into the air. Cum erupting up like a gyser. raining back down and covering the pair. Calypso moaning in delight as the wave of cum hits her body. Filling her up, swelling her belly.
+
+Ivan sighs, his cum ending with a bright red blush as he can feel his wife&#39;s new pregnet like belly against him. &quot;You took that tease litterly.&quot; Ivan chukels as Calypso relaxes against him.
+
+&quot;Ya, I love feeling your cum ok...&quot; Calypso blushes, looking at his chest. Ivan smiles, pulling her closer to him.
+
+&quot;We should do this again sometime.&quot; Calypso nods in agreement.
+(set:$GiantIvan3Preg to true)
+[[Nice work! This is one of 6 Giant Ivan endings. Wanna find more?-&gt;Title]]]
+(else:)[Ivan chuckels deeply, causing Calypso to shutters. Looking slightly up at the giant Ivan a few sizes bigger then her. &quot;Looks like I get a-another...&quot; Ivan can&#39;t finish his sentence as his body shutters. More mass adding onto his alreayd big frame.
+
+&quot;Yes!&quot; Calypso moans, giong in for a hug and feeling Ivan&#39;s chest press agaisnt her. &quot;Grow my hunky boy!&quot; Calypso giggles at her own antics as Ivan continues to grow.
+
+&quot;Man I&#39;m getting... getting...&quot; Ivan moans, feeling Calypso shrink smaller. When in fact he was the one growing bigger by the second. Calypso hugging and kissing his growing body. Sending shivers up his back.
+
+&quot;I can&#39;t... hold on...&quot; Ivan moans, Calypso worshiping his body pushing him way over the edg as the growth stops.
+
+Cum floods out of his big balls and into the room. Staining the ground and bed as it spills out of his cock. Calypso blushing as she watchs her giant husband let out masculin moan after moan. Sending shivers up her back. Cum pumping out of his cock before he was dry, riding out his pelasure.
+
+&quot;That&#39;s gonna be a lot of clean up.&quot; Ivan sighs, relaxing and looks at all the cum he had just produced.
+
+&quot;Well worth it.&quot; Calypso sighs, hugging his body the best she can. &quot;We got to do this again!&quot;
+
+&quot;Hell ya!&quot;
+(set:$GiantIvan3 to true)
+[[Nice work! This is one of 6 Giant Ivan endings. Wanna find more?-&gt;Title]]]]</tw-passagedata><tw-passagedata pid="22" name="Slightly Tall Ivan" tags="Ivan-Ending" position="1425,1625" size="100,100">(if:$Calypso &lt;=2 and $Ivan &lt;=2)[Ivan smiles, watching as the spinner lands on his spot. Calypso sighs, a little sad but her tail betrays her as it wags in exitment. Ivan grunts, his already big cock growing thicker against his pants with each throb. His thighs expanding out, pushing against Calypso and titenting his pants. forming a skin like feeling around his butt and thighs. Calypso shivers as she watches him slowly grow bigger.
+
+&quot;Oh yes!&quot; Ivan moans deeply, the bed creeking as his ass grows bigger. His wings shivering as his tail swishes behind him happily. His pecs growing even bigger and stronger. His thighs and butt burst through his pants hias his pecs swell to break his hoodie before the magic cuts off suddenly. &quot;What!&quot; Ivan looks down at the spinner in anger. &quot;Serously!&quot;
+
+Calypso giggles at his fake anger before going in for a hug with her foot taller husband. Ivan sighs, hugging her back. &quot;You&#39;re big enough love.&quot; Calypso coos, nuzzeling into his side. Ivan smiles, gently pushing her to the bed before looming over her.
+
+Calypso blushes, looking up at Ivan as he places his cock, throbbing, between her legs. &quot;You ready big girl.&quot; Ivan coos in her ear, sending a shiver down her back before she nods. Ivan kisses her on the forhead as he gently slides himself in her.
+
+Calypso moans as Ivan starts to fuck her. She wraps her arms around his head and pulls him down for a kiss. Pressing ehr breasts against his big pecs. The two kiss deeply and loveingly. Taking breaks to breath and moan as Ivan continues to ravage her.
+
+&quot;I-ivan...&quot; Calypso moans before cumming. Ivan chukels, pulling away while still fucking her. Letting her ride herself out as his climax aprouches fast. Ivan grunts, pushing deep inside her. Calypso moans in suprised as Ivan cums inside her. Sending shivers down her spine.
+(set:$SlightlyTallIvan2 to true)
+Ivan grunts, humping a bit before rexlaing, pulling out and laying down next to Calypso. Calypso rolls over onto him and hugs him, nuzzeling into his chest. &quot;We should do this again!&quot; Calypso smiles up at Ivan, who smiles back before hugging her.]
+(else-if:$Calypso &gt;= 3 and $Ivan &gt;= 3)[Ivan smiles, watching as the spinner lands on his spot. Calypso sighs, a little sad but her tail betrays her as it wags in exitment. Ivan grunts, his already big cock growing thicker with each throb. His thighs expanding out, pushing against Calypso who shivers as she watches him slowly grow bigger.
+
+&quot;Oh yes!&quot; Ivan moans deeply, the bed creeking as his ass grows bigger. His wings shivering as his tail swishes behind him happily. His pecs growing even bigger and stronger before the magic cuts off suddenly. &quot;What!&quot; Ivan looks down at the spinner in anger. &quot;Serously!&quot;
+
+Calypso giggles at his fake anger before going in for a hug with her foot taller husband. Ivan sighs, hugging her back. &quot;You&#39;re big enough love.&quot; Calypso coos, nuzzeling into his side. Ivan smiles, gently pushing her to the bed before looming over her.
+
+Calypso blushes, looking up at Ivan as he places his cock, throbbing, between her legs. &quot;You ready big girl.&quot; Ivan coos in her ear, sending a shiver down her back before she nods. Ivan kisses her on the forhead as he gently slides himself in her.
+
+Calypso moans as Ivan starts to fuck her. She wraps her arms around his head and pulls him down for a kiss. Pressing ehr breasts against his big pecs. The two kiss deeply and loveingly. Taking breaks to breath and moan as Ivan continues to ravage her.
+
+&quot;I-ivan...&quot; Calypso moans before cumming. Ivan chukels, pulling away while still fucking her. Letting her ride herself out as his climax aprouches fast. Ivan grunts, pushing deep inside her. Calypso moans in suprised as Ivan cums inside her. Sending shivers down her spine.
+(set:$SlightlyTallIvan1 to true)
+Ivan grunts, humping a bit before rexlaing, pulling out and laying down next to Calypso. Calypso rolls over onto him and hugs him, nuzzeling into his chest. &quot;We should do this again!&quot; Calypso smiles up at Ivan, who smiles back before hugging her.]
+
+[[Good work, you basicly found the vinnila ending but Ivan is slightly bigger. There&#39;s two of these per character so try out other combinations of equal sizes.-&gt;Title]]</tw-passagedata><tw-passagedata pid="23" name="No Grow 1" tags="" position="1125,925" size="100,100">The two watch in antisapation for the first spin to slowly turn and land on the one space nether of them had control over.
+
+&quot;Well then.&quot; Ivan says in disapointment. Calypso crossing her arms over her chest and pouts cutiely. Ivan chukels at her adorable display before spinning for his turn.
+(set:$No to $No + 1)
+[[Grow Ivan-&gt;Ivan Growth 2]]
+[[Grow Calypso-&gt;Calypso Growth 2]]
+[[No Growth-&gt;No Grow 2]]</tw-passagedata><tw-passagedata pid="24" name="Ivan Growth Double" tags="" position="675,1050" size="100,100">&lt;div class=&quot;Body&quot;&gt;&lt;div class=&quot;PG&quot;&gt;Ivan and Calypso hold there breath as the spinner starts to slow down near both of there wedges. The spinner slows to a stop, right on the line between both of them, slightly more towrds Ivan&#39;s then Calypso&#39;s, bust still on the line deviding the two slices..&lt;/div&gt;
+
+&lt;div class=&quot;PG&quot;&gt;&quot;How does that even work?&quot; Ivan asks, snapping his fingers. In a flash of light, a rules book lands in his hand before he starts flipping through it. He snaps his fingers again, this time the flash creating specticals in his hand before he puts them on his nose.&lt;/div&gt;
+
+&lt;div class=&quot;PG&quot;&gt;&quot;Maybe I should spin again?&quot; Calypso asks, shrugging her shoulders. Waiting for ivan to find out how to proceed.&lt;/div&gt;
+
+&lt;div class=&quot;PG&quot;&gt;&quot;Wait, here it says that the smaller player gets to catch up and the player who spun it gets another t-turn...&quot; Ivan stutters as the magic finnaly washes over his body. He drops the book and glasses, were they land on the gorund and disapear in a buff of light. Ivan moans, his body shuttering as warmth fills his body like none other he had ever felt before.&lt;/div&gt;
+
+&lt;div class=&quot;PG&quot;&gt;&lt;span class=&quot;IMoan1&quot;&gt;&quot;Fuck!&quot;&lt;/span&gt; Ivan moans, bucking his hips as his cock throbs in his pants. Calypso watches, mouth slightly open as Ivan&#39;s cock throbs bigger, straining against his pants. Ivan moans, feeling his body starting to expand and grow. His heart beat pumping the magic inside him. Pushing him bigger fast, his pecs growing stronger, his ass bellowing out like an airbag, and his cock throbing bigger and bigger like a stedy pump from his heart.&lt;/div&gt;
+
+&lt;div class=&quot;PG&quot;&gt;Ivan&#39;s cloths slowly grow tights around his expanding body. His pecs growing out, straining against his hoodie as his thickening thighs push against his pants with his cock thretening to burst out of his pants. Calypso shivers, watching as her husband grows from being smaller then her, to shoulder hieght, quickly getting to her hieght and then some before the magic slows down and stops..&lt;/div&gt;
+
+&lt;div class=&quot;PG&quot;&gt;Leaving Ivan shivering, panting and moaning for more. He trys not to move his legs as his big cock was now super sensitive, spurting out pre cum down his leg at any little brush. The pre spilling down his leg and onto the floor. &quot;Damn, that felt amazing.&quot; He says, face flushed red and turning to his wife. &quot;You get to spin again.&quot; Calypso nods, hitting the spinner, looking over her husband&#39;s big body. Blushing herself, wanting to see how big he get&#39;s.&lt;/div&gt;&lt;/div&gt;
+(set:$Ivan to $Ivan + 2)
+&lt;div class=&quot;Grow-Options&quot;&gt;[[Grow Calypso-&gt;Calypso Growth 3]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="25" name="Ivan Growth Double 2" tags="" position="675,1300" size="100,100">&lt;div class=&quot;Body&quot;&gt;&lt;div class=&quot;PG&quot;&gt;The lovers watch as the spinner, for the second time, lands dead in the center of the two&#39;s spaces. &quot;Here w-we go a-again...&quot; Ivan stutters out, alreayd feeling the magic pump up his body again. Filling his entier being with the want to be bigger, the lust for size.
+
+&lt;div class=&quot;PG&quot;&gt;His pecs are the first to quickly buldg out. Expanding out to the point of being near breast size, tearing his hoodie a part and showing off his fluffy yack body with his new giant strong pecs still swelling in size like an air bag. His arms swell in muscle size. Stretching to acomidate the new, bulkyer, Ivan. 
+
+&lt;div class=&quot;PG&quot;&gt;&lt;span class=&quot;IMoan2&quot;&gt;&quot;Yes! Bigger!&quot;&lt;/span&gt; Ivan booms out, his voice shaking the room. Calypso moaning at his deepening voice, shivering as she watches her little husband sprout up like a weed. His thighs sweeling out and ripping apart his shorts. Revieling is soft rump as it expands out words on the bed. Calypso almost jelous of the fat man ass as it expands, driffting her eyes up with his size, seeing his pecs nearly pillow like with massive muscels.
+
+&lt;div class=&quot;PG&quot;&gt;&lt;span class=&quot;IMoan1&quot;&gt;&quot;Fuck, Calypso!&quot;&lt;/span&gt; Ivan moans, bucking his hips on the near edg of cumming. His cock throbs against his body, growing bigger. Cum rolling down his sensitive growing cock, sending shivers up his body. His cock nessled nicly between his growing pillow pecs pressing gently against his cock. Ivan flexes his pecs around his cock, causing a lighting of pleasure to shoot through him, with pre cum spurting out and onto his head from his strong cock being squahed between his even stronger pecs.
+
+&lt;div class=&quot;PG&quot;&gt;Calypso shivers, licking her lips at her giant, musculer husband. Growing bigger and stronger by the second. Stopping at just a foot taller then she was. Ivan moans, flexing his giant pecs around his cock, genting sliding them against his sensitive cock. Sending pleasure up his back as pre spurts out from the soft strong touch of his pecs giving himself a boob job. He looks over at his wife, who was eyeing him hungerly.
+
+&lt;div class=&quot;PG&quot;&gt;Calypso smiles up at him, pulling him down to her level and kissing him on the lips before spinning the diel. Ivan shivers, his cock cought between her giant soft breasts and his strong pecs. This nealry causes him to go over and cum. But the two manage to hold it together and pull away before he exploded his load. Nearly breaking the bed with there combined weight. The two watch in antisapation to see what the second to last spin would finnaly be.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+(set:$Ivan to $Ivan + 2)
+&lt;div class=&quot;Grow-Options&quot;&gt;[[Grow Calypso-&gt;Calypso Growth 5]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="26" name="Same Szie Giant Calypso Dom" tags="Duel-Ending" position="1025,1825" size="100,100">&quot;Well then...&quot; Ivan trails off, seeing as the last turn lands on the both of them again. &quot;I have no idea how that&#39;s gonna work.&quot; Ivan says, looking to Calypso. 
+
+She shrugs before responding with, &quot;You&#39;re the one that brought up the game. Shoul.. shou.. Oooo...&quot; Calypso was cut off when the magic forms aorund her.
+
+&quot;Gess th-that...&quot; Ivan was also cut off when the magic forms around him too. 
+&quot;Well, this is gonna be fun.&quot; Ivan says, shivering as he grows. Moaning and leaning agianst Calypso to try and stay inside the room. It didn&#39;t help for long as Calypso was expanding just as fast. Her breats pushing her up, her butt crashing into the wall.
+
+Before they knew it the pair was out in the open, growing bigger and crushing the rest of there house. Ivan staggers up, trying to stand but comes crashing down as his legs shake in pelasure. Crushing another home under his musculer butt, trapping the poor souls insids unde rhis butt.
+
+&quot;God, this feels...&quot; Ivan moans, his cock throbbing, nearly taller then himelf as it sends a pirt of cum into the air and lans on Calypso&#39;s back. Calypso sits up, not making the same mistake as Ivan.
+
+&quot;It feels amazing!&quot; Calypso booms, shaking the naberhood. Breaking glass and sending a pleasure up Ivan&#39;s body. Somthing about her voice has changed, it was more dominant then before. And he loved it.
+
+&quot;C-calypso...&quot; Ivan moans her name, nearing his edg. Calypso sees his giant growing cock throbbing. Somthing inside her clicks, and she leans forword. A smile across ehr face as she gently places her breasts against his body, trapping his cock and sending a shiver up his body.
+
+&quot;What is it hubby?&quot; She asks, kissing the tip of his cock gently before rubbing ehr growing milkers up and down his shaft. Ivan bits his lip, clenshing his legs as he tries not to instantly cum.
+
+&quot;I-I want you to fuck me now.&quot; Ivan says, his heart racing fast. Calypso nods, understanding. She stands up, the magic stopping as she turns aorund. Ivan sighing, a moment of rest before a rocket of pleasure is sent up his body the moment her but surrounds his cock.
+
+&quot;Damn!&quot; Ivan moans as Calypso starts rubbing ehr giant ass over his cock. &quot;Shit I can&#39;t last Calypso!&quot; He moans, trying to hold on for the fanaly.
+
+&quot;Mmm... big boy being submisive today hehe...&quot; Calypso teases, sending a shive rup Ivan&#39;s body before she lifts up and slams her butt down agaisnt his hip. Sliding his cock in easly. The two moaning as they cum at the same time.
+
+Ivan grabs her hips and buck into her butt. trying to filler her up like a balloon. Her stomick infalting a bit with his cum before the rest of it falls out. The two riding out the pleasure. Ivan sighs, laying down as Calypso stands up. Laying down on top of him with her breasts against his strong chest.
+
+&quot;We are deffently doing this again.&quot; Calypso coos into Ivan&#39;s ear before sighing and cuddeling him.
+(set:$samesizecalypsodom to true)
+&quot;Hehe ya we will.&quot; Ivan sighs, looking up at the sky and winking at you.
+
+[[NICE! This was one of the two same size giant Endings. Want to try for another ending?-&gt;Title]]</tw-passagedata><tw-passagedata pid="27" name="Calypso Growth Double 1" tags="" position="1575,1050" size="100,100">Ivan and Calypso watch as the spinner slows down. The two holding there breaths as it slows down between there wedges, stopping to the dispointment of both of them.
+
+&quot;How does that even work?&quot; Ivan asks, snapping his fingers and a rull books apears in his hand.
+
+&quot;Maybe I should spin again?&quot; Calypso asks, shrugging her shoulders.
+
+&quot;Wait, here it says that the smaller player gets to catch up and the player who spun it gets another turn.&quot; Ivan explains, snapping his fingers to make the book disapear.
+
+&quot;What does t-that...&quot; Calypso is cut off when suddenly her breasts pump out like an air bag gone off. Filling out her crop top and strining against the fabric. Calypso moans, milk leaking out as her butt goins in. growing out like someone was pumping it up with air.
+
+Ivan watches, blushing as her thigh rubs up against his. Expanding out fast. Her butt nearly tearing her pants a part. &quot;Oh! sweat Ivan this feels amazing!&quot; Calypso moans, sending a shiver down Ivan&#39;s spine as she grows taller.
+
+His little wife, now with breasts over flowing her crop top and a big bubble butt, grows taller. Muscels filling out her arms and legs. Pushing ehr higher with each moan. She crosses her legs to try and not instantly cum as she rises up and up till she stops at his hieght.
+
+Calypso sighs, shaking and blushing hard. &quot;Man, I need more of that!&quot; Calypso turns to Ivan with a big smile.
+
+&quot;Well it is your turn again.&quot; Ivan smiles, blushing and quivering. Wanting to see his wife grow agian. Calypso nods, hitting the spinner again.
+(set:$Calypso to $Calypso + 2)
+[[Grow Ivan-&gt;Ivan Growth 3]]</tw-passagedata><tw-passagedata pid="28" name="Calypso growth Double 2" tags="" position="1575,1300" size="100,100">&quot;Oh!&quot; Calypso looks on in suprise as the spinner again lands inbetween the two slices. &quot;Guess I&#39;m c-catching up!&quot; She moans, sqeaking as her breasts balloon out, snapping her crop top off and bouncing free.
+
+Ivan watches, his cock throbing as her thighs pump up with more mass. Squahing against his like a soft pillow. The two shivering in pleasure, Ivan having to hold back not to just tacking his growing wife.
+
+Her butt expanding out, nearly cracking the bed in half as she rise up to meat Ivan&#39;s hieght before stopping. Calypso grinds down on the bed, blushing and horny. Ivan blushing, pulling her into a hug.
+
+ &quot;Can we do it now?&quot; Calypso asks, going into the hug. Pressing ehr breasts against his pecs. Ivan gently grabs her butt, causing her to squeak. Her wings snapping out before looking at Ivan in anger.
+ 
+ &quot;One more turn.&quot; Ivan says, kissing Calypso on the lips. She shivers, kissing back before the pair of horny giants pull apart. Calypso trying again on her spin.
+(set:$Calypso to $Calypso + 2)
+[[Grow Ivan-&gt;Ivan Growth 5]]</tw-passagedata><tw-passagedata pid="29" name="Same Szie Giant Ivan Dom" tags="Duel-Ending" position="1225,1825" size="100,100">&quot;Well then...&quot; Ivan trails off, seeing as the last turn lands on the both of them again. &quot;I have no idea how that&#39;s gonna work.&quot; Ivan says, looking to Calypso. 
+
+She shrugs before responding with, &quot;You&#39;re the one that brought up the game. Shoul.. shou.. Oooo...&quot; Calypso was cut off when the magic forms aorund her.
+
+&quot;Gess th-that...&quot; Ivan was also cut off when the magic forms around him too. 
+&quot;Well, this is gonna be fun.&quot; Ivan says, shivering as he grows. Moaning ashis body grows faster then before. Pressing against Calypso&#39;s chest as his pecs expand.
+
+Calypso moans, shifting as she tries to stay inside. Feeling the weight of ivan on top of her growing bigger as her expanding breasts balloon out bigger. Pushing ivan up and against the cieling from there volume alone.
+
+Before they knew it the pair was out in the open, growing bigger and crushing the rest of there house. Ivan rolls of Calypso, laying on the gorund looking up at the sky slightly blocked by his towering growing cock.
+
+&quot;God, this feels...&quot; Ivan moans, his cock throbbing, nearly taller then himelf as it sends a spirt of cum into the air and lands on himself. Calypso sits up, holding her growing boobs in her arms while her butt chrusts the ground and press against Ivan next to her.
+
+&quot;It feels so good!&quot; Ivan booms, his voice echoing out. Shaking the ground, cracking glass and sending a shiver up Calypso&#39;s body. Her face flushing red at the sexy deep voice of her husband.
+
+Ivan looks over, seeing Calypso a blushing mess, watching his massive cock throbbing as the growth stops. Slowly a smile forms on his face before he sits up. Gently he grabs her arm, pressing his chest against hers and pushes her down to the ground with a loud thud.
+
+&quot;Oh!&quot; Calypo sqeaks, blushing as Ivan leans over her body. His hands trapping her arms to the ground. grinding his cock between her stomick and poking through her big breasts.
+
+&quot;You ready to be bread my little sunshine.&quot; Ivan coos, thrusting a bit faster, sitting up. Cum spurting out, covering a bit of her face as her breasts jiggles from his thrusts.
+
+&quot;Y-yes daddy.&quot; Calypso blushes, licking the tip of Ivan&#39;s cock. Ivan shivers, gently wrapping his arms round her legs before pulling back and shoving his cock deep inside her.
+
+&quot;Oh yes!&quot; Calypso sqeaks in joy. Her bubbles butt jiggling, raised off the ground from Ivan&#39;s strong hold as he starts fucking her hard. Her belly swollen a bit from his cock as he ravages her body.
+
+&quot;Oh sweat chaos!&quot; Calypso moans, messaging her breasts now dripping milk as Ivan goes at her. &quot;Yes! please, harder!&quot; At her command, Ivan slams harder into her. Thighs jiggeling, butt wigggeling, and stomick nealry full of his cock.
+
+&quot;So... close!&quot; Ivan&#39;s voice booms. Shaking Calypso to the core. Pushing her way over the edge.
+
+&quot;Yes!&quot; Calypso moans, bucking into ivan as she cums. &quot;Cum inside me please!&quot; Ivan grunts, dropping her legs and leaning down. Pressing his chest against hers before thrusting deep inside her. Letting out a grunt as he pumps cum into her body before it flows out like a river.
+
+Calypso sqeaks in delight as Ivan grunts. grinding against her for a few minutes, riding out his pleasure before it ends. Sighing and pulling out before laying down next to her.
+
+&quot;We should do this again some time.&quot; Ivan smiles, out of breath. Calypso nodding in agreement.
+(set:$samesizeivandom to true)
+&quot;Hehe ya we will.&quot; Ivan sighs, looking up at the sky and winking at you.
+
+[[NICE! This was one of the two same size giant Endings. Want to try for another ending?-&gt;Title]]</tw-passagedata><tw-passagedata pid="30" name="Why" tags="Duel-Ending" position="1125,1625" size="100,100">Calypso giggles, kissing Ivan on the lips as he pulls her on top of him. Ivan kisses back, the pair ignoring the spinner that had in deed landed again on the empty space. But they didn&#39;t care, they were there for eachother.
+
+Calypso helps Ivan get off his hoodie, showing off his fluffy slim yake body. Calypso kissing his chest and nuzzeling the fluff. Causing Ivan to luagh out, &quot;Hey that ticels!&quot;
+
+&quot;I know.&quot; Calypso giggles, slowly moving lower down his body till she got to his pants and undid them as well. Licking her lips as his foot long cock, hard and ready for ehr springs out. In a flash of light, Ivan switched with Calypso, with her now on the bed and his naked body looming over her.
+
+Now she is the one to blush as Ivan helps her get her cloths off. Throughing the crop top with the others, letting her breasts hang free. Calypso giggles as Ivan kisses her cheek. Nuzzeling into her nack before gently sliding down to her chest, were he stops to kiss it before continuing down.
+
+Calypso shivers as he pulls off her boots before getting her shorts off. Exposing her body completly to him. &quot;Oh Ivan,&quot; Calypso moans as he crawls back up to her. Thire bodies close and completly nude. &quot;I&#39;m all yours.&quot; She giggles, booping his nose.
+
+Ivan giggles back, booping her nose before going down for a kiss. Pressing his chest against her, causing her to moan before wrapping her arms around his head and pulls him down harder.
+
+Ivan shivers, grinding his cock against her dripping slit. His hands wondering to her wings trapped on her back and the bed. Calypso moans as his hands gently message her back. Her wings twiching, trapped by the bed.
+
+Ivan pulls off, snapping his fingers and causeing the two to switch places. Calypso looks down and blushes as Ivan spreads his legs a bit and smirks. Wiggeling his eyebrows as she eyes his foot long cock.
+
+&quot;Time for the f-fun!&quot; Ivan was cut short when Calypso turns around and starts rubbing her butt up against his cock, causing spurts of pre to flow out and onto his body.
+
+&quot;Hehe, you look cute when flustered.&quot; Calypso teases, squezing her butt against his cock. Ivan bits his lip before sitting up and wrapping his arms around her body. Grabbing her breasts gently and causeing her to let out a cute squeak. &quot;H-hey!&quot; She giggles, still grinding on his lap.
+
+&quot;Well you&#39;re cute flustered too love.&quot; Ivan says, messaging her breasts that sends a shiver down her back. Ivan tightly wraps his arms around her body and gently lifts her up before setting her back down, cock now deep inside her.
+
+&quot;Oh!&quot; Calypso moans, leaning back into him as his cock spears her. throbing deep inside her. &quot;I alwayse forget how big you are.&quot; She says, kissing his cheek.
+
+&quot;Sometimes I do to.&quot; Ivan says as Calypso pulls his hands off of her and pushes him down to the bed.
+
+&quot;Now just relxe.&quot; Calypso smiles before starting to pump her body up and down. Rising up to the tip before slaming down onto his chest. Her butt jiggeling a bit as the pair moan in pleasure.
+
+Ivan bucks his hips up at the same time she slams down. In a near perfect unisone that sometimes leads to Ivan powerfuly pushing Calypso up for her to sqeaks in suprise as she falls back down.
+
+Ivan grabs her waist, and gids her to the bed. the two rolling till ivan was now on top. Calypso prepairs herself on the bed as Ivan places his hands on ether side of her head. leaning over her body before ramming her har and fast.
+
+Calypso squeling in delight as her butt jiggles and her body is pushed into the bed. the entier thing shaking as ivan rams her like an animal in heat. grunting and panting, his wings stiff along with Calypso&#39;s. Her tail wagging till he grabs it and uses it as levrige.
+
+&quot;Oh Ivan!&quot; Calypso moans, humping back as she cums. Spilling down her and Ivan&#39;s legs as she rides out her climaxe. Leaving Ivan to pound her dry till he lets go of her tail and wraps his arms around her body and pulls her in. thrusting hard one last time and grinding against her as he pumps cum into her.
+
+&quot;You like that?&quot; Ivan grunts, still humping as the cum slowly stops. Calypso nods as he pulls out. Laying down next to her before the two hug eachother with a big smile. Ivan eyeing you as Calypso closes her eyes. Nuzzeling into his chest. Ivan flipping you off before smiling and going back to hugging his wife.
+(set:$why to true)
+[[Congrats, why did you do that in a growth story? Wanna try again?-&gt;Title]]</tw-passagedata><tw-passagedata pid="31" name="Ivan Teasing about preginating Calypso" tags="" position="1575,1175" size="100,100">&quot;Bet you can&#39;t wait to see me massive.&quot; Ivan teases Calypso, pulling her into a hug. She blushes, nuzzeling into her bigger husband&#39;s body. Moaning a bit as they wait for the spinner to stop.
+
+&quot;I&#39;d take all the cum you can make inside me.&quot; Calypso teaes back. Looking up at him. He blushes before shooting back.
+
+&quot;Bet you&#39;d love waves of my cum to impregnate you.&quot; Ivan chukels, vibrating Calypso a bit as she imagins being flooded with a massive Ivan&#39;s cum.
+
+&quot;Hehe ya.&quot; Calypso says, blushing while pulling away.
+(set:$Pregnet to true)
+[[Grow Ivan-&gt;Ivan Growth 4]]
+[[Grow Calypso-&gt;Calypso Growth 4]]
+[[No Growth-&gt;No Grow 4]]</tw-passagedata><tw-passagedata pid="32" name="Calypso Teasing about Ivan being in her breasts" tags="" position="675,1175" size="100,100">&lt;div class=&quot;Body&quot;&gt;&lt;div class=&quot;PG&quot;&gt;&quot;Bet you can&#39;t wait to see me big.&quot; Calypso teases, gently nudging Ivan with her elbo. She giggels to herself, causing her big breasts to jiggle freely now without cloths keeping them down. Ivan watchs her big boobs move, almost hymistizing him. His cock throbing, waning to be between her giant breasts. Ivan shakes his head, blushing before responding back.
+
+&lt;div class=&quot;PG&quot;&gt;&quot;Oh I want you to be massive!&quot; Ivan flings his arms up in exaduation, scooting closer to his big wife and pushing his face into her massive breasts. Calypso moans as Ivan moter boats her big pearky breasts. Making them wiggle and sneding pleasure down Calypso&#39;s back as the jiggle. Calypso shivering, feeling her husbad&#39;s fac ein her breast sends wonderful pleasure up her body.
+
+&lt;div class=&quot;PG&quot;&gt;&lt;span class=&quot;CCoo&quot;&gt;&quot;Oh Ivan,&quot;&lt;/span&gt; Calypso sighs before Ivan pulls away. She looks down at him, winking at him with a grin. &quot;Bet you&#39;d love to be in my boobs as my tiny husband.&quot; Calypso snickers at her own words, blushing at the idea of a small Ivan just relaxing in her breast like a big bed. Ivan blushing, his body shivering at the idea as his cock throbs. Spilling pre cum out before he turns back to see if the spinner had stopped.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+(set:$Breasts to true)
+&lt;div class=&quot;Grow-Options&quot;&gt;[[Grow Ivan-&gt;Ivan Growth 4]]
+[[Grow Calypso-&gt;Calypso Growth 4]]
+[[No Growth-&gt;No Grow 4]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="33" name="Endings" tags="" position="1225,700" size="100,100">&lt;div class=&quot;Title&quot;&gt;You&#39;re Endings&lt;/div&gt;
+&lt;div class=&quot;SubTitle&quot;&gt;24 endings&lt;/div&gt;
+
+&lt;div class=&quot;Body&quot;&gt;(if:$MassiveIvan is true)[Massive Ivan Ending.
+]\
+(if:$MassiveCalypso is true)[Massive Calypso Ending.
+]\
+(if:$PregMassiveIvan is true)[Massive Ivan ending with Calypso getting pregnet. Nice work, she&#39;s defently going to have kids now.
+]\
+(if:$MassiveCalypsoBreasts is true)[Massive Calypso Ending with Ivan in her big bouncy boobs. You defently imagened being the one in her breasts instead of Ivan didn&#39;t you?
+]\
+(if:$GiantIvan1 is true)[True Giant Ivan.
+]\
+(if:$GiantCalypso1 is true)[True Giant Calypso
+]\
+(if:$GiantIvan1Preg is true)[True Giant Ivan with Calypso getting pregnent. Good work, I felt that one.
+]\
+(if:$GiantCalypsoBreast1 is true)[True Giant Calypso with Ivan between her breasts.
+]\
+(if:$GiantIvan2 is true)[Almost Giant Ivan.
+]\
+(if:$GiantCalypso2 is true)[Almsot Giant Calypso
+]\
+(if:$GiantIvan2Preg is true)[Almost Giant Ivan with Calypso getting pregnent. So close, yet so much cum.
+]\
+(if:$GiantCalypsoBreast2 is true)[Almost Giant Calypso with Ivan between her breasts. So close, yet so much breasts.
+]\
+(if:$GiantIvan3 is true)[Not Even Close Giant Ivan Ending
+]\
+(if:$GiantCalypso3 is true)[Not Even Close Giant Calypso
+]\
+(if:$GiantIvan3Preg is true)[Not Even Close Giant Ivan Ending with Calypso getting pregnent. Why, serously Ivan wasn&#39;t that much bigger.
+]\
+(if:$GiantCalypsoBreast2 is true)[Not Even Close Giant Calypso with Ivan between her breasts. Why tho, just make Calypso bigger.
+]\
+(if:$SlightlyTallIvan2 is true)[Slightly Tall Ivan. Nice, he grew big enough to break out of his cloths you dirty boy.
+]\
+(if:$SlightlyTallCalypso2 is true)[Slightly tall Calypso, still had her cloths on.
+]\
+(if:$SlightlyTallIvan1 is true)[Slightly Taller Ivan. He got thick.
+]\
+(if:$SlightlyTallCalypso1 is true)[Slightly tall Calypso, she got thick.
+]\
+(if:$why is true)[Why? Why why why why? All those desictions and you decided not to do anything. Why?
+]\
+(if:$samesizecalypsodom is true)[Massive Same Size, but with Calypso as Dommy Mommy. You must really like big girls don&#39;t you?
+]\
+(if:$samesizeivandom is true)[Massive Same Size, but with Ivan as Dommy Daddy. You really like big men don&#39;t you?
+]\
+(if:$SameSzie is true)[They ended up the same size.]&lt;/div&gt;
+
+&lt;div class=&quot;Options&quot;&gt;[[Begin the story-&gt;Title]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="34" name="Save Games" tags="" position="1125,600" size="100,100">&lt;div class=&quot;Grow-Options&quot;&gt;[[Save Game Slot 1-&gt;Save Game 1]]
+(if: (saved-games: ) contains &quot;Game Save1&quot;) [(link: &quot;Load Game 1&quot;) [(load-game: &quot;Game Save1&quot;)]]
+[[Save Game Slot 2-&gt;Save Game 2]]
+(if: (saved-games: ) contains &quot;Game Save2&quot;) [(link: &quot;Load Game 2&quot;) [(load-game: &quot;Game Save2&quot;)]]
+[[Save Game Slot 3-&gt;Save Game 3]]
+(if: (saved-games: ) contains &quot;Game Save3&quot;) [(link: &quot;Load Game 3&quot;) [(load-game: &quot;Game Save3&quot;)]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="35" name="Save Game 1" tags="" position="1025,500" size="100,100">&lt;div class=&quot;Body&quot;&gt;&lt;div class=&quot;CT&quot;&gt;(if: (save-game: &quot;Game Save1&quot;) ) [Game Save 1]
+(else:) [Can not save]
+
+[[Start-&gt;Title]]&lt;/div&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="36" name="Save Game 2" tags="" position="1125,500" size="100,100">&lt;div class=&quot;Body&quot;&gt;&lt;div class=&quot;CT&quot;&gt;(if: (save-game: &quot;Game Save2&quot;) ) [Game Save 2]
+(else:) [Can not save]
+
+[[Start-&gt;Title]]&lt;/div&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="37" name="Save Game 3" tags="" position="1225,500" size="100,100">&lt;div class=&quot;Body&quot;&gt;&lt;div class=&quot;CT&quot;&gt;(if: (save-game: &quot;Game Save3&quot;) ) [Game Save 3]
+(else:) [Can not save]
+
+[[Start-&gt;Title]]&lt;/div&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="38" name="Start" tags="" position="1125,800" size="100,100">&lt;div class=&quot;Body&quot;&gt;&lt;div class=&quot;PG&quot;&gt;The setting sun baiths the room in a warm glow of red and orange. The wooden door creeks opens and in steps a six foot tall draconequus made up of a lion foot, pony foot, a fluffy soft yack body, with a human arm, lion arm and a human head with brown curly aphro hair. Ivan, dressed in his signiture red hoodies form university with short brown pants, holds his wife Calypso in his arms easly as he floats into the room.
+
+&lt;div class=&quot;PG&quot;&gt;&quot;So what do you say love?&quot; Ivan asks, his snake tail dancing behind him in exitment. The fluffy end of his tail a wonderful white as his bat and pegisus wings shiver in exitment. Calypso giggles, a human woman with part pegisus and part wolf in her. Shown through the white wings on her back and black wolf ears on her head breaking up her long black hair tied into a brad.
+
+&lt;div class=&quot;PG&quot;&gt;Calypso currently is dressed in black combat boots, short black jeans and a black crop top with earings with a fether from Ivan&#39;s pegisus wing.
+
+&lt;div class=&quot;PG&quot;&gt;&quot;It sounds like fun!&quot; Calypso barks, blushing a bit. Her brown tail wagging in exitment.
+
+&lt;div class=&quot;PG&quot;&gt;&quot;All right then, sit right here my love.&quot; Ivan gently floats over and places Calypso onto there bed before moving over to the closet. Calypso giggles, sitting up with her hands in her lap. Her tail wagging like a little puppy, blushing profusly in exitment at what her husband had in store tonight.
+
+&lt;div class=&quot;PG&quot;&gt;&quot;Here it is.&quot; Ivan turns and places down a simple spinner with a green gem in the center of it before sitting down across from Calypso. Three sections with diffrent colors devide the circle spinner into thirds. &quot;So first we pick a color, then we take turns spinning it. If it lands on one of us, we grow in size.&quot;
+
+&lt;div class=&quot;PG&quot;&gt;&quot;I&#39;ll take the blue!&quot; Calypso smiles, Ivan noding and writing ehr name down, before adding his to blue. &quot;What about the empty space?&quot; Calypso asks, pointing at the odd amount of sections.
+
+&lt;div class=&quot;PG&quot;&gt;&quot;We don&#39;t grow then.&quot; Ivan responds. &quot;We&#39;ll do it six time before we get to the real fun.&quot; Ivan winks, blushuing lightly himself. &quot;How about you go first cutie.&quot; He says, booping her nose, casuing her to giggle and blush before spinning the spinner&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+(set:$No to 0)(set:$Ivan to 0)(set:$Calypso to 0)(set:$Pregnet to false)(set:$Breasts to false)\
+&lt;div class=&quot;Grow-Options&quot;&gt;[[Grow Calypso-&gt;Calypso Growth 1]]
+[[Grow Ivan-&gt;Ivan Growth 1]]
+[[No Growth-&gt;No Grow 1]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="39" name="CalypsoS1" tags="" position="500,2100" size="100,100">&lt;div class=&quot;Body&quot;&gt;&lt;div class=&quot;PG&quot;&gt;The two watch as the spinner slows down. Landing on Calypso to be the one to grow.
+
+&lt;div class=&quot;PG&quot;&gt;&quot;Ooo yes!&quot; Calypso bounces in exitment, her arms up and pressing against her chest as is bounces up and down. Ivan blushing at the sight of his wife&#39;s jiggeling tits. &lt;span class=&quot;CMoan1&quot;&gt;&quot;Ooo my!&quot;&lt;/span&gt; Calypso moans, shivering and blushing as pleasure rolls over her body. Magic covering her entier body with a wonderful warm pleasure, pushing out from inside her body. Wanting her to explode out in size.
+
+&lt;div class=&quot;PG&quot;&gt;In one second she had grown a good few inches in a burst of hieght like a beat from her heart. Mass and hieght added onto her small body, pushing her bigger then before. Her already supple thick butt grows out plumper and fater. Ivan biting his lower lip as his cock throbs, wanting so bad to take her growing body on right then. Watching her thighs grow thicker and stronger sending pleasures up his back. Watching his little Calypso moan out as her breasts bumps out like balloons filling with air.
+
+&lt;div class=&quot;PG&quot;&gt;&lt;span class=&quot;CMoan1&quot;&gt;&quot;Yes! Bigger!&quot;&lt;/span&gt; Calypso moans, pushing her chest up and out as her bust expands against her crop top. Pushing it tight against her soft breasts.
+
+&lt;div class=&quot;PG&quot;&gt;&quot;Feels sooo good.&quot; Calypso sighs. Every part of her filling up her cloths, rowing them tight against her curvy body. Waves of pleasure run down her back as her body pushes against her cloths. Ivan watches, growing so very hard watching his wife grow with such enthusiasum. Breasts nearly the size of her head, with thighs that looks like they could crush a watermelon and a bubble butt he&#39;d love to have his face under.
+
+&lt;div class=&quot;PG&quot;&gt;Calypso sighs, blushing, a little sad that the growth had stoped. Looking over at Ivan before she smiles. &quot;That felt amazing.&quot; She giggles, causing her chest to jiggle. Ivan blushes hard, watching her chest jiggle.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="40" name="CalypsoS2" tags="" position="500,2200" size="100,100">&lt;div class=&quot;Body&quot;&gt;&lt;div class=&quot;PG&quot;&gt;Ivan holds his breath, crossing his fingers in hopes the spinner would land on him. The pair watch as the spinner slows down, both watching in antisapation. &quot;Eeee yes!&quot; Calypso smiles, bouncing as the spinner stops on her spot. &lt;span class=&quot;CMoan1&quot;&gt;&quot;Mmmmm bigger!&quot;&lt;/span&gt; She moans as the magic returns to her body. &lt;span class=&quot;CMoan1&quot;&gt;&quot;So Much Bigger!&quot;&lt;/span&gt; Calypso moans out in pelasure. Her body starting to explode out in spurts of growth.
+
+&lt;div class=&quot;PG&quot;&gt;Ivan watches on, his cock throbing hard for his quickly growing wife. Her breasts pumping up and out. Pressing and overflowing from her crop top. Straining it to it&#39;s limits as her breasts pushes her crop top out. Calypso moans, feeling her breasts get hugged by her crop top. &lt;span class=&quot;CCoo&quot;&gt;&quot;So good...&quot;&lt;/span&gt; Calypso coos, messaging her giant bust.
+
+&lt;div class=&quot;PG&quot;&gt;Ivan looks down to her thighs and growing bubble butt growing to fill out her pants. Not fairing much better then her crop top. Her thighs have started to wrip her pants at the seems. Calypso moaning as she feels and hears her pants wripping. Her butt balooning out to pillow size. Ivan blushing, wanting so bad to rest his face on her fat ass as it expands bigger. The bed bending a bit from the new weight. &quot;Come on...&quot; Calypso edges on her growth as it slows down.
+
+&lt;div class=&quot;PG&quot;&gt;&lt;span class=&quot;CCoo&quot;&gt;&quot;Please,&quot;&lt;/span&gt; Calypso begs. &lt;span class=&quot;CMoan1&quot;&gt;&quot;Go bigger!&quot;&lt;/span&gt; Calypso moans, crossing her thick legs togther to try and keep from having her pre cum spill out from the overwhelming warmth filling her body like a pitcher of water under a fusit. She slides her tight boots off as the magic finnaly stops again. Blushing hard and very exited, Calypso turns to look at Ivan.
+
+&lt;div class=&quot;PG&quot;&gt;Ivan blushes, seeing how big his love had gotten this turn. His body shivering, wanting to take her onto the bed and fuck her.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="41" name="CalypsoS3" tags="" position="500,2300" size="100,100">&lt;div class=&quot;Body&quot;&gt;&lt;div class=&quot;PG&quot;&gt;Ivan chukles, rolling his eyes as the spinner lands on Calypso once more. &quot;Oh My! Oh My! Oh My!&quot; She sqeaze in delighted exitment. &lt;span class=&quot;CMoan2&quot;&gt;&quot;Oh sweet Ivan!&quot;&lt;/span&gt; Calypso moans out, throughing her head back. Leaning on back and pressing her chest up, Calypso&#39;s breasts break free from there confinments in one big push of size. Now able to wobble free from there cloth confiments that now fall to the bending bed. Ivan shivers, watching as her pillow sized breasts grow to beach ball size and still swelling bigger like it was filling up with water.
+
+&lt;div class=&quot;PG&quot;&gt;&lt;span class=&quot;CMoan2&quot;&gt;&quot;Yes! Bigger!&quot;&lt;/span&gt; Calypso shouts to the cieling as her thighs and butt start to push out and down onto the bed. Ivan watches as his little Calypso expands out bigger, her thighs and butt ripping her shorts apart to expose her fat bubble butt and strong thick thighs. Her tail wagging and her wings fluttering as she grinds down onto the bed nearly about to break from her weight. &lt;span class=&quot;CMoan1&quot;&gt;&quot;Oh Ivan, when can we do it. I&#39;m filled with so much pleasure.&quot;&lt;/span&gt; She moans, the growth slowing down to a stop.
+
+&lt;div class=&quot;PG&quot;&gt;Ivan looks over his wife&#39;s massive body. Blushing hard at her thick thighs and wobbeling fat thick bubble butt. His cock throbing for her wonderfuly thick and milky breasts hanging down to her stomick.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="42" name="CalypsoS4" tags="" position="500,2400" size="100,100">&lt;div class=&quot;Body&quot;&gt;&lt;div class=&quot;PG&quot;&gt;&quot;Yes!&quot; Calypso yells in glee, pumping her fist into the air in exitment and cuasing her butt and breasts to jiggle. Ivan, while sad at not growing, blushes as he sees her wife so exited. And if he was being real, he really couldn&#39;t wait to see her grow. &lt;span class=&quot;CMoan2&quot;&gt;&quot;I want to be the biggest girl you ever saw!&quot;&lt;/span&gt; Calypso shouts to the cieling. Her voice shaking the room, sending a shiver up Ivan&#39;s back.
+
+&lt;div class=&quot;PG&quot;&gt;&quot;You deffently are the hottest.&quot; Ivan teases her, grabbing Calypso&#39;s thigh. Letting his hand sink into it&#39;s strong thick muscels that grow against his hand. Calypo shivers, moaning at his touch. She messages her big growing breasts while Ivan gently messages her bubble butt.
+
+&lt;div class=&quot;PG&quot;&gt;&lt;span class=&quot;CMoan1&quot;&gt;&quot;Oh Ivan, take me.&quot;&lt;/span&gt; She moans out, grining her fat growing rump into the bed bending to her new size. Ivan blushes, feeling her big butt growing against his hand as she begs for him to take her.
+
+&lt;div class=&quot;PG&quot;&gt;&quot;Two more turns then we can have fun.&quot; Ivan purs, causing Calypso to shiver in pleasure as the growth slows down to a stop. Her head now about to hit the ceiling of the bedroom. Her massive body bending her part of the bed so much it looks like it could snap any second. Almost breaking it under her massive thick butt&#39;s weight.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="43" name="CalypsoS5" tags="" position="500,2500" size="100,100">&lt;div class=&quot;Body&quot;&gt;&lt;div class=&quot;PG&quot;&gt;&quot;Of course.&quot; Ivan luaghs, watching as the spinner lands on Calypso&#39;s space. &quot;Let&#39;s see how big you get sexy girl.&quot; Ivan growls up at her. Gently grabbing her thighs, sending a shiver up her body.
+
+&lt;div class=&quot;SG&quot;&gt;&lt;span class=&quot;CCoo&quot;&gt;&quot;Oh Ivan...&quot;&lt;/span&gt; Calypso moans, feeling her body warm up as the magic returns to her big body. Quickly her body starts once again swelling in size. Her breasts leaking milk as they balloon up and out, hanging lower and lower with more and more mass slowly pushing out form her body. Calypso moans, feeling her body glow with the power of the sun. Her swelling thighs and giant bubble butt aventuraly becomes to much for the bed, snapping it in half and sneing Calypso to the floor. Her butt vilontly giggleing from the impact with a high sqeak moan form Calypso, &lt;span class=&quot;CMoan2&quot;&gt;&quot;So BIG!&quot;&lt;/span&gt;
+
+&lt;div class=&quot;SG&quot;&gt;Ivan watches as his wife grows bigger, blushing as her hips press against him, pushing him away before the bed broke and sends him face first into her lap. Were he blushes even hard, his cock throbing hard, feeling ehr soft growing thigh he was currently bent over with her breasts nearly resting agaisnt his back.
+
+&lt;div class=&quot;PG&quot;&gt;Calypso looks down, feeling her small husband against her leg just as thick as his body. She giggles before asking, &quot;You ok down there?&quot; Ivan blushes, noding instead of responding, grinding himself against her thigh. Calypso shivers, feeling him hump her thigh sends her even higher in pleasure, and seeming to full the growth more. &lt;span class=&quot;CMoan2&quot;&gt;&quot;Ivan!&quot;&lt;/span&gt; Calypso moans, bucking her hips. Grinding against the ground, tail wagging in exitment crashes into other furnituer and walls as she grows bigger. Ivan now able to hug her thigh as it lifts him off the ground.  &quot;I want to be your&lt;span class=&quot;CMoan3&quot;&gt; big&lt;/span&gt; wife!&quot; Calypso moans out, hitting her head against the cieling.
+
+&lt;div class=&quot;PG&quot;&gt;She lets out a suprised squeak, the cieling fourced her to move, causeing Ivan to fall off her thigh with a little wimper and a thud on the ground before then getting smothered under his giant wife&#39;s breasts. He moves to get in a comfertable postion to breath as the growth stops. Calypso wimpering and moaning, her butt pressing against the wall with her wings crushed agianst the cieling and ehr breasts pressed on the ground, trying her best to be small in the growing tight room.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
