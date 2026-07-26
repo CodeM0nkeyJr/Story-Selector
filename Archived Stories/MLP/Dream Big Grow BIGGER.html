@@ -3,68 +3,309 @@
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1" name="viewport">
-<title>Story Landing page</title>
+<title>Dream Big, Grow BIGGER</title>
 <style title="Twine CSS">@keyframes appear{0%{opacity:0}to{opacity:1}}@keyframes fade-in-out{0%,to{opacity:0}50%{opacity:1}}@keyframes rumble{25%{top:-0.1em}75%{top:.1em}0%,to{top:0px}}@keyframes shudder{25%{left:.1em}75%{left:-0.1em}0%,to{left:0px}}@keyframes buoy{25%{top:.25em}75%{top:-0.25em}0%,to{top:0px}}@keyframes sway{25%{left:.25em}75%{left:-0.25em}0%,to{left:0px}}@keyframes pulse{0%{transform:scale(0, 0)}20%{transform:scale(1.2, 1.2)}40%{transform:scale(0.9, 0.9)}60%{transform:scale(1.05, 1.05)}80%{transform:scale(0.925, 0.925)}to{transform:scale(1, 1)}}@keyframes zoom-in{0%{transform:scale(0, 0)}to{transform:scale(1, 1)}}@keyframes shudder-in{0%,to{transform:translateX(0em)}5%,25%,45%{transform:translateX(-1em)}15%,35%,55%{transform:translateX(1em)}65%{transform:translateX(-0.6em)}75%{transform:translateX(0.6em)}85%{transform:translateX(-0.2em)}95%{transform:translateX(0.2em)}}@keyframes rumble-in{0%,to{transform:translateY(0em)}5%,25%,45%{transform:translateY(-1em)}15%,35%,55%{transform:translateY(1em)}65%{transform:translateY(-0.6em)}75%{transform:translateY(0.6em)}85%{transform:translateY(-0.2em)}95%{transform:translateY(0.2em)}}@keyframes fidget{0%,8.1%,82.1%,31.1%,38.1%,44.1%,40.1%,47.1%,74.1%,16.1%,27.1%,72.1%,24.1%,95.1%,6.1%,36.1%,20.1%,4.1%,91.1%,14.1%,87.1%,to{left:0px;top:0px}8%,82%,31%,38%,44%{left:-1px}40%,47%,74%,16%,27%{left:1px}72%,24%,95%,6%,36%{top:-1px}20%,4%,91%,14%,87%{top:1px}}@keyframes slide-right{0%{transform:translateX(-100vw)}}@keyframes slide-left{0%{transform:translateX(100vw)}}@keyframes slide-up{0%{transform:translateY(100vh)}}@keyframes slide-down{0%{transform:translateY(-100vh)}}@keyframes fade-right{0%{opacity:0;transform:translateX(-1em)}to{opacity:1}}@keyframes fade-left{0%{opacity:0;transform:translateX(1em)}to{opacity:1}}@keyframes fade-up{0%{opacity:0;transform:translateY(1em)}to{opacity:1}}@keyframes fade-down{0%{opacity:0;transform:translateY(-1em)}to{opacity:1}}@keyframes flicker{0%,29%,31%,63%,65%,77%,79%,86%,88%,91%,93%{opacity:0}30%{opacity:.2}64%{opacity:.4}78%{opacity:.6}87%{opacity:.8}92%,to{opacity:1}}@keyframes blur{0%{filter:blur(2rem);opacity:0}25%{opacity:1}to{filter:blur(0rem);opacity:1}}.dom-debug-mode tw-story,.dom-debug-mode tw-passage,.dom-debug-mode tw-sidebar,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{outline:1px solid #f5a3da;min-height:32px;display:block !important}.dom-debug-mode tw-story::before,.dom-debug-mode tw-passage::before,.dom-debug-mode tw-sidebar::before,.dom-debug-mode tw-include::before,.dom-debug-mode tw-hook::before,.dom-debug-mode tw-expression::before,.dom-debug-mode tw-link::before,.dom-debug-mode tw-dialog::before,.dom-debug-mode tw-columns::before,.dom-debug-mode tw-column::before,.dom-debug-mode tw-align::before{position:absolute;top:0;left:0;height:16px;background-color:#f5a3da;color:#000;font-size:16px;font-weight:normal;font-style:normal;font-family:monospace;display:inline-block;line-height:100%;white-space:pre;z-index:999997}.dom-debug-mode tw-story:hover,.dom-debug-mode tw-passage:hover,.dom-debug-mode tw-sidebar:hover,.dom-debug-mode tw-include:hover,.dom-debug-mode tw-hook:hover,.dom-debug-mode tw-expression:hover,.dom-debug-mode tw-link:hover,.dom-debug-mode tw-dialog:hover,.dom-debug-mode tw-columns:hover,.dom-debug-mode tw-column:hover,.dom-debug-mode tw-align:hover{outline:1px solid #fc9}.dom-debug-mode tw-story:hover::before,.dom-debug-mode tw-passage:hover::before,.dom-debug-mode tw-sidebar:hover::before,.dom-debug-mode tw-include:hover::before,.dom-debug-mode tw-hook:hover::before,.dom-debug-mode tw-expression:hover::before,.dom-debug-mode tw-link:hover::before,.dom-debug-mode tw-dialog:hover::before,.dom-debug-mode tw-columns:hover::before,.dom-debug-mode tw-column:hover::before,.dom-debug-mode tw-align:hover::before{background-color:#fc9;transition:background-color 1s}.dom-debug-mode tw-passage,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{padding:1em;margin:0}.dom-debug-mode tw-story::before{content:'<tw-story tags="' attr(tags) '">'}.dom-debug-mode tw-passage::before{top:-16px;content:'<tw-passage tags="' attr(tags) '">'}.dom-debug-mode tw-sidebar::before{top:-16px;content:"<tw-sidebar>"}.dom-debug-mode tw-hook::before{content:'<tw-hook name="' attr(name) '">'}.dom-debug-mode tw-expression::before{content:'<tw-expression name="' attr(name) '">'}.dom-debug-mode tw-link::before{content:'<tw-link name="' attr(name) '">'}.dom-debug-mode tw-dialog::before{content:"<tw-dialog>"}.dom-debug-mode tw-columns::before{content:"<tw-columns>"}.dom-debug-mode tw-column::before{content:"<tw-column>"}.dom-debug-mode tw-align::before{content:"<tw-align>"}.dom-debug-mode tw-include::before{content:'<tw-include type="' attr(type) '" name="' attr(name) '">'}tw-open-button[goto]{display:none}.debug-mode tw-open-button[replay],.debug-mode tw-open-button[goto]{display:inline}.debug-mode tw-expression{display:inline-block !important}.debug-mode tw-expression[type=variable]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"$" attr(name)}.debug-mode tw-expression[type=tempVariable]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"_" attr(name)}.debug-mode tw-expression[return=boolean]{background-color:rgba(179,179,179,.2)}.debug-mode tw-expression[return=array]{background-color:rgba(255,102,102,.2)}.debug-mode tw-expression[return=dataset]{background-color:rgba(255,128,0,.2)}.debug-mode tw-expression[return=number]{background-color:rgba(255,179,102,.2)}.debug-mode tw-expression[return=datamap]{background-color:rgba(255,255,102,.2)}.debug-mode tw-expression[return=changer]{background-color:rgba(179,255,102,.2)}.debug-mode tw-expression[return=lambda]{background-color:rgba(102,255,102,.2)}.debug-mode tw-expression[return=hookname]{background-color:rgba(102,255,204,.2)}.debug-mode tw-expression[return=string]{background-color:rgba(102,255,255,.2)}.debug-mode tw-expression[return=datatype]{background-color:rgba(102,153,255,.2)}.debug-mode tw-expression[return=gradient],.debug-mode tw-expression[return=colour]{background-color:rgba(204,102,255,.2)}.debug-mode tw-expression[return=instant],.debug-mode tw-expression[return=macro]{background-color:rgba(240,117,199,.2)}.debug-mode tw-expression[return=command]{background-color:rgba(153,153,255,.2)}.debug-mode tw-expression.false{background-color:rgba(255,0,0,.2) !important}.debug-mode tw-expression[type=macro]::before{content:"(" attr(name) ":)";padding:0 .5rem;font-size:1rem;vertical-align:middle;line-height:normal;background-color:inherit;border:1px solid rgba(255,255,255,.5)}.debug-mode tw-expression[title]:not([title=""]){cursor:help}.debug-mode tw-hook{background-color:rgba(0,85,255,.1) !important}.debug-mode tw-hook::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"["}.debug-mode tw-hook::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"]"}.debug-mode tw-hook[name]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"]<" attr(name) "|"}.debug-mode tw-pseudo-hook{background-color:rgba(255,170,0,.1) !important}.debug-mode tw-collapsed::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"{"}.debug-mode tw-collapsed::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"}"}.debug-mode tw-verbatim::before,.debug-mode tw-verbatim::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"`"}.debug-mode tw-align[style*="text-align: center"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0) 0%, hsla(14, 100%, 87%, 0.25) 50%, hsla(14, 100%, 87%, 0) 100%)}.debug-mode tw-align[style*="text-align: left"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0.25) 0%, hsla(14, 100%, 87%, 0) 100%)}.debug-mode tw-align[style*="text-align: right"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0) 0%, hsla(14, 100%, 87%, 0.25) 100%)}.debug-mode tw-column{background-color:rgba(189,228,255,.2)}.debug-mode tw-enchantment{animation:enchantment .5s infinite;border:1px solid}.debug-mode tw-link::after,.debug-mode tw-broken-link::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:attr(passage-name)}.debug-mode tw-include{background-color:rgba(204,128,51,.1)}.debug-mode tw-include::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:attr(type) ' "' attr(name) '"'}.debug-dialogs tw-backdrop:not(.eval-replay):not(.harlowe-crash){pointer-events:none;opacity:.1}tw-eval-replay tw-eval-code,tw-eval-replay tw-eval-explanation{max-height:20vh;overflow:auto;margin:10px auto}tw-eval-replay tw-eval-code{display:block;font-family:monospace;padding-bottom:1ex;border-bottom:2px solid gray}tw-eval-replay tw-eval-explanation{display:block;text-align:center}tw-eval-replay tw-eval-explanation>code{white-space:pre-wrap}tw-eval-replay tw-eval-explanation>code.from-block{width:40%;display:inline-block;text-align:left;max-height:4em;overflow-wrap:anywhere;overflow-y:scroll}tw-eval-replay tw-eval-explanation>code.from-block~.to-desc{width:calc(40% - 2em);margin-left:2em;display:inline-block}tw-eval-replay tw-eval-explanation>code.from-block+span::after{content:"..."}tw-eval-replay tw-eval-explanation>code.from-inline{text-align:right}tw-eval-replay tw-eval-explanation>:nth-child(2){white-space:pre}tw-eval-replay tw-eval-explanation>.to-desc{text-align:left}tw-eval-replay tw-eval-explanation>table{width:100%;margin-top:1em}tw-eval-replay tw-eval-explanation>table td{white-space:pre-wrap !important;word-wrap:anywhere}tw-eval-replay tw-eval-reason{text-align:center;font-size:80%;font-style:italic;display:block}tw-eval-replay tw-eval-it{text-align:center;font-size:80%;display:block}tw-eval-replay tw-dialog-links{display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around}@keyframes enchantment{0%,to{border-color:#ffb366}50%{border-color:#6fc}}tw-debugger{position:fixed;box-sizing:border-box;bottom:0;right:0;z-index:999999;min-width:14em;min-height:1em;padding:0em .5em .5em 1em;font-size:1.25em;font-family:sans-serif;color:#262626;background-color:#fff;border-left:solid #262626 2px;border-top:solid #262626 2px;border-top-left-radius:.5em;opacity:1}tw-debugger.fade-panel:not(:hover){opacity:.33}tw-debugger.theme-dark{color:#d9d9d9;background-color:#000}tw-debugger.theme-dark{border-color:#d9d9d9 rgba(0,0,0,0) rgba(0,0,0,0) #d9d9d9}tw-debugger select{margin-right:1em;width:12em}tw-debugger button,tw-debugger tw-link{border-radius:3px;border:solid #999 1px;margin:auto 4px;color:#262626;background-color:#fff;cursor:pointer}tw-debugger button.enabled,tw-debugger tw-link.enabled{color:#000;background-color:#d9d9d9;box-shadow:inset #999 3px 5px .5em}tw-debugger.theme-dark button,tw-debugger.theme-dark tw-link{color:#d9d9d9;background-color:#000;border-color:#666}tw-debugger.theme-dark button.enabled,tw-debugger.theme-dark tw-link.enabled{color:#e6e6e6;background-color:#424242;box-shadow:inset #666 3px 5px .5em}tw-debugger button{font-size:1em;overflow-x:hidden;text-overflow:ellipsis;white-space:pre}tw-debugger tw-link{font-size:1.25em;border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}tw-debugger tw-link:hover{border-color:#262626;color:#262626}tw-debugger.theme-dark tw-link:hover{border-color:#d9d9d9;color:#d9d9d9}tw-debugger tw-dialog{background-color:#fff;color:#000;font-size:1.25em}tw-debugger.theme-dark tw-dialog{background-color:#000;color:#e6e6e6}tw-debugger .panel{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;position:absolute;bottom:100%;left:-2px;right:0;padding:1em;overflow-y:scroll;overflow-x:hidden;border:inherit;box-sizing:content-box;background-color:#fff;border-bottom:solid #999 2px;border-top-left-radius:.5em;border-bottom-left-radius:.5em;font-size:.8em}tw-debugger .panel:empty,tw-debugger .panel[hidden]{display:none}tw-debugger.theme-dark .panel{background-color:#000;border-bottom-color:#666}tw-debugger .panel-source .panel-row-buttons{width:2rem}tw-debugger .panel-source .source-tags{width:20%;font-style:italic}tw-debugger .panel-row-source td{font-family:monospace;font-size:1rem;white-space:pre-wrap;overflow-wrap:anywhere;max-height:8rem;padding:1rem}tw-debugger .panel-rows{width:100%;overflow-x:scroll}tw-debugger .panel-rows>*{display:table-row}tw-debugger .panel-rows>div:nth-of-type(2n){background-color:#e6e6e6}tw-debugger .panel-tools .panel-rows>*,tw-debugger .panel-options .panel-rows>*{margin-top:.4rem;display:block}tw-debugger.theme-dark .panel-rows>div:nth-of-type(2n){background-color:#212121}tw-debugger .panel-row-buttons{text-align:right}tw-debugger .panel-variables .panel-rows:empty::before{content:"~ No variables ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-enchantments .panel-rows:empty::before{content:"~ No enchantments ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-errors .panel-rows:empty::before{content:"~ No errors... for now. ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-errors .panel-rows:empty+.panel-errors-bottom{display:none}tw-debugger.theme-dark .panel-variables .panel-rows:empty::before,tw-debugger.theme-dark .panel-enchantments .panel-rows:empty::before,tw-debugger.theme-dark .panel-errors .panel-rows:empty::before{color:#a8a8a8}tw-debugger .panel-rows:empty+.panel-variables-bottom{display:none}tw-debugger th[data-col]{text-decoration:underline;cursor:pointer}tw-debugger th[data-col][data-order=asc]::after{content:"↓"}tw-debugger th[data-col][data-order=desc]::after{content:"↑"}tw-debugger .panel-storylets:not(.panel-exclusive) .storylet-exclusive,tw-debugger .panel-storylets:not(.panel-urgent) .storylet-urgent{display:none}tw-debugger .storylet-exclusive,tw-debugger .storylet-urgent,tw-debugger .storylet-open{text-align:center}tw-debugger .panel-variables-bottom{padding-top:5px}tw-debugger .enchantment-row{min-height:1.5em}tw-debugger .variable-path{opacity:.4}tw-debugger .temporary-variable-scope,tw-debugger .enchantment-local{font-family:sans-serif;font-weight:normal;opacity:.8;font-size:.75em}tw-debugger .temporary-variable-scope:not(:empty)::before,tw-debugger .enchantment-local:not(:empty)::before{content:" in "}tw-debugger .variable-name,tw-debugger .enchantment-name{font-family:monospace;font-weight:bold}tw-debugger .variable-type{color:#575757;font-weight:normal;text-overflow:ellipsis;overflow:hidden;max-width:10em}tw-debugger.theme-dark .variable-type{color:#a8a8a8}tw-debugger .error-row{display:table-row;background-color:rgba(230,101,204,.3)}tw-debugger .error-row:nth-of-type(2n){background-color:rgba(237,145,219,.3)}tw-debugger .error-row>*{display:table-cell;padding:.25em .5em}tw-debugger .error-row .error-message[title]:not([title=""]){cursor:help}tw-debugger .error-row .error-passage{color:#575757}tw-debugger.theme-dark .error-row .error-passage{color:#a8a8a8}tw-debugger .storylet-row{background-color:rgba(193,240,225,.3)}tw-debugger .storylet-row:nth-child(2n){background-color:rgba(152,231,204,.3)}tw-debugger .storylet-row.storylet-closed{font-style:italic;background-color:#fff}tw-debugger .storylet-row.storylet-closed:nth-child(2n){background-color:#e6e6e6}tw-debugger .storylet-row.storylet-closed>:not(.storylet-lambda){opacity:.6}.storylet-error tw-debugger .storylet-row{background-color:rgba(230,101,204,.3)}.storylet-error tw-debugger .storylet-row:nth-child(2n){background-color:rgba(237,145,219,.3)}tw-debugger .storylet-row .storylet-name,tw-debugger .storylet-row .storylet-value{display:inline-block;width:50%}tw-debugger .storylet-row .storylet-lambda{font-family:monospace;font-size:1rem;white-space:pre-wrap;overflow-wrap:anywhere}tw-debugger.theme-dark .storylet-row.storylet-closed{background-color:#000}tw-debugger.theme-dark .storylet-row.storylet-closed:nth-child(2n){background-color:#212121}tw-debugger .tabs{padding-bottom:.5em}tw-debugger .tab{border-radius:0px 0px .5em .5em;border-top:none;top:-2px}tw-debugger .resizer-h{position:absolute;height:14em;border-left:2px solid #999;border-right:2px solid #999;top:10px;left:4px;width:8px;cursor:ew-resize}tw-debugger.theme-dark .resizer-h{border-color:rgba(0,0,0,0) #666}tw-debugger .resizer-v{position:absolute;height:8px;border-top:2px solid #999;border-bottom:2px solid #999;margin-bottom:4px;top:4px;left:10px;width:95%;cursor:ns-resize;box-sizing:border-box}tw-debugger.theme-dark .resizer-v{border-color:#666 rgba(0,0,0,0)}tw-debugger mark{color:inherit;background-color:rgba(101,230,230,.3) !important}tw-dialog{z-index:999997;border:#fff solid 2px;padding:2em;color:#fff;background-color:#000;display:block}@media(min-width: 576px){tw-dialog{max-width:50vw}}tw-dialog input[type=text]{font-size:inherit;width:100%;border:solid #fff !important}tw-dialog-links{text-align:right;display:-ms-flexbox;display:flex;-ms-flex-pack:end;justify-content:flex-end}tw-backdrop{z-index:999996;position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,.8);display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}tw-backdrop~tw-backdrop{display:none}tw-link,.enchantment-link{cursor:pointer;color:#4169e1;font-weight:bold;text-decoration:none;transition:color .2s ease-in-out}tw-passage [style^=color] tw-link:not(:hover),tw-passage [style*=" color"] tw-link:not(:hover),tw-passage [style^=color][hover=true] tw-link:hover,tw-passage [style*=" color"][hover=true] tw-link:hover,tw-passage [style^=color] .enchantment-link:not(:hover),tw-passage [style*=" color"] .enchantment-link:not(:hover),tw-passage [style^=color][hover=true] .enchantment-link:hover,tw-passage [style*=" color"][hover=true] .enchantment-link:hover{color:inherit}tw-link:hover,.enchantment-link:hover{color:#00bfff}tw-link:active,.enchantment-link:active{color:#dd4b39}.visited{color:#6941e1}tw-passage [style^=color] .visited:not(:hover),tw-passage [style*=" color"] .visited:not(:hover),tw-passage [style^=color][hover=true] .visited:hover,tw-passage [style*=" color"][hover=true] .visited:hover{color:inherit}.visited:hover{color:#e3e}tw-broken-link{color:#933;border-bottom:2px solid #933;cursor:not-allowed}tw-passage [style^=color] tw-broken-link:not(:hover),tw-passage [style*=" color"] tw-broken-link:not(:hover),tw-passage [style^=color][hover=true] tw-broken-link:hover,tw-passage [style*=" color"][hover=true] tw-broken-link:hover{color:inherit}tw-link.enchantment-mouseover,.link.enchantment-mouseover,tw-expression.enchantment-mouseover>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border-bottom:2px dashed #999}tw-link.enchantment-mouseover:hover,tw-link.enchantment-mouseover:active,.link.enchantment-mouseover:hover,.link.enchantment-mouseover:active,tw-expression.enchantment-mouseover>tw-link:hover,tw-expression.enchantment-mouseover>tw-link:active{color:inherit}tw-link.enchantment-mouseover.enchantment-button,.link.enchantment-mouseover.enchantment-button,tw-expression.enchantment-mouseover>tw-link.enchantment-button{border-style:dashed}tw-link.enchantment-mouseout,.link.enchantment-mouseout,tw-expression.enchantment-mouseout>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border:rgba(64,149,191,.6) 1px solid;border-radius:.2em}tw-link.enchantment-mouseout:hover,tw-link.enchantment-mouseout:active,.link.enchantment-mouseout:hover,.link.enchantment-mouseout:active,tw-expression.enchantment-mouseout>tw-link:hover,tw-expression.enchantment-mouseout>tw-link:active{color:inherit}tw-link.enchantment-mouseout:hover,.link.enchantment-mouseout:hover,tw-expression.enchantment-mouseout>tw-link:hover{background-color:rgba(175,197,207,.75);border:rgba(0,0,0,0) 1px solid}tw-link.enchantment-dblclick,.link.enchantment-dblclick,tw-expression.enchantment-dblclick>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;cursor:pointer;border:2px solid #999;border-radius:0}tw-link.enchantment-dblclick:hover,tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:hover,.link.enchantment-dblclick:active,tw-expression.enchantment-dblclick>tw-link:hover,tw-expression.enchantment-dblclick>tw-link:active{color:inherit}tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:active,tw-expression.enchantment-dblclick>tw-link:active{background-color:#999}tw-link.enchantment-button,.link.enchantment-button,.enchantment-button:not(.link) tw-link,.enchantment-button:not(.link) .link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}.enchantment-button{display:block}.enchantment-clickblock{cursor:pointer;width:100%;height:100%;display:block}.enchantment-clickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;color:rgba(65,105,225,.5);transition:color .2s ease-in-out}.enchantment-clickblock>:not(tw-enchantment):hover::after{color:rgba(0,191,255,.5)}.enchantment-clickblock>:not(tw-enchantment):active::after{color:rgba(222,78,59,.5)}.enchantment-clickblock>:not(tw-enchantment)::after{box-shadow:inset 0 0 0 .5vmax}.enchantment-clickblock>tw-passage::after,.enchantment-clickblock>tw-sidebar::after{box-shadow:0 0 0 .5vmax}.enchantment-mouseoverblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:2px dashed #999}.enchantment-mouseoutblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:rgba(64,149,191,.6) 2px solid}.enchantment-mouseoutblock:hover>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;background-color:rgba(175,197,207,.75);border:rgba(0,0,0,0) 2px solid;border-radius:.2em}.enchantment-dblclickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;cursor:pointer;border:2px solid #999}tw-dialog-links{padding-top:1.5em}tw-dialog-links tw-link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block;display:inline-block}html{margin:0;height:100%;overflow-x:hidden}*,:before,:after{position:relative;box-sizing:inherit}body{margin:0;height:100%}tw-storydata{display:none}tw-story{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;font:100% Georgia,serif;box-sizing:border-box;width:100%;min-height:100%;font-size:1.5em;line-height:1.5em;padding:5% 5%;overflow:hidden;background-color:#000;color:#fff}tw-story [style*=content-box] *{box-sizing:border-box}@media(min-width: 576px){tw-story{padding:5% 20%}}tw-story tw-consecutive-br{display:block;height:1.6ex;visibility:hidden}tw-story select{background-color:rgba(0,0,0,0);font:inherit;border-style:solid;padding:2px}tw-story select:not([disabled]){color:inherit}tw-story textarea{resize:none;background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none;padding:2px}tw-story input[type=text]{background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none}tw-story input[type=checkbox]{transform:scale(1.5);margin:0 .5em .5em .5em;vertical-align:middle}tw-story tw-noscript{animation:appear .8s}tw-passage{display:block}tw-sidebar{text-align:center;display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between}@media(min-width: 576px){tw-sidebar{left:-5em;width:3em;position:absolute;-ms-flex-direction:column;flex-direction:column}tw-enchantment[style*=width]>tw-sidebar{width:inherit}}tw-icon{display:inline-block;margin:.5em 0;font-size:66px;font-family:"Verdana",sans-serif}tw-icon[alt]{opacity:.2;cursor:pointer}tw-icon[alt]:hover{opacity:.4}tw-icon[data-label]::after{font-weight:bold;content:attr(data-label);font-size:20px;bottom:-20px;left:-50%;white-space:nowrap}tw-meter{display:block}tw-hook:empty,tw-expression:empty{display:none}tw-error{display:inline-block;border-radius:.2em;padding:.2em;font-size:1rem;cursor:help;white-space:pre-wrap}tw-error.error{background-color:rgba(223,58,190,.6);color:#fff}tw-error.warning{background-color:rgba(223,140,58,.6);color:#fff;display:none}.debug-mode tw-error.warning{display:inline}tw-error-explanation{display:block;font-size:.8rem;line-height:1rem}tw-open-button,tw-folddown{cursor:pointer;line-height:0em;border-radius:4px;border:1px solid rgba(255,255,255,.5);font-size:.8rem;margin:0 .2rem;padding:3px;white-space:pre}tw-folddown::after{content:"▶"}tw-folddown.open::after{content:"▼"}tw-open-button[replay]{display:none}tw-error tw-open-button,tw-eval-replay tw-open-button{display:inline !important}tw-open-button::after{content:attr(label)}tw-notifier{border-radius:.2em;padding:.2em;font-size:1rem;background-color:rgba(223,182,58,.4);display:none}.debug-mode tw-notifier{display:inline}tw-notifier::before{content:attr(message)}tw-colour{border:1px solid #000;display:inline-block;width:1em;height:1em}tw-enchantment:empty{display:none}h1{font-size:3em}h2{font-size:2.25em}h3{font-size:1.75em}h1,h2,h3,h4,h5,h6{line-height:1em;margin:.3em 0 .6em 0}pre{font-size:1rem;line-height:initial}small{font-size:70%}big{font-size:120%}mark{color:rgba(0,0,0,.6);background-color:#ff9}ins{color:rgba(0,0,0,.6);background-color:rgba(255,242,204,.5);border-radius:.5em;box-shadow:0em 0em .2em #ffe699;text-decoration:none}center{text-align:center;margin:0 auto;width:60%}blink{text-decoration:none;animation:fade-in-out 1s steps(1, end) infinite alternate}tw-align{display:block}tw-columns{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between}.transition-in{animation:appear 0ms step-start}.transition-out{animation:appear 0ms step-end}[data-t8n^=dissolve].transition-in,[data-t8n=fade].transition-in{animation:appear .8s}[data-t8n^=dissolve].transition-out,[data-t8n=fade].transition-out{animation:appear .8s reverse}[data-t8n^=shudder].transition-in{display:inline-block !important;animation:shudder-in .8s}[data-t8n^=shudder].transition-out{display:inline-block !important;animation:shudder-in .8s reverse}[data-t8n^=rumble].transition-in{display:inline-block !important;animation:rumble-in .8s}[data-t8n^=rumble].transition-out{display:inline-block !important;animation:rumble-in .8s reverse}[data-t8n^=pulse].transition-in{animation:pulse .8s;display:inline-block !important}[data-t8n^=pulse].transition-out{animation:pulse .8s reverse;display:inline-block !important}[data-t8n^=zoom].transition-in{animation:zoom-in .8s;display:inline-block !important}[data-t8n^=zoom].transition-out{animation:zoom-in .8s reverse;display:inline-block !important}[data-t8n^=blur].transition-in{animation:blur .8s;display:inline-block !important}[data-t8n^=blur].transition-out{animation:blur .8s reverse;display:inline-block !important}[data-t8n^=slideleft].transition-in{animation:slide-left .8s;display:inline-block !important}[data-t8n^=slideleft].transition-out{animation:slide-right .8s reverse;display:inline-block !important}[data-t8n^=slideright].transition-in{animation:slide-right .8s;display:inline-block !important}[data-t8n^=slideright].transition-out{animation:slide-left .8s reverse;display:inline-block !important}[data-t8n^=slideup].transition-in{animation:slide-up .8s;display:inline-block !important}[data-t8n^=slideup].transition-out{animation:slide-down .8s reverse;display:inline-block !important}[data-t8n^=slidedown].transition-in{animation:slide-down .8s;display:inline-block !important}[data-t8n^=slidedown].transition-out{animation:slide-up .8s reverse;display:inline-block !important}[data-t8n^=fadeleft].transition-in{animation:fade-left .8s;display:inline-block !important}[data-t8n^=fadeleft].transition-out{animation:fade-right .8s reverse;display:inline-block !important}[data-t8n^=faderight].transition-in{animation:fade-right .8s;display:inline-block !important}[data-t8n^=faderight].transition-out{animation:fade-left .8s reverse;display:inline-block !important}[data-t8n^=fadeup].transition-in{animation:fade-up .8s;display:inline-block !important}[data-t8n^=fadeup].transition-out{animation:fade-down .8s reverse;display:inline-block !important}[data-t8n^=fadedown].transition-in{animation:fade-down .8s;display:inline-block !important}[data-t8n^=fadedown].transition-out{animation:fade-up .8s reverse;display:inline-block !important}[data-t8n^=flicker].transition-in{animation:flicker .8s}[data-t8n^=flicker].transition-out{animation:flicker .8s reverse}
 </style>
 </head>
 <body>
-<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Story Landing page.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Story Landing page" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="CB710555-E945-44EC-81C5-A39E72E015B5" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar {
+<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Dream Big, Grow BIGGER.</tw-noscript></noscript></tw-story>
+<tw-storydata name="Dream Big, Grow BIGGER" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="E945D4EC-C1C5-439E-B2E0-15B58759943B" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar {
     display: none;
 }
 
 /*Story Overall Formating*/
-tw-story{background-color:#A55B4B;color:#4F1C51}tw-link,tw-link.visited{color:#4F1C51}tw-link:hover,tw-link.visited:hover{color:#DCA06D}
+tw-story{background-color:#B2C6D5;color:#732255}tw-link,tw-link.visited{color:#732255}tw-link:hover,tw-link.visited:hover{color:#bd378b}
 
 /*Div List*/
 
-.Title {text-align:center;font-weight:bold;font-size:75px;line-height:100px;color:#210F37;}
+.Title {text-align: center;font-weight: bold;font-size: 75px;line-height: 100px;}
 
-.SubTitle{text-align:center;font-size:50px;line-height:150px}
+.SubTitle{text-align: center;font-size: 50px;line-height:50px}
 
-.Body{text-align:left;font-size:35px;line-height:50px;}
+.Options {text-align: center;font-size: 40px;line-height: 150px;}
 
-.Tabed{text-indent:2em;}
+.Body{text-align: left;font-size: 35px;line-height: 50px;}
 
-.Tag{float:right;font-size:20px;color:#DCA06D;}
+.CopyWrite{font-size: 15px;line-height: 15px;}
 
-.Option{text-align:center;font-size:40px;line-height:100px;}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="powder" color="blue"></tw-tag><tw-passagedata pid="1" name="Storys" tags="" position="625,125" size="100,100">&lt;div class=&quot;Title&quot;&gt;Story Selection&lt;/div&gt;
+.PG{text-indent:2em}
 
-&lt;div class=&quot;Body&quot;&gt;[[Powdered Scale&#39;s Stories]]&lt;/div&gt;
+.Center{text-align:center;}
 
-&lt;div class=&quot;Body&quot;&gt;[[Archived Stories]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="2" name="Acid Steals From Dust" tags="" position="400,600" size="100,100">&lt;div class=&quot;Title&quot;&gt;Acid Steals From Dust&lt;/div&gt;
-&lt;div class=&quot;Body&quot;&gt;&lt;div class=&quot;Tabed&quot;&gt;Acid has created a new collar, one were there&#39;s an In and Out. The In collar takes the size and atrabuts of the person wearing it, while the Out, wich he wears, gives him the size two fold.&lt;/div&gt;
-&lt;div class=&quot;Tabed&quot;&gt;Acid invits his best friend Dust over so he can take his size. Dust, while not nowing about the nature of the new devise, agree to test it out. What could happen, not like Dust loves being tiny to any giant sexy ponies.&lt;/div&gt;
-&lt;div class=&quot;Option&quot;&gt;(link:&quot;Start Story&quot;)[(goto-url:&quot;/Story-Selector/Powdered-Scale-Stories/Acid Storys/acidstealfromdust.html&quot;)]
-[[Story Select-&gt;Pony Stories]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="3" name="Remember The Ash" tags="" position="225,575" size="100,100">&lt;div class=&quot;Title&quot;&gt;Remember The Ash&lt;/div&gt;
-&lt;div class=&quot;Body&quot;&gt;&lt;div class=&quot;Tabed&quot;&gt;Blake is attacked by some strange beings, and his demond friend Fushoku couldn&#39;t help him in time. Now he edges on the abiss with only a few memories to try and wake him up.&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;Option&quot;&gt;(link:&quot;Start Story&quot;)[(goto-url:&quot;/Story-Selector/Powdered Scale Stories/Blake Storys/Remember The Ash.html&quot;)]
-[[Story Select-&gt;Human Stories]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="Powdered Scale&#39;s Stories" tags="" position="350,275" size="100,100">&lt;div class=&quot;Title&quot;&gt;Powdered Scale&#39;s Stories&lt;/div&gt;
+/*Span List*/
 
-&lt;div class=&quot;Body&quot;&gt;[[Pony Stories]]&lt;/div&gt;
+.AMoan1{font-size:40px;color:#cc0000;}
 
-&lt;div class=&quot;Body&quot;&gt;[[Human Stories]]&lt;/div&gt;
+.AMoan2{font-size:55px;color:#cc0000;}
 
-&lt;div class=&quot;Option&quot;&gt;[[Main Menu-&gt;Storys]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="Pony Stories" tags="" position="400,425" size="100,100">&lt;div class=&quot;Title&quot;&gt;Pony Stories&lt;/div&gt;
+.AMoan3{font-size:70px;color:#cc0000;}
 
-&lt;div class=&quot;Body&quot;&gt;[[Acid Steals From Dust]]&lt;div class=&quot;Tag&quot;&gt;Tags: Acid, Dust, Size Theft, Butt Sitting, Explicit, Story&lt;/div&gt;
+.MMoan1{font-size:40px;color:darkred;}
 
-(display:&quot;Powder Selector&quot;)</tw-passagedata><tw-passagedata pid="6" name="Human Stories" tags="" position="225,425" size="100,100">&lt;div class=&quot;Title&quot;&gt;Human Stories&lt;/div&gt;
+.MMoan2{font-size:60px;color:darkred;}
 
-&lt;div class=&quot;Body&quot;&gt;[[Remember The Ash]]&lt;div class=&quot;Tag&quot;&gt;Tags: Blake, Fushoku, Sad, Qustinable, Story&lt;/div&gt;
+.ACoo{font-size:25px;color:#cc0000;}
 
-(display:&quot;Powder Selector&quot;)</tw-passagedata><tw-passagedata pid="7" name="Powder Selector" tags="" position="325,125" size="100,100">&lt;div class=&quot;Option&quot;&gt;[[Category Selector-&gt;Powdered Scale&#39;s Stories]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name="Archived Stories" tags="" position="1000,300" size="100,100">&lt;div class=&quot;Title&quot;&gt;Archived Stories&lt;/div&gt;
+/*Image*/
 
-&lt;div class=&quot;Body&quot;&gt;[[MLP Stories]]&lt;/div&gt;
+img {
+    width:50%;
+    height:auto;
+    display:inline-block;
+    vertical-align:middle;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Title" tags="" position="750,300" size="100,100">&lt;div class=&quot;Title&quot;&gt;Dream Big, Grow BIGGER&lt;/div&gt;
+&lt;div class=&quot;SubTitle&quot;&gt;Writen By: GlacierOfPaxe&lt;/div&gt;
 
-&lt;div class=&quot;Option&quot;&gt;[[Main Menu-&gt;Storys]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="9" name="MLP Stories" tags="" position="1000,425" size="100,100">&lt;div class=&quot;Title&quot;&gt;Pony Stories&lt;/div&gt;
+&lt;div class=&quot;Options&quot;&gt;[[Start-&gt;Dream Big, Grow BIGGER]]
+(link: &quot;Other Stories&quot;)[(goto-url: &quot;/Story-Selector/index.html&quot;)]&lt;/div&gt;
 
-&lt;div class=&quot;Body&quot;&gt;[[Dream Big, Grow BIGGER]]&lt;div class=&quot;Tag&quot;&gt;Tags: Acid, Dust, Size Theft, Butt Sitting, Explicit, Story&lt;/div&gt;
+&lt;div class=&quot;CopyWrite&quot;&gt;
+Copyright © 2026 by GlacierOfPaxe
 
-(display:&quot;Archived Selector&quot;)</tw-passagedata><tw-passagedata pid="10" name="Archived Selector" tags="" position="1000,100" size="100,100">&lt;div class=&quot;Option&quot;&gt;[[Category Selector-&gt;Archived Stories]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="11" name="Dream Big, Grow BIGGER" tags="" position="1000,550" size="100,100">&lt;div class=&quot;Title&quot;&gt;Dream Big Grow BIGGER&lt;/div&gt;
-&lt;div class=&quot;Body&quot;&gt;&lt;div class=&quot;Tabed&quot;&gt;Big Dragon and Luna.&lt;/div&gt;
-&lt;div class=&quot;Option&quot;&gt;(link:&quot;Start Story&quot;)[(goto-url:&quot;/Story-Selector/Archived Stories/MLP/Dream Big Grow BIGGER.html&quot;)]
-[[Story Select-&gt;Pony Stories]]&lt;/div&gt;</tw-passagedata></tw-storydata>
+All rights reserved.
+
+No part of this publication may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of the publisher, except as permitted by U.S. copyright law.
+
+The story, all names, characters, and incidents portrayed in this production are fictitious. No identification with actual persons (living or deceased), places, buildings, and products is intended or should be inferred.
+
+2st edition 2026
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="2" name="Dream Big, Grow BIGGER" tags="" position="750,425" size="100,100">&lt;div class=&quot;Body&quot;&gt;&lt;div class=&quot;PG&quot;&gt;Bigger….
+
+
+Stronger….
+
+
+The dragonlord tossed and turned in her sleep.
+
+
+Bigger.
+
+
+Stronger.
+
+
+It has been the same dream for weeks on end. Ember was towering over her kingdom. A Goddess to be worshiped and feared by all. Her every move was a roaring wave of muscle, scales creaking at the slightest twitch. And still those two words would pour into her mind, growing louder no matter how titanic she became. 
+
+
+Bigger! 
+
+
+Stronger! 
+
+
+The voice was her own, but deeper, stronger. A rumbling snarl that sent fear throughout her body. Yet at the same time, it excited her. She craved that power. It called to her from the depth of her soul, begging her to reach out and find a way to get as mighty as possible. Something told her that no matter how great she became, she would always crave more. The greed was so tempting, if she gave into it she may grow to rival her dreamself, but she didn’t know if she could do it. 
+
+
+With all that power came a lack of control. The total submission to her base instincts was the opposite of tempting. She would not allow herself to submit to anything, least of all herself! If only she could find a way to grow into the Goddess of her dreams without sacrificing so much. If only she could just get… bigger… stronger
+
+
+Bigger!
+
+
+Stronger!
+
+
+BIGGER!!!
+
+
+STRONGER!!!
+
+
+For a moment, she thought she had woken up, but one glance at the ground told her anything but. She was still her titanic dream self. A monster of a dragon with muscles that stretched beyond anything she had seen. It had to be the dream; although, that didn’t explain the sudden lucidity that came over her. 
+
+
+“That would be my doing, lord Ember.” A voice called from the clouds. The dragonlord snarled, turning to face her unknown enemy. Even in a dream she would not risk defeat. She prepared to fight until she saw the clouds part, a full moon hovering in the sky silhouetting a familiar form. “Explain yourself, why do you invade my dreams, princess.” She growled, relaxing only slightly at the appearance of the pathetic pony ruler. 
+
+
+“For that is my duty and I wish to help a fellow ruler. Especially one in need.” The Alicorn spoke with radiant confidence as though she were speaking to her subject. Ember fought down the urge to resist the pony’s attempt at friendship. If anyone could help her with her dreams it would be the Princess of the night. “Fine. How do you plan on helping me”, she spat the word like it was poison. 
+
+
+“All I have is some words of advice if you wish to hear them. It won’t help you to suppress what you’ve been feeling. Letting it build up inside of you will only make it lash out all the worse. If you truly desire to grow in power, then I suggest you pursue this dream in the waking world.” Luna’s voice began to fade as did the rest of Ember’s dream.
+
+
+She wasn’t sure exactly when she woke up, but she knew it was soon. The pony princess’s words echoed in her head as she paced in her cave. Power, that’s what she needed, but where to begin? There were so many ways someone could potentially find it, but she was at a lose. With all the might of her kingdom she knew she could find whatever source of might she desired. The options were limitless and yet she was paralyzed for choice. “Ugh!!! Just… need something to chew on.” She huffed, before lightly nibbling on the tip of her scepter. The gem was warm in her mouth, thrumming with the power to rule. 
+
+
+Of all the sources of strength she considered, she never even thought about the one on her hands. At least not until she felt a piece of the gemstone snap. The warmth immediately transformed into a fiery flavor like no other. She didn’t realize what had happened until it was too late. Swallowing the fraction of the crystal whole. 
+
+
+The moment it dawned on her, her heart sank. Mostly she feared she had damaged a treasured piece of her hoard. That fear turned sour in her gut, bubble and roiling. Placing a hand on her stomach, she froze in place and wished for the moment to pace. 
+
+
+Lucky for her, she got exactly what she wanted. 
+
+
+Power. Pure and unfiltered surged out from her gut. She dropped the staff, stumbled in place, and fought to keep herself upright. “Ugh! W-what’s… grrrr~”, she growled, claws digging into her scales. The sound should have been natural to a dragon, but something was wrong. It was so much deeper than her voice would allow. Rumbling through her chest, echoing down to the bone. It felt good. Gave her strength. 
+
+
+Back straightened, eyes went wide, and the dragonlord roared as a power beyond all others surged out from her stomach. She flexed every muscle until her scales grew sore, joints screamed, and her body felt weak. That weakness was burned away by an inner flame rushing forth.
+
+
+As she roared, a gout of fire emerged, scorching the roof of her cave. Flat, toned gut tightened and hardened in seconds. It forced the air from her lung and fanned the fires of her ascension. Abs formed, rippling into her frame in seconds. Each row punched out of her gut, pulling her scales so that she could feel her veins throbbing against them. Growth lurching out from them and into her chest. One pec detonated bigger, the other barely keeping up. When it reached her right shoulder she could only snap her jaws closed, snarl, and watch it expand. Veins snaked down the limb, throbbing and forcing her arm to swell. When it reached her fingers, she closed her hand into a fist and pulled it close. Flexing, grunting, and wordless demanding for it to grow! Strength flowing through her veins, spreading faster than she could keep up with. Down her legs, running like a raging river. Trembling, barely able to keep herself upright. One thigh surging thicker while the other was just getting started. 
+
+
+Ember stumbled forward, slamming her fist into the wall to hold herself up. Whole body shaking, thrumming with chaotic spurts of strength! “Aaagh!! Rrrrgh~! Fuck!!! This is… incredible~!!!” She moaned, flames flicking through her clenched jaw. A quiver rush of pleasure cutting through the intensity. “Uuuurrrgh!!! Yeah!!! More~!!!” She stretched out her neck as it thickened with muscle. A string of drool falling off of her chin before her flames could boil it. Her other fist crashed into the wall, stone cracking like ice. She smiled, wings outstretched while her body spasmed through another growth spurt. 
+
+
+To her delight, she saw the world around her shrinking. It was slow at first, barely noticeable save for her watching the cracks on the wall go further and further away from her. Then came the next surge. A moan pushed past her muzzle as her head jumped several inches higher. Her new mass suddenly doubled in size as it had to keep up with her height. She couldn’t help herself as she began to laugh, almost cackling. It just felt too good to just take a step back and feel the undeniable power thumping in her chest. Her dream had nothing on the real thing. 
+
+
+She was so enraptured by how she felt that it took her a moment to realize the growth was done. The storm of power throbbing through her had calmed and in its place was raw mass. An experimental flex told her all she needed to know. Her bicep swelled, nearly grazing her fist with how supercharged it had become. Even relaxed she had the body of a Goddess, rivaling that of her dream. Six pack that made the walls of her cave look soft. Muscles so defined and massive that she felt them tug on her frame. Even her wings had gotten the bulk they needed to support her. She was beast and it was all thanks to the gem that represented her power. 
+
+
+Just looking at it left her feeling warmer. It was discarded in the ground, slightly chipped, and all for her. The moment she took it into her hand again, her muscles grew pumped. Whatever fraction of power she took for the stone was reacting to the gem, begging her to reconnect with it. There was no need to be modest about it. After getting mind fucked by just a shard she was hungry to try the rest. 
+
+
+Her smile widened and a single word was all she had to say, “mine~”
+
+
+Saying it was enough to leave her body starving for more. Taking the gem in hand, snapping it off of the scepter, and gazing upon it like it was the greatest gift she had ever found. Again, “mine~!”, she spoke with a nearly feral need. Her impressive figure rumbling, growing a fraction larger from greed alone. An extra inch at her biceps, the faint beginnings of a fourth row of abs. When she placed the gem on her tongue, she shuddered. A small voice told her to have some self control, but the words of Luna came clearer than ever. There was no need to hold back. 
+
+
+The gem shattered in her maw, shards spilling out between her teeth as she swallowed nearly all of it whole. A frantic part of her wanted to fall to the ground and take what little she missed, but she was too slow. Ember threw her chest forward, mouth open in a silent scream as the same feeling from before enveloped her a thousand times over. She couldn’t move, breathe, or even think. Only two words remained burned into her mind. Repeating themselves over and over again, louder and prouder each time until she swore they would split her skull open. 
+
+
+BIGGER!!!
+
+
+STRONGER!!!
+
+
+BIGGER!!!!
+
+
+STRONGER!!!!
+
+
+“B-baaaah~…”, she moaned softly, the final act of weakness in her new life. “BIGGER~!!!!!!!” Her roar shook the foundations of her mountain, her kingdom, her world! Stomach erupting into a literal wall of muscle. It surged forward, six blue bricks rippling into eight, ten, fourteen! Sixteen abdominal muscles writhing, pulsing, and begging to grow! It nearly set her falling to the floor, but she slammed a claw on the ground. Cracks detonated out from under her, splintering over the entire floor in seconds. Sickening cracks and snaps rang out from within her as every bone and muscle ballooned in size. Each individual fiber of the dragonlord’s form was fighting the rest, doing everything in their power to dominate one another. 
+
+
+Her back exploded even larger than her stomach. Lats flared at her side and forced her arms up while her backside evolved into a mountain range all of its own. Each muscle fiber was visible twitching, dancing to the tune of her roaring heart. She panted, gasping for air, voice dropping lower. A deep, snarling growl that shook the foundations of her home. Arms and legs flexing, growing, and moving of their own will. The power was too much for her to contain, but her greed only grew with her. More! It shouted without words, forcing her neck to thicken and her limbs to bulge with building knots of brawn. Her poor skeleton reformed a million times a second just to keep up with her strength! 
+
+
+It was all happening so quickly that she failed to see how she was changing in other ways. Face scrunching up, veins snaking over it before her jaw cracked. Chin growing a dimple that swelled as her face widened. Voice dropping lower, until it was closer to wild thunder than anything else. She was growing faster than she could control and she loved it! Just trying to walk caused larger, deeper cracks to rip through her home, up the walls, and across the ceiling! Limbs thicker than trees, chest still expanding even as it well over quadrupled in size! She was a Goddess and all she wanted was, “MOOOOORRRREEEE~!!!!!!!” A wing arm crashed into the roof, effortlessly breaking through it while the other had barely grown. She couldn’t even stand yet as only one leg had gained the strength to even move!
+
+
+Through all the chaos a flash of midnight blue magic filled the back of the cave. The princess came as soon as she felt a friend in need; however, nothing could have prepared her for what she saw. 
+
+
+“Ember! What’s the matter? Your whole kingdom is-Ah!” She couldn’t help but yelp at the sight of a back that was wider than she was tall. Blue scales openly groaning as they fought to contain the sheer volume of muscle within them. An uneven monstrosity of musculature that rivaled even the greatest of foes she had faced. To her horror, it was still getting bigger faster than she knew how to cope with. Walls of pure strength erupting closer to her, bashing into the cave walls with such ease she doubted the dragonlord even felt it. Still, despite her terror, she knew she needed to help a friend in need. 
+
+
+She took a single step toward the dragon and immediately felt something sharp stab into her hoof. A piece of crystal? She tried to extract it with her magic, yet the moment she did the jagged gem shard vanished into her. “Huh?!?! W-what was th-ah!… nnngh… this can… n-not be!” 
+
+
+Might. Strength. Eternal glory! The gem infused itself into her, using her own magic to better mold the pony into an ideal vessel. She huffed, hooves clattering on the floor as she tried to move away from Ember, but her body wouldn’t listen to her! All she could do was stand there as the change overwhelmed all senses. 
+
+
+A pathetic cry echoed through the cave as her stabbed hoof healed in seconds. She watched it tremble, twitching and throbbing as she felt the urge to open her hoof. The feeling didn’t make sense to her, but she had no choice but to follow it. Immediately her front hooves began to split apart, five distinct lumps forming, curling into themselves. Fingers. Luna was growing actual fingers! “H-how is this… UUGH!!! GRRRAAHHH~!!!” The roar ripped from her throat as her back arched. Pain shot through her spine for a moment before it collapsed into base pleasure. Her very nature was shifting, rearranging into what the power was meant for. Proportions grew and shrank rapidly, bubbles of power rose under her hide before dispersing throughout her body. The essence of her equestrian body was bent and twisted into a humanoid form. It should have been the most horrific moment of her life if only it didn’t…
+
+
+“F-feels so… gah!… GOOD!!!” She shouted, drooled, and groaned as her pussy began to grow. Like being struck by a lightning bolt of pleasure, her legs gave out right as the metamorphosis finished. Collapsing onto her knees, gasping and moaning. All she could do was stare at her new hands, watch the veins thrumming over her body, and feel her own magic turn against her in ways she never dared consider. 
+
+
+Fingers clenched, scratching at the floor with shocking ease. “Ah! E-ember! We need… need to st-stop… UGH THIS~!!!” Hands balled into fists, she slammed them into the ground. Grunting, practically snarling with effort! She wanted to hold it back, to save herself from the dragonlord’s fate, but there was nothing she could do. “RRRRRGH!!! FUCK!!!” Again and again she slammed her fists into the stone, each time hitting it harder as the fire within her raged beyond her control. 
+
+
+Voice cracking, fear giving way to acceptance of the power she had been blessed with! “GGRRRRAAAAHH~… NNNGH!!! SO GOOD!!! MORE~!!!!!” With her roar came the battle cry of a million muscle fibers. One more slam and she pushed herself onto her knees, snarling at her arm, demanding it grow. Bicep and tricep pitifully flexing before an eruption of magic surged through them. Moaning, her entire arm lurched larger! Muscles bulging onto it while her joints poppped. Her whole shoulder punching out, extending further and thicker until the weight began to drag it down. “RRRRAAAHHH! N-not enough… fuck so GOOD!!! KEEP GROWING~!!!!!” The begging pony slammed her thighs together moments before they both fattened with muscle stretching her skin tight. Growls and groans forced from her muzzle, stomach clenching and hardening, pecs detonating into place, and boobs swelling onto her figure. 
+
+
+The more strength that poured into her, the deeper her drive became. She needed to stand and help her friend, now! One foot landed on the floor, shaky and weak. Molten power screamed through her calf. A trillion workouts compounded into an instant of unrelenting empowerment. The whole leg flared, bulging with fresh beef as she pushed herself up. Foot sinking into the soft stone of the cave while she could hardly keep herself up! It wasn’t the weight, the bigger she grew the lighter she felt. No, it was the pleasure constantly assaulting her pussy. A phantom lover tending to her clit, teasing the bundle of nerves with such focus it left her half blind. Still she snarled and pushed through it! 
+
+
+Standing taller and taller, she huffed at the sight of everything shrinking away from her. She was growing in faster violent surges, forcing her to stumble toward the wall of back muscle that was Ember. With each step Luna took a new part of her grew. First it was her hooves stretching, expanding in all directions to support her weight. Then came her legs, thighs engorged on power with veins feeding it directly into her crotch. Clit straining and stretching like a small pseudo cock begging for action. Abs clenching with every breath she took; cutting themselves into a wall of tightly packed blue bricks! Pecs, tits, shoulders, arms, and finally her neck! She was a freak! A monster of muscle! More strength in one of her thickened fingers than most ponies had in their entire bodies! And she was still getting bigger! 
+
+
+While Luna had only just begun to scrap her horn against the ceiling, Ember was outgrowing her cave entirely. The brute of a beast was pressed against every side of her home save for one. Muscles like steel, unyielding even to the stones that had stood their ground for a thousand thousand years. She grunted, groaned, and with a growl fit to shake the heavens she burst forth!
+
+
+The entire mountain exploded as the dragon lord stepped out into the world! Her titanic figure made her dream self look puny. With each step she took the ground quaked, trees collapsed under her feet, and her wings shadowed the lands. She stretched out her arms and wings, snarling at how powerful they looked even as they continued to swell. The way the muscles had split into smaller muscle groups, each one so monstrously overdeveloped that even if she were smaller they would rival most weaklings in pure mass. When she pulled them back into a most muscular flex, she moaned like thunder. Pressing into her back and pecs, grinding together as they fought for space. Legs quivering, the pleasure striking hot. She refused to look away from herself even as It became a challenge to get a good look at them and pass her traps or pecs. They had swollen so massive that they threatened her field of vision. Her frustration was only matched by her lust for each sinew she saw throbbing bigger. Drool dripping down her thickened lip and cleft chin, moans dropping by the octave until she was unintelligible to most of the ants filling her lands. 
+
+
+They were all so tiny, it was hard to tell what was a dragon and what was prey. All of them were here to rule and play with as she pleased, so it’s not like it mattered. Even the largest of them were barely taller than her knees. The great mountains and volcanoes of her kingdom couldn’t so much as surpass her sheet of abs! And yet the growth did not stop! 
+
+
+She was forced to stop marveling at her own body and land with a mighty growth spurt. One half of her torso crunching as it surged outward! Arm outstretched toward the sky, claws nearly cutting the clouds. Growth flowing down the limb, through her biceps, forearm, and into her hand. The second her fingers began to pop and stretch it clenched into a fist. She snarled, her other lat bulking in much the same way. The growth was mirrored by her wingarm. Legs, chest, and neck all fighting to grow at once. Each one spasming larger before rapidly another part of her took center stage. She didn’t even feel her brow thicken, mind dulling until all she thought of was growth and pleasure. “BIGGER~…. STRRRRRONGER~!!!!” Were the only words that mattered! They were hers, all hers, and none would dare take them from her! 
+
+
+At least, she thought as much until she felt the ground quake from something other than her. 
+
+
+Another titan tore free of the ruined mountain. Muscles glistening with sweat, blue fur matted under tonnes of stone. A roaring monster that nearly rivaled the great dragon lord herself! Luna emerged ever bit a beast as her friend. Her muzzle twisted into a grimace, mind reeling against the addictive power of growth. Neck thicker than her tower in Canterlot, strained as she thrashed her head around. Voice as deep as the darkest depths of the night. “HHHHNNNNGGH!!! HELP…. F-FRIEND!!!! AAAAGGGHH~!!!!” She shouted, tossing away the final scraps of the mountain with a flap of her wings. 
+
+
+In every way she was an equal to Ember. Muscles just as hyper defined and hide stretchingly huge. Veins like rivers snaking across her mountainous muscles. Wings that reshaped the movements of the wind with ease. A towering beast of strength whose very steps could defeat armies. The only thing the pony was greater at was growth. With a flash of midnight blue magic, tinged with a familiar glint of red, the princess roared and grew. Her growth was just as volatile. Surging mounds of muscle crashed into one another with the impact of a fireball. The thunderclap of each collision rocked the foundations of the earth. One leg lurching taller, nearly sending her crashing to the ground before the other detonated even bigger! Abs roiling like a Black Sea, each wave taller and wider than the last until it reached her chest! Pecs and breasts fighting for control, unparalleled softness battling the strength to crush a kingdom. 
+
+
+Ember watched it all unfold, not understanding the words the strange creature had said to her. All she knew was that it was bigger than her and she couldn’t have that. “MORE~!!!!!” She roared, stomping her foot as she let her greed run wild. The gem’s gift merging with her natural ability forced her to grow even faster! 
+
+
+The two beasts were in a standoff. One would grow and the other would surge to surpass them. Over and over the two would try and beat one another until their chests came crashing together. A sheet of pure pecs smashed into boobs bigger than lakes. Ember snarled at her rival while Luna tried to fight with what little sanity she had left. 
+
+
+Despite her best efforts, the princess simply couldn’t hold out any longer. She outstretched her neck as waves of change overcame her face. Muzzle thickening, chin widening, and lips fattening. It wasn’t painful, the pleasure was just too much! Her mind thrashing as she felt base desires bubbling up from within her. Bigger. Stronger. Those same words from Ember’s Dream now flooded into her mind with such potency that there was no way for her to deny them. When her eyes opened and her brow thickened, she came face to face with a beauty like no other. 
+
+
+It made her and Ember pause as they took in the finer features of each other. The feel of muscle against muscle, the power in either of their frames, and that linger tremble of oncoming growth. There was one conclusion the beast’s could reach in their growth drunk minds.
+
+
+They both needed to fuck. Their bodies vibrated at the same frequency. Both aching for the other to come close and explore their muscles. The moment of realization was quick, cut short by their house dwarfing chins colliding into a kiss. Over the crushed barrens of the dragon lord’s land the two titans made love to each other. Every kiss further pushed them to grow and expand, not just for themselves, but each other. To feel one another’s biceps grinding against their own. It was more magical than anything they could imagine in their diminished state of mind. Just the taste of one another was worth a thousand more feet of muscle throbbing onto their frames. They were made for one another! 
+
+
+Something deep within them was calling for them to be close. A fraction of their strength infused souls screaming out for one another. It was the gem reaching out to its shard within the pony princess. Only as their abs made contact and their passions reached their peak did the magic fully connect. 
+
+
+A tiny spark of pure red energy zapped between them and they were both thrown back. Their bodies were overrun by each other’s magic. Pony magic infested Ember while Draconic greed flooded Luna. Both grew wide eyed, shared a look, and roared. 
+
+
+To call it a climax would have been an oversimplification. They had both grown a custom to the endless tide of power bashing through their bodies. What they felt was like the beginnings of their transformations all over again. Neither could utter a word as an alien power took root within them. Something born from neither dragon nor pony, but an unconsidered union of the two. 
+
+
+For Ember, she felt the distorted magic of friendship above all else. It spread throughout her body, surging toward her head and resting at the tip of her forehead. There it condensed, concentrating itself until a new horn emerged, stabbing through her scales, radiating with magic unlike any she knew. She snarled, ready to tear the offending appendage off of herself, but she stopped. There was a taste in the air. Something new she had never noticed. Magic. Pony magic ripe for the taking. She didn’t even have to try. All she needed to do was think about it and her horn lit up. The taste hit her harder than ever, forcing a moan out of her as she devoured scores of the sweet taste. Muscles rumbling, body’s boiling with pent up potential. Rapidly converting the puny pony magic into the new and wondrous thing that had changed her. She smiles, her natural horns growing longer, curving further while they hummed with magic. Spikes erupting from her back. Features sharpening until she was the most ferocious monster the world had ever seen! She cackled, cumming and absorbing as much magic as her body would allow! All the while growing bigger and better than ever! 
+
+
+Luna’s change was even more extreme. The greed of the dragons filled her heart to bursting. She needed more of everything, more power, more size, more strength, more and more and more!!!! The pony roared as her brutish features distorted. Scales joining her fur, shimmering and creaking like the rest of her hide as she surged taller. Every muscle within her doubled in size, demanding that it alone could be the biggest. Her own body nearly turned on itself with how intense her greed had become. And even then she was not done! Magic flared to life on her horn, directed purely at the sun on high and her moon. 
+
+
+Using all of her might she forced the moon into the sky, covering the sun, and bathing the planet in an eclipse like no other. She roared, “MORE!!! MORE!!! MOOORRRRREEEE~!!!!!” A surge of mutated magic engulfed the darkened sun. The same twisted sorcery that transformed Luna and Ember now rained upon all the peoples of the world. It was the end of days and only the two world shattering titans knew it. 
+
+
+…
+
+
+…
+
+
+…
+
+
+Celestia had only recently woken up and lifted the sun into the sky when it happened. Her sister’s moon eclipsed it with ease. It had happened before, but only when they planned for such an event. 
+
+
+“Hmmph, well that’s odd,” she said, already clopping over toward her schedule to see if she missed anything. Only to stop barely one hoof in the door. Something felt wrong, off, like the temperature of the balcony had suddenly tripled. It was such an intense shift that the princess of the day could only stand there and pant. “Ah… what was… th-that, I feel so… o-oooh~” her moan was weak, filled with the frailty that no dr-… pony should have? “What am I thinking that… that isn’t what…” her eyes unfocused, she stumbled in place. 
+
+
+She tried to summon her magic, but it didn’t listen to her. Her calls for help died before they even reached her muzzle. All that came out were weak moans and whimpers. Pathetic. She was a princess! She should be better than that! 
+
+
+She had to be better!
+
+
+Bigger!!!
+
+
+STRONGER!!!
+
+
+“N-no this is wrong I… ugh… nNNGH~!!!” Her soft groan transformed into a snarling grunt. Jaw thickening slightly, chin growing a slight dimple. Her head felt fuzzy, but in a good way. She liked it. Needed more, wanted it more than anything in the world! The same wave of changes as before, but far less subtle. Lip growing fat and full, face widening with masculine thickness, and brow growing heavy. Her entire body felt wrong in a way she was struggling to conceptualize beyond two words. Muscles flexing, bursting bigger in surges too fast she could barely notice them in time to react. And as her shadow began to crawl up the walls of her castle and the ponies of Canterlot began to moan by the hundreds, she grunted those beautiful words. 
+
+
+Bigger…
+
+
+Stronger~….&lt;/div&gt;
+
+[[Title Screen-&gt;Title]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
